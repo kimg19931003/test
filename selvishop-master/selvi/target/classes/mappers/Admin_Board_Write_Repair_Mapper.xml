@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="selvishop">
+  
+  
+  
+  
+    <select id="admin_board_add" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            insert into board( board_name, board_title, board_content, board_thumbnail, board_writer_email, board_writer, board_reg_date) 
+                   values( '${board_name}', '${board_title}', '${board_content}', '${board_thumbnail}', '${board_writer_email}',  '${board_writer}', NOW() )
+        ]]>
+    </select>
+    
+    
+    <select id="admin_board_edit" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+             select * from board where board_idx_pk = ${board_idx_pk}
+        ]]>
+    </select>
+    
+  
+  
+  </mapper>
+  

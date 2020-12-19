@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="selvi">
+     
+    
+     
+    <select id="user_ih_insert" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            insert into spsell_ih_info(id, name, user_ih , f_time) values((select count(*) from (select id from spsell_ih_info) tmp), '${name}', '${user_ih}' , '${f_time}')
+        ]]>
+    </select>
+    
+     <select id="user_ih_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            select * from spsell_ih_info where name='${name}'
+        ]]>
+    </select>
+    
+    <select id="user_ih_update" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            update spsell_ih_info set user_ih='${user_ih}' where name='${name}'
+        ]]>
+    </select>
+    
+  
+    
+    
+   
+</mapper>
+

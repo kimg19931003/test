@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+/* 영역 */
+div.topArea {
+    overflow: hidden;
+    /* background: #e5006a; */
+    background: #000;
+}
+
+div.topArea .schBoxWrap {
+    position: relative;
+    padding: 20px 0 0;
+    /* height: 76px; */
+    height: 100px;
+}
+
+/* 내용 */
+div.topArea a.btnMenu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 46px;
+    height: 56px;
+    text-align: center;
+}
+
+div.topArea a.btnCart img, div.topArea a.btnMenu img {
+    margin-top: 24px;
+    width: 28px;
+}
+
+div.topArea a.logo {
+    margin: 0 auto;
+    width: 145px;
+}
+
+div.topArea a.btnMy {
+    position: absolute;
+    top: 0;
+    right: 39px;
+    width: 39px;
+    height: 56px;
+    text-align: center;
+}
+
+div.topArea a.btnMy img {
+    margin-top: 22px;
+    width: 28px;
+}
+
+div.topArea a.btnCart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 9px;
+    width: 30px;
+    height: 56px;
+    text-align: center;
+}
+
+div.topArea span.cnt {
+    position: absolute;
+    top: 24px;
+    right: 7px;
+    display: inline-block;
+    padding: 1px 4px 1px;
+    font-size: .68em;
+    line-height: 10px;
+    color: #ff0072;
+    border-radius: 25px;
+    background: #fff;
+}
+
+div.topArea .schBox {
+    position: relative;
+    margin: 21px 6px 0;
+    background: #fff;
+}
+
+div.topArea .schBox .ipBox {
+    position: relative;
+    margin: 0 50px 0 12px;
+    height: 34px;
+    overflow: hidden;
+}
+
+div.topArea .schBox input {
+    padding: 8px 0;
+    width: 100%;
+    color: #222;
+    border: none;
+    outline: 0;
+}
+
+div.topArea .schBox .ipBox a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 31px;
+    z-index: 10;
+}
+
+div.topArea a.btnSearch {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    text-align: center;
+    height: 100%;
+}
+
+div.topArea a.btnSearch img {
+    margin-top: 5px;
+    width: 24px;
+}
+
+div.topArea .naviBox {
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    z-index: 10;
+}
+
+div.topArea .naviBox.fixed {
+    position: fixed;
+    top: 0;
+    width: 850px;
+    background: #fff;
+    z-index: 600;
+}
+
+div.topArea .navi {
+    position: relative;
+    display: inline-block;
+    padding: 0 4px;
+    width: auto;
+    height: 40px;
+    text-align: center;
+    z-index: 700;
+}
+
+/* .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -ms-transition-property: -ms-transform;
+    transition-property: transform;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+} */
+
+/* .swiper-container-android .swiper-slide, .swiper-wrapper {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate(0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+} */
+
+div.topArea .navi li {
+    display: inline-block;
+}
+
+div.topArea .navi a {
+    height: calc(100% - 24px);
+    padding: 9px 13px 15px;
+    width: auto;
+}
+
+div.topArea .navi a.on span {
+    color: #ff0072;
+}
+
+div.topArea .navi a.on:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -21px;
+    width: 42px;
+    height: 2px;
+    background: #ff0072;
+}
+
+div.topArea .navi span {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #000;
+}
+
+div.topArea .navi li:first-child span {
+    word-spacing: -1px;
+}

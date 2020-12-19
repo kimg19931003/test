@@ -1,0 +1,53 @@
+/* 데이터 테이블 css 수정 */
+
+
+#board_table_length{
+    margin:0;
+    position:relative;	
+}
+
+#board_table_length select{
+	padding: 6px;
+    font-size: 17px;
+}
+
+
+#board_table_paginate{
+	position: relative;
+    left: -400px;
+}
+
+.dt-buttons{
+	
+}
+
+.dataTables_wrapper{
+	top:-32px !important;
+}
+
+
+#board_table_filter{
+	position:absolute;
+	left:100px;
+	top:-106px;
+}
+
+#board_table_filter img{
+	position:relative;
+	top:10px;
+}
+
+#board_table_filter input{
+	position:relative;
+	top:0px;
+	padding: 7px;
+    border: 0;
+    font-size: 17px;
+}
+
+
+
+.field_header_contents{
+	position: absolute;
+    right: 0px;
+}

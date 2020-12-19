@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+
+
+#fasion_form{
+	width:850px;
+	margin:auto;
+	height:auto;
+	border:1px solid #d0d0d0;
+	background:white;
+	
+}
+
+
+
+
+#best_form{
+	width:850px;
+	margin:auto;
+	height:auto;
+	border:1px solid #d0d0d0;
+	background:white;
+
+}
+
+
+.form{
+	display:inline-block;
+	width:260px;
+	margin:9px;
+}
+
+
+
+.text_small{
+	font-size: 13px;
+	
+}
+
+.product_price_sale{
+	font-size:17px;
+	
+}
+
+
+.product_price_initial{
+	text-decoration:line-through;
+	font-size:12px;
+}
+
+
+
+#best_explain{
+	width:850px;
+	margin:30px auto;
+	height:auto;
+	border-bottom:1px solid #d0d0d0;
+	background:#f0f0f0;
+}
+
+
+
+
+
+
+
+
+
+
+#best_product{
+	width:850px;
+	margin:30px auto;
+	height:auto;
+	border:1px solid #d0d0d0;
+	background:white;
+}
+
+
+.best_product_form{
+	width:270px;
+	padding:5px;
+	display:inline-block;
+	position:relative;
+	cursor:pointer;
+}
+
+.best_price_sale_text{
+	display:inline-block;	
+	color:#e40069;
+}
+
+.best_price_form{
+    display:inline-block;	
+}
+
+
+.rank_num{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url(https://img.womanstalk.co.kr/upload/images/mobile/store/bg_best.png) left top no-repeat;
+    background-size: 50px;
+}
+
+
+.rank_text{
+	position: absolute;
+    top: 3px;
+    left: 9px;
+    text-align: center;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    color:white;
+}
+
+
+.best_bottom_info{
+	border-top:1px solid #dadada;
+	font-size:13px;
+}

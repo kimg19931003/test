@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="selvi">
+     
+    
+     
+    <select id="entry_manager" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            select * from entry1 et left join (select * from link_code group by user_id) lc on et.id = lc.user_id
+        ]]>
+    </select>
+    
+    <select id="entry_delete" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+             update entry1 set deleted = 'y' where id='${id}'
+        ]]>
+    </select>
+    
+    <select id="entry_recovery" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            update entry1 set deleted = 'n' where id='${id}'
+        ]]>
+    </select>
+    
+    
+   
+</mapper>
+

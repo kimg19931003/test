@@ -1,0 +1,370 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+div.loginArea .memLogin h2 {
+	margin: 5px 0 75px;
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+}
+
+div.loginArea .inputBox {
+    position: relative;
+    text-align: center;
+}
+
+div.loginArea .inputBox p {
+	margin-bottom: 20px;
+	padding: 0 10px;
+	height: 35px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( min-width :780px) {
+	#main_wrap {
+		width: 1024px !important;
+		margin: auto !important;
+		padding-top: 20px;
+	}
+	div.loginArea .memLogin {
+		padding: 0 30px;
+		text-align: center;
+	}
+
+	/* 로그인 */
+	div.loginArea {
+		height: calc(100% - 85px);
+		background: #fff;
+		margin-top: 100px;
+		width: 600px;
+		margin: auto;
+	}
+
+	/* 로그인, 비밀번호 칸 */
+	.email_div {
+		width: 90%;
+		height: 48px;
+		border-radius: 24px;
+		border: solid 1px #dedede;
+		background-color: #ffffff;
+		margin-bottom: 56px;
+		text-align: center;
+		display: inline-block;
+	}
+	.password_div {
+		width: 90%;
+		height: 48px;
+		border-radius: 24px;
+		border: solid 1px #dedede;
+		background-color: #ffffff;
+		margin-bottom: 27px;
+		text-align: center;
+		display: inline-block;
+	}
+	#email, #password {
+		height: 100%;
+		width: 91%;
+	}
+
+	/* 아이디 비밀번호 타이틀 */
+	.email_title {
+		position: absolute;
+		top: -28px;
+		left: 47px;
+		font-size: 15px;
+	}
+	.password_title {
+		position: absolute;
+		top: 75px;
+		left: 47px;
+		font-size: 15px;
+	}
+
+	/* 로그인 버튼, 비회원조회 주문 버튼 */
+	.btnLogin {
+		width: 90%;
+		height: 48px;
+		border-radius: 24px;
+		border: solid 1px #dedede;
+		background-color: #e5006a;
+		color: white;
+		font-size: 15px;
+	}
+	.no_mem_btnLogin {
+		width: 90%;
+		height: 48px;
+		border-radius: 24px;
+		border: solid 1px #dedede;
+		background-color: #dedede;
+		margin-top: 15px;
+		font-size: 15px;
+	}
+
+	/* sns 로긴 버튼 */
+	div.loginArea .snsBtnBox a img {
+		width: 60px;
+	}
+
+	/* 아이디, 비번찾기, 회원가입 */
+	div.loginArea .helpBtnBox a {
+		width: 55px;
+		height: 14px;
+		font-family: NotoSansKR;
+		font-size: 15px;
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.07;
+		letter-spacing: 0.5px;
+		text-align: center;
+		color: #939393;
+		text-decoration: none;
+	}
+	div.loginArea .helpBtnBox {
+		position: relative;
+		padding: 32px 0;
+		text-align: center;
+	}
+}
+
+@media ( max-width :780px) {
+	#main_wrap {
+		width: 100% !important;
+		margin: auto !important;
+		padding-top: 20px;   
+	}
+	div.loginArea .memLogin {
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	/* 로그인 */
+	div.loginArea {
+		height: calc(100% - 85px);
+		background: #fff;
+		margin-top: 100px;
+		width: 360px;
+		margin: auto;
+	}
+
+	/* 로그인, 비밀번호 칸 */
+	.email_div {
+		width: 100%;
+		height: 48px;
+		border-radius: 24px;
+		border: solid 1px #dedede;
+		background-color: #ffffff;
+		margin-bottom: 56px;
+		text-align: center;
+		display: inline-block;
+	}
+	.password_div {
+		width: 100%;
+		height: 48px;
+		border-radius: 24px;
+		border: solid 1px #dedede;
+		background-color: #ffffff;
+		margin-bottom: 27px;
+		text-align: center;
+		display: inline-block;
+	}
+	#email, #password {
+		height: 100%;
+		width: 89%;
+	}
+
+	/* 아이디 비밀번호 타이틀 */
+	.email_title {
+		position: absolute;
+		top: -28px;
+		left: 21px;
+		font-size: 15px;
+	}
+	.password_title {
+		position: absolute;
+		top: 75px;
+		left: 21px;
+		font-size: 15px;
+	}
+
+	/* 로그인 버튼, 비회원조회 주문 버튼 */
+	.btnLogin {
+		width: 100%;
+		height: 48px;
+		border-radius: 24px;
+		border: solid 1px #dedede;
+		background-color: #e5006a;
+		color: white;
+		font-size: 15px;
+		cursor:pointer;
+	}
+	.no_mem_btnLogin {
+		width: 100%;
+		height: 48px;
+		border-radius: 24px;
+		border: solid 1px #dedede;
+		background-color: #dedede;
+		margin-top: 15px;
+		font-size: 15px;
+	}
+
+	/* sns 로긴 버튼 */
+	div.loginArea .snsBtnBox a img {
+		width: 50px;
+	}
+
+	/* 아이디, 비번찾기, 회원가입 */
+	div.loginArea .helpBtnBox a {
+		width: 55px;
+		height: 14px;
+		font-family: NotoSansKR;
+		font-size: 12px;
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.07;
+		letter-spacing: 0.5px;
+		text-align: center;
+		color: #939393;
+		text-decoration: none;
+	}
+	div.loginArea .helpBtnBox {
+		position: relative;
+		padding: 15px 0;
+		text-align: center;
+	}
+}
+
+div.loginArea .inputBox p input {
+    width: 488px;
+    height: 48px;
+    border-radius: 24px;
+    border: solid 1px #dedede;
+    background-color: #ffffff;
+}
+
+div.loginArea .inputBox p input .nonmemberNo {
+	width: 45%;
+	height: 100%;
+	font-size: 14px;
+	color: #242424;
+	border: none;
+	outline: 0;
+}
+
+div.loginArea .inputBox p:last-child {
+	margin-bottom: 15px;
+}
+
+div.loginArea .saveBtnBox button {
+	display: inline-block;
+	margin-left: 10px;
+	padding-left: 28px;
+	width: auto;
+	height: 22px;
+	line-height: 22px;
+	font-size: 15px;
+	color: #000;
+	background:
+		url(https://img.womanstalk.co.kr/upload/images/mobile/login/ico_chk.png)
+		left center no-repeat;
+	background-size: 22px;
+}
+
+div.loginArea .saveBtnBox button.on {
+	background:
+		url(https://img.womanstalk.co.kr/upload/images/mobile/login/ico_chk_on.png)
+		left center no-repeat;
+	background-size: 22px;
+}
+
+
+
+
+
+
+
+.login_button, .no_mem_login_button{
+	display:inline-block;
+	width:100%;
+}
+
+
+
+
+
+
+div.loginArea .snsBtnBox {
+	padding: 0;
+	text-align: center;
+	margin-top: 30px;
+}
+
+div.loginArea .snsBtnBox a {
+	display: inline-block;
+	margin: 0 8px;
+	width: auto;
+	vertical-align: top;
+}
+
+
+
+
+
+div.loginArea .helpBtnBox p {
+	display: inline-block;
+	padding-right: 10px;
+	height: 15px;
+	vertical-align: top;
+	line-height: 15px;
+
+}
+
+div.loginArea .helpBtnBox p:last-child {
+	margin-right: 0;
+	padding-right: 0;
+	border-right: none;
+}
+
+
+
+div.loginArea .nonLogin {
+	padding: 20px 30px 0;
+	border-top: 1px solid #e5e5e5;
+}
+
+div.loginArea .nonLogin h2 {
+	margin: 5px 0 20px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+div.loginArea .nonLogin .inputBox {
+	margin-top: 20px;
+}
+
+div.loginArea .nonLogin a.btnLogin, div.loginArea .nonLogin button.btnLogin
+	{
+	margin: 30px 0 20px;
+	width: calc(100% - 2px);
+	height: 50px;
+	color: #242424;
+	border: 1px solid #242424;
+	background: #fff;
+}

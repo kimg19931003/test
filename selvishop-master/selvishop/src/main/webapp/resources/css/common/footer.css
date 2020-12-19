@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body, html{
+	
+	font-family:Noto Sans KR !important;
+}
+
+
+#footer{
+	width:863px;
+	margin-top: 10px;
+	height:300px;   
+	margin:auto;
+	bottom:0px;
+	text-align:center;
+	
+}
+ 
+
+#footer ul:not(#footer ul:nth-child(3)){
+	z-index:8;
+	padding: 0;
+
+}
+
+#footer ul:nth-child(3){
+
+}
+
+#footer li{
+	color:white;
+	list-style:none;
+	line-height: 31px;
+	z-index:8;
+	width:auto;
+}
+
+#footer li:first-child{
+	font-size: 26px;
+	margin-bottom:40px;
+	z-index:8;   
+}
+
+
+#footer .li_font_big{
+	font-size:30px;
+	margin-bottom:6px;
+	color:#d0d0d0;
+}
+
+
+#footer li span:hover{
+	border-bottom:1px solid #2f2f2f;
+	padding-bottom:1px;
+}
+
+
+
+      
+
+/*------- 회사 은행 ---------*/
+#footer .bank_info{
+	width:49%;
+	height:300px;  
+    margin:auto;   
+    background:#3f3f3f;
+    display:inline-block;
+    position: relative;
+    top: -37px;
+    transition:all linear 0.2s;
+}
+#footer .bank_info:hover{
+	background: #0073ca;
+}
+
+#footer .bank_info_ul{
+	position: relative;
+    top: 43px;
+}
+
+/*------- 회사 상담 ---------*/
+#footer .cs_info{
+	width:49%;
+	height:300px;
+    margin:auto;   
+    background:#3f3f3f;
+    display:inline-block;
+    transition:all linear 0.2s;
+}
+#footer .cs_info:hover{
+	background:#007336;
+}
+
+#footer .cs_info_ul{
+	position: relative;
+    top: 43px;
+}
+
+/*------- 회사 정보 ---------*/
+#footer .company_info{
+	width:49%;    
+	height:296px;
+    margin:auto;   
+    background:#3f3f3f;      
+    display:inline-block;
+    position: relative;
+    top: -37px;
+    border-top:1px solid #ffffff;
+    transition:all linear 0.2s;
+}   
+#footer .company_info:hover{
+	background:#1f1f1f;
+}
+
+#footer .company_info_ul{
+	position: relative;
+    top: 28px;
+}
+
+
+/*------- 회사 관련 링크, 카피라이트 ---------*/
+#footer .link_info{
+	width:49%;
+	height:296px;
+	margin:auto;         
+	background:#3f3f3f;
+	display:inline-block;
+	position: relative;
+    top: -116px;
+    border-top:1px solid #ffffff;
+    transition:all linear 0.2s;
+}
+#footer .link_info:hover{
+	background: #3F3F9E;
+}
+
+
+#footer .link_info_ul{
+	position: relative;
+    top: 28px;
+}
+         
+
+/*------- 푸터 링크 이미지  ---------*/
+
+.link_img{
+	
+	padding : 0 9px;
+	display:inline-block;
+}
+

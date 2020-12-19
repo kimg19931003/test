@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+
+
+
+#fasion_form{
+	width:850px;
+	margin:30px auto;
+	height:108px;
+	border:1px solid #d0d0d0;
+	background:white;
+
+}
+
+
+
+#fasion_form li{
+	width:156px;
+	float:left;
+	border:1px solid #d0d0d0;
+	padding:8px 6px;
+	font-size:12px;
+	
+}	
+
+#fasion_form li a{
+	position:relative;
+    text-align:center;
+}	
+
+
+
+
+
+#single_ad_slide{
+	width:850px;
+	margin:30px auto;
+	height:auto;
+	border:1px solid #d0d0d0;
+	background:white;
+}
+
+
+.bx-wrapper{
+	margin-bottom:0 !important;
+}
+
+
+
+#single_left_big_photo{
+	width:850px;
+	margin:30px auto;
+	height:954px;
+	border:1px solid #d0d0d0;
+	background:white;
+}
+
+
+.left_photo, .right_photo_div{
+	float:left;
+}
+
+.left_photo img{
+	width:566px;
+}
+
+.right_photo img{
+	width:284px;
+}
+
+
+
+
+
+
+
+#multi_top_photo{
+	width:850px;
+	margin:30px auto;
+	height:auto;
+	border:1px solid #d0d0d0;
+	background:white;
+}
+
+
+.bottom_photo img{
+	width:280.9px;
+}
+
+
+
+
+
+
+
+
+.sortBtnBox{
+	width:850px;
+	margin:30px auto;
+	height:auto;
+	border:1px solid #d0d0d0;
+	background:white;
+}
+
+.sortBox li{
+	width:1%;
+	display:table-cell;
+	border-top:1px solid #d0d0d0;
+	border-right:1px solid #d0d0d0;
+	position:relative;
+	padding:6px 10px;
+	font-size:15px;
+}
+
+
+.sortBox li a{
+	text-align:center;
+}
+
+
+
+
+
+#fasion_product{
+	width:850px;
+	margin:30px auto;
+	height:auto;
+	border:1px solid #d0d0d0;
+	background:white;
+}
+
+
+.fasion_product_form{
+	width:270px;
+	padding:5px;
+	display:inline-block;
+	position:relative;
+	cursor:pointer;
+}
+
+.fasion_price_sale_text{
+	display:inline-block;	
+	color:#e40069;
+}
+
+.fasion_price_form{
+    display:inline-block;	
+}
+
+
+.rank_num{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url(https://img.womanstalk.co.kr/upload/images/mobile/store/bg_best.png) left top no-repeat;
+    background-size: 50px;
+}
+
+.product_price_initial{
+	text-decoration:line-through;
+	font-size:11px;
+	color:#c0c0c0;
+}
+
+
+.rank_text{
+	position: absolute;
+    top: 3px;
+    left: 9px;
+    text-align: center;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    color:white;
+}
+
+
+.fasion_bottom_info{
+	border-top:1px solid #dadada;
+	font-size:13px;
+}
+
+
+
+.fasion_price_sale_text{
+	font-size:30px;
+}

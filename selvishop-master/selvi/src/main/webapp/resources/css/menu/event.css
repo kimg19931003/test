@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* 내용 */
+div.boardArea {
+	margin: 0 auto;
+	width: 850px;
+}
+
+div.boardArea .boardListBox li {
+	margin-bottom: 5px;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+/* 페이지 */
+div.paginate {
+	padding: 20px 0;
+	text-align: center;
+}
+
+div.paginate a, div.paginate strong {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 13px;
+	line-height: 21px;
+	color: #333;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border: 1px solid #ccc;
+	background: 0 0;
+}
+
+div.paginate strong {
+	color: #ff0072;
+	border: 1px solid #ff0072;
+}

@@ -1,0 +1,125 @@
+    @font-face {
+
+       font-family: ng; // 사용할 폰트명
+
+       src: url('directory/NanumGothic.eot'); 
+
+       src: local(※), url('/resources/font/medium.woff') format('woff'); 
+       src: local(※), url('/resources/font/light.ttf') format('truetype');
+       src: local(※), url('/resources/font/경기천년제목_LIGHT.TTF') format('truetype');
+       src: local(※), url('/resources/font/경기천년제목OTF_Light.woff') format('woff');
+    }
+    
+    
+    
+    
+      html, body {   
+          background: #f8f8f8;
+          height:100%;
+          margin: 0px;
+          font-size:5vw;
+          text-decoration:none;
+          font-family: ng !important;
+      }
+    
+       
+  
+     
+     #login_form{    
+         background: #f8f8f8;
+         height:65%;     
+         margin-top: 100px; 
+         text-align: center;
+         z-index:0;
+         transition:all linear 0.5s;
+         z-index:8; 
+         width:100%;
+          height:30%;
+          position:relative;  
+      }
+      
+      
+     #login_form input{
+         font-size: medium;
+         text-align:center;
+         width:260px;
+      }
+     
+     
+     
+     #entry{    
+         border:1px solid #d0d0d0;
+         background: white;
+         text-align:center;
+         transition:all ease-in-out 1.5s;
+         z-index:7; 
+         width:850px;
+         margin:auto;
+         position:relative; 
+     }
+     
+ 
+     input[type='text'],input[type='password']{  
+         text-align:center;
+         display:block; 
+         margin:auto;
+         -webkit-appearance: none;
+         font-weight: bold;
+         -webkit-box-sizing: border-box;
+         transition: all linear 1s; 
+         border:1px solid #fff5f8; 
+         height:45px;    
+         padding-top: 3px;
+         width:81%;
+         border:1px solid #d0d0d0; 
+         border-bottom:0px;
+     }
+     
+     
+  
+     input:-webkit-autofill { 
+         -webkit-box-shadow: 0 0 0 30px #fff5f8 inset ; 
+         -webkit-text-fill-color: #000; 
+     }
+     
+     input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent;  }
+     
+   
+     a{-webkit-tap-highlight-color: transparent;}
+
+     
+     /*개인정보 제공동의*/
+     
+         #user_info_agree{
+             font-size:15px;
+         }
+         
+         .agree_div{
+             width:81%;
+             margin:auto;
+             text-align:left;
+         } 
+      
+      
+         .all_agree_div, .info_agree_div ,.user_agree_div{
+             border:1px solid #d0d0d0;
+             border-bottom:0px;
+             padding:8px;
+         }
+             
+         
+         .all_agree_div div{
+          
+             display:inline-block;
+         }
+      
+      
+         .info_agree_div div, .user_agree_div div{
+             display:inline-block;
+          
+           
+         }
+     /*개인정보 제공동의*/
+
+ 
+	 

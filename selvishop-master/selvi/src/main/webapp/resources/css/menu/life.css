@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* 메뉴 */
+div.shopArea .cateList {
+	margin-top: 5px;
+	margin: 0 auto;
+    width: 850px;
+}
+
+div.shopArea .cateList li {
+	position: relative;
+	float: left;
+	width: 20%;
+	background: #fff;
+}
+
+div.shopArea .cateList a {
+	position: relative;
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+}
+
+div.shopArea .cateList span {
+	width: 100%;
+	display: block;
+	font-size: 12px;
+	word-spacing: -1px;
+	letter-spacing: -.7px;
+}
+
+div.shopArea .cateList li a.on span, div.shopArea .cateList li:hover span
+	{
+	color: #ff0072;
+}
+
+div.shopArea .cateList a:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #eee;
+}
+
+div.shopArea .cateList li:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	content: "";
+	width: 1px;
+	height: 100%;
+	background: #eee;
+}
+
+div.shopArea .cateList:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/* 기획전 배너 */

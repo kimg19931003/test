@@ -1,0 +1,144 @@
+
+*{
+	list-style:none;
+	text-decoration:none;
+}
+
+
+
+
+
+
+/****************** pc 반응형 *************************/
+
+@media ( min-width :780px) {
+	#main_wrap {
+		width: 100% !important;
+		max-width: 1024px !important;
+		margin: auto !important;
+		padding: 100px 0px 100px 0px;
+	}
+	#join_complete {
+		width: 50%;
+		margin: auto;
+		text-align: center;
+	}
+	.join_complete_title {
+		font-family: NotoSansKR;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 1.5;
+		letter-spacing: 0.6px;
+	}
+	.join_complete_comment {
+		width: 480px;
+		margin: 24px auto 32px auto;
+		height: 164px;
+		border-radius: 30px;
+		background: rgba(11, 99, 186, 0.1);
+		margin: 24px 0px 32px 0px;
+		filter: alpha(opacity = 10);
+		line-height: 50px;
+		padding-top: 30px;
+	}
+	.join_complete_comment div {
+		background: rgba(11, 99, 186, 0.1);
+		padding: 34px 0px 0px 0px;
+		border-radius: 24px;
+		color: #505050;
+	}
+	.join_complete_move_home {
+		width: 240px;
+		margin: auto;
+		border-radius: 24px;
+		background: #e40069;
+		font-size: 15px;
+		padding: 10px 0px;
+	}
+	.move_home {
+		color: white;
+	}
+	.join_complete_move_mypage {
+		width: 240px;
+		margin: auto;
+		border-radius: 24px;
+		background: #dedede;
+		font-size: 15px;
+		margin-top: 10px;
+		padding: 10px 0px;
+	}
+	.move_mypage {
+		color: black;
+	}
+}
+
+
+
+
+
+
+
+
+
+/****************** 모바일 반응형 *************************/
+
+@media(max-width:780px){
+	#main_wrap {
+		width: 100% !important;
+		max-width: 1024px !important;
+		margin: auto !important;
+		padding: 100px 0px 100px 0px;
+	}
+	#join_complete {
+		width: 90%;
+		margin: auto;
+		text-align: center;
+	}
+	.join_complete_title {
+		font-family: NotoSansKR;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 1.5;
+		letter-spacing: 0.6px;
+	}
+	.join_complete_comment {
+		width: 95%;
+		height: 164px;
+		max-width:480px;
+		border-radius: 30px;
+		background: rgba(11, 99, 186, 0.1);
+		margin: 24px auto 32px auto;
+		filter: alpha(opacity = 10);
+		line-height: 50px;
+		padding-top: 30px;
+	}
+	.join_complete_comment div {
+		background: rgba(11, 99, 186, 0.1);
+		padding: 34px 0px 0px 0px;
+		border-radius: 24px;
+		color: #505050;
+	}
+	.join_complete_move_home {
+		width: 240px;
+		margin: auto;
+		border-radius: 24px;
+		background: #e40069;
+		font-size: 15px;
+		padding: 10px 0px;
+	}
+	.move_home {
+		color: white;
+	}
+	.join_complete_move_mypage {
+		width: 240px;
+		margin: auto;
+		border-radius: 24px;
+		background: #dedede;
+		font-size: 15px;
+		margin-top: 10px;
+		padding: 10px 0px;
+	}
+	.move_mypage {
+		color: black;
+	}
+}

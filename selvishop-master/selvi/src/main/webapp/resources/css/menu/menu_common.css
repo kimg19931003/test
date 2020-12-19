@@ -1,0 +1,553 @@
+@charset "UTF-8";
+
+/* 영역 */
+div.shopArea {
+	background: #eee;
+	margin: 0 auto;
+    width: 850px;
+}
+
+div.storeArea .storeTopBox {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+div.storeArea .cateTabBtn {
+    padding-top: 15px;
+}
+
+div.brandArea .cateListWrap {
+    padding: 15px 0 10px;
+}
+
+/* 카테고리 / 브랜드 탭 메뉴 */
+div.shopMainArea .cateTabBtn {
+	padding-top: 15px;
+}
+
+div.shopArea .cateTabBtn li {
+	position: relative;
+	float: left;
+	width: calc(100%/ 2);
+	background: #fff;
+}
+
+div.shopArea .cateTabBtn li.on {
+	background: #ff0072;
+}
+
+div.shopArea .cateTabBtn li:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	content: "";
+	width: 1px;
+	height: 100%;
+	background: #eee;
+}
+
+div.shopArea .cateTabBtn a {
+	display: block;
+	padding: 10px 0;
+	width: 100%;
+	min-height: 16px;
+	text-align: center;
+	color: #4d4d4d;
+}
+
+div.shopArea .cateTabBtn li.on a {
+	font-weight: 600;
+	color: #fff;
+}
+
+div.shopArea .cateTabBtn:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/* 카테고리 메뉴 */
+div.shopArea .cateList {
+	margin-top: 5px;
+}
+
+div.shopMainArea .cateList {
+	margin-bottom: 5px;
+}
+
+div.cateListWrap+.cateList {
+	margin: 5px 0 !important;
+}
+
+div.shopArea .cateList li {
+	position: relative;
+	float: left;
+	width: 20%;
+	background: #fff;
+}
+
+div.shopArea .cateList a {
+	position: relative;
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+}
+
+div.shopArea .cateList span {
+	width: 100%;
+	display: block;
+	font-size: 12px;
+	word-spacing: -1px;
+	letter-spacing: -.7px;
+}
+
+div.shopArea .cateList a:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #eee;
+}
+
+div.shopArea .cateList:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/* 브랜드 시작 이름 */
+div.brandArea .brandSortBox {
+    margin-top: -5px;
+}
+
+div.brandArea .brandSortBox a {
+    float: left;
+    position: relative;
+    display: block;
+    width: calc(100% / 8);
+    height: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+div.brandArea .brandSortBox span {
+    font-size: 15px;
+    line-height: 50px;
+    color: #9d9d9d;
+}
+
+div.brandArea .brandSortBox a:first-child span {
+    font-size: 13px;
+}
+
+div.brandArea .brandSortBox a.on span, div.brandArea .brandSortBox a:hover span {
+    color: #ff0072;
+}
+
+div.brandArea .brandSortBox span:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #eee;
+}
+
+div.brandArea .brandSortBox a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #eee;
+}
+
+div.brandArea .brandSortBox:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* 브랜드 목록 */
+div.brandArea .brandListBox {
+    margin-top: 7px;
+    padding-bottom: 10px;
+}
+
+div.brandArea .brandListBox .brandTit {
+    padding: 0 15px;
+    height: 38px;
+    font-size: 18px;
+    line-height: 38px;
+    color: #ff0072;
+    background: #fbfbfb;
+}
+
+div.brandArea .brandListBox .brandList {
+    padding: 0 15px;
+    background: #fff;
+}
+
+div.brandArea .brandListBox li {
+    height: 40px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+div.brandArea .brandListBox span {
+    display: block;
+    margin: 0 auto;
+    width: 98%;
+    font-weight: 600;
+    line-height: 40px;
+    color: #353535;
+    background: url(https://img.womanstalk.co.kr/upload/images/mobile/store/dot_brandList.png) right center no-repeat;
+    background-size: 7px;
+}
+
+div.brandArea .brandListBox li:last-child {
+    border-bottom: none;
+}
+
+/* 정렬 탭 */
+div.sortBtnBox {
+	margin-bottom: 5px;
+	background: #fff;
+}
+
+div.sortBtnBox h4 {
+	padding: 15px;
+	font-size: 16px;
+	color: #010101;
+}
+
+div.sortBox {
+	padding: 8px 9px 7px;
+	text-align: right;
+}
+
+div.sortBtnBox .sortBox {
+	padding: 0;
+	text-align: center;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+div.sortBtnBox .sortBox ul {
+	display: table;
+	width: 100%;
+}
+
+div.sortBox li {
+	position: relative;
+	display: inline-block;
+	margin-right: -4px;
+	padding: 0 8px 0 11px;
+	width: auto;
+	height: 14px;
+	line-height: 14px;
+}
+
+div.sortBox li:last-child {
+	padding-right: 0;
+}
+
+div.sortBox li:before {
+	display: block;
+	position: absolute;
+	top: 1px;
+	right: 0;
+	content: "";
+	width: 1px;
+	height: 12px;
+	background: #cecece;
+}
+
+div.sortBtnBox .sortBox li {
+	position: relative;
+	display: table-cell;
+	margin-right: 0;
+	padding: 0;
+	width: calc(100%/ 3);
+	height: 14px;
+	vertical-align: middle;
+	line-height: 14px;
+}
+
+div.sortBtnBox .sortBox li:before {
+	display: block;
+	position: absolute;
+	top: 1px;
+	right: 0;
+	content: "";
+	width: 1px;
+	height: 100%;
+	background: #eee;
+}
+
+div.sortBox a {
+	color: #222;
+}
+
+div.sortBtnBox .sortBox a {
+	padding: 11px 0;
+	text-align: center;
+	color: #999;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+
+div.sortBox a.on, div.sortBox a:hover {
+	color: #ff0072;
+}
+
+div.sortBtnBox .sortBox a.on, div.sortBtnBox .sortBox a:hover {
+	color: #ff0072;
+}
+
+div.sortBox li:last-child {
+	padding-right: 0;
+}
+
+/* 상품 리스트 */
+div.prodBox {
+	position: relative;
+	background: #fff;
+}
+
+div.shopListWrap:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+div.shopListWrap .prodBox {
+	float: left;
+	width: 33.333333%;
+	vertical-align: top;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+
+/* 판매 인기 상품 - 이미지 */
+div.prodBox .prodImgBox {
+	position: relative;
+}
+
+div.shopListWrap .prodBox .prodImgBox {
+	margin: 10px 10px 0;
+}
+
+div.prodBox .prodImg1 {
+	position: relative;
+	padding-top: 100%;
+	overflow: hidden;
+}
+
+div.prodBox .prodImg1 p {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: translate(50%, 50%);
+	-webkit-transform: translate(50%, 50%);
+	-ms-transform: translate(50%, 50%);
+}
+
+div.prodBox .prodImg1 p span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+img.lazyloaded {
+	opacity: 1;
+	transition: opacity .4s;
+}
+
+div.shopListWrap .prodBox .play {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 27px;
+	height: 27px;
+	background:
+		url(https://img.womanstalk.co.kr/upload/images/common/ico_play.png)
+		right center no-repeat;
+	background-size: 100%;
+}
+
+div.shopListWrap .prodBox .play span {
+	display: block;
+	padding-right: 18px;
+	height: 16px;
+	font-size: 12px;
+	line-height: 17px;
+	background:
+		url(https://img.womanstalk.co.kr/upload/images/mobile/store/ico_play.png)
+		right center no-repeat;
+	background-size: 13px;
+	display: none;
+}
+
+div.prodBox .badgeBox {
+	position: absolute;
+	top: 6px;
+	left: 4px;
+	width: 40px;
+}
+
+/* 판매 인기 상품 - 정보 */
+div.prodBox .prodInfo {
+	margin: 0;
+	padding: 6px 10px 9px;
+}
+
+div.prodBox p.title {
+	display: block;
+	height: 36px;
+	font-size: 15px;
+	line-height: 19px;
+	letter-spacing: -.5px;
+	overflow: hidden;
+	color: #000;
+}
+
+div.prodBox .priceInfo {
+	position: relative;
+	margin-top: 11px;
+}
+
+div.shopListWrap .prodBox .priceInfo {
+	min-height: 28px;
+}
+
+div.prodBox .priceInfo strong.sale {
+	display: inline-block;
+	margin-right: 2px;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 16px;
+	letter-spacing: -1px;
+	color: #ff0072 !important;
+}
+
+div.prodBox .priceInfo strong.sale span {
+	font-size: 14px;
+}
+
+div.prodBox .priceInfo strong.saleWt {
+	font-size: 16px;
+}
+
+div.prodBox .priceInfo p.price {
+	display: inline-block;
+}
+
+div.prodBox .priceInfo s {
+	display: block;
+	min-height: 10px;
+	font-size: 10px;
+	line-height: 10px;
+	letter-spacing: -.5px;
+	color: #999;
+}
+
+div.prodBox .priceInfo p.price strong {
+	font-size: 16px;
+	line-height: 17px;
+	color: #000;
+}
+
+/* 배송 / 쿠폰 / 평점 */
+div.prodBox .icoBox {
+	padding: 6px 0 9px;
+	border-top: 1px solid #f1f1f1;
+}
+
+div.shopListWrap .prodBox .icoBox {
+	margin: 0 10px;
+}
+
+div.prodBox .prodIco {
+	float: left;
+	height: 12px;
+}
+
+div.prodBox .prodIco span {
+	vertical-align: top;
+	height: 12px;
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: -.6px;
+}
+
+div.prodBox .prodIco span.delivery {
+	color: #006cff;
+}
+
+div.prodBox .prodIco span.coupon {
+	color: #ff0072;
+}
+
+div.prodBox .prodIco span.cnt {
+    color: #f58bb8;
+}
+
+div.prodBox .icoStarBox {
+	float: right;
+	margin-top: 3px;
+	height: 16px;
+}
+
+div.prodBox .reviewCnt {
+	margin-top: 0;
+	padding-left: 14px;
+	height: 12px;
+	background:
+		url(https://img.womanstalk.co.kr/upload/images/common/ico_star.png)
+		left center no-repeat;
+	background-size: 12px;
+}
+
+div.prodBox .icoStarBox strong {
+	display: inline-block;
+	margin-left: 1px;
+	height: 12px;
+	vertical-align: top;
+	font-size: 11px;
+	line-height: 1.7em;
+	color: #484848;
+}
+
+div.prodBox .reviewCnt strong {
+	height: 12px;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: -.5px;
+	line-height: 10px;
+	color: #222;
+}
+
+div.prodBox .icoBox:after {
+	display: block;
+	content: "";
+	clear: both;
+}

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* 헤더 */
+div.titleTopArea {
+    position: fixed;
+    top: 0;
+    width: 850px;
+    height: 56px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    background: #fff;
+    z-index: 9997;
+}
+
+div.titleTopArea a.btnBack {
+    left: 0;
+}
+
+div.titleTopArea a.btnBox {
+    position: absolute;
+    top: 0;
+    width: 46px;
+    height: 100%;
+}
+
+div.titleTopArea a.btnBox p {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+div.titleTopArea a.btnBox span {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.titleTopArea a.btnBox img {
+    width: 28px;
+}
+
+div.titleTopArea h3 {
+    display: table;
+    margin-left: 51px;
+    width: calc(100% - 51px);
+    height: 100%;
+}
+
+div.titleTopArea h3 span {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    color: #222;
+}
+
+div.titleTopArea a.btnHome {
+    right: 0;
+}
+
+/* 아이디 / 비밀번호 찾기 */
+div.findArea {
+    min-height: 100%;
+}
+
+div.findArea .wtTitle {
+    height: 50px;
+}
+
+div.wtTitle {
+    padding-top: 6px;
+    height: 31px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    color: #646464;
+    letter-spacing: -1px;
+    border-bottom: 1px solid #d4d4d4;
+    background: #fff;
+}
+
+div.findArea .findWrap {
+    padding: 50px 20px;
+}
+
+div.findArea .tabBtn {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+div.findArea .tabBtn p {
+    float: left;
+    width: 50%;
+}
+
+div.findArea .tabBtn button {
+    padding: 10px 0;
+    text-align: center;
+    color: #bababa;
+    border: 1px solid #ebebeb;
+    border-bottom: 1px solid #b3b3b3;
+    background: #ebebeb;
+}
+
+div.findArea .tabBtn button.on {
+    position: relative;
+    font-weight: 600;
+    color: #000;
+    border: 1px solid #b3b3b3;
+    border-bottom: 1px solid #f7f7f7;
+    background: #f7f7f7;
+    z-index: 100;
+}
+

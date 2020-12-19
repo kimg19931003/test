@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+
+input::-webkit-input-placeholder { color:#c0c0c0;font-family: 'Nanum Gothic'; }
+input::-moz-placeholder { color:#c0c0c0;font-family: 'Nanum Gothic'; }
+input:-ms-input-placeholder { color:#c0c0c0;font-family: 'Nanum Gothic'; }
+input:-moz-placeholder { color:#c0c0c0;font-family: 'Nanum Gothic'; }
+input::placeholder { color:#c0c0c0; font-family: 'Nanum Gothic';}
+
+input{
+	border:1px solid #d0d0d0;
+}
+
+#customer_title_line{
+    width: 972px;
+    margin: auto;
+    
+    position: relative;
+    left: -40px;
+    top: -65px;
+}
+
+
+select, input{
+	padding: 9px;
+}
+
+#customer_title_line div{
+	display:inline-block;
+	left: -40px;
+    position: relative;
+	
+}
+
+.customer{
+	font-size:20px;
+    margin: 25px;
+    padding-right: 19px;
+	font-weight:bolod;
+	border-right:1px solid #d0d0d0;
+}
+
+#customer_form{
+	width:1100px;
+	margin:auto;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: -400px; 
+}
+
+
+.title{
+	font-size: 20px;
+    margin: 25px;
+    padding-right: 19px;
+    font-weight: bold;
+    border-right: 1px solid #d0d0d0;
+}
+
+
+
+ #customer_table_info{
+	display:none;
+}
+
+#customer_table tr , #customer_table td{
+	border-bottom:1px solid #d0d0d0;
+	cursor:pointer;
+	
+}
+
+#customer_table th{
+	padding : 20px 0px 20px 0px;
+}
+
+#customer_table tr:hover{
+	background:#f8f8f8;
+	transition:all linear 0.2s;
+}
+
+#customer_table td{
+	padding: 35px 0px 35px 0px;
+	font-size:13px;
+}
+
+
+table{
+	text-align:center;
+}
+
+
+/* 데이터 테이블 랭스 플레이스 */
+
+#customer_table_length{
+	position: relative;
+    left: 900px;
+    top: -22px;
+}
+
+
+
+
+/* 데이터 테이블 서치 플래이스 */
+
+#customer_table_filter{
+    position: relative;
+    top: -21px;
+    left: -568px;
+}
+	
+#customer_table_filter input{
+    position: relative;
+    top: -11px;
+    border: 0;
+    font-size: 18px;
+}
+
+#customer_table_filter img{
+    position: relative;
+    top: 2px;
+}
+
+
+
+
+
+
+

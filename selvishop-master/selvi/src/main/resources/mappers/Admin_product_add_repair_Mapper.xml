@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="selvishop">
+  
+    
+  
+    <select id="admin_product_add" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            insert into product( prdt_name, prdt_code, prdt_price, prdt_sale_price, prdt_thumbnail, prdt_content, prdt_comment, prdt_quantity, prdt_option1_name, prdt_option2_name, prdt_option3_name, prdt_state, prdt_category_large, prdt_option_add_price_1, prdt_option_add_price_2, prdt_option_add_price_3, prdt_reg_date)
+                        values( '${prdt_name}', '${prdt_code}', '${prdt_price}', '${prdt_sale_price}', '${prdt_thumbnail}', '${prdt_content}', '${prdt_comment}', '${prdt_quantity}', '${prdt_option1_name}', '${prdt_option2_name}', '${prdt_option3_name}', '${prdt_state}', '${prdt_category_large}', '${prdt_option_add_price_1}', '${prdt_option_add_price_2}', '${prdt_option_add_price_3}', NOW()) 
+        ]]>
+    </select>
+    
+    
+    
+    <select id="product_sku_duplicate" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from product where prdt_code = '${prdt_code}'
+        ]]>
+    </select>
+      
+ 
+  
+    <select id="product_all" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from product
+        ]]>
+    </select>
+  
+  
+    <select id="product_repair_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from product where prdt_idx_pk = ${prdt_idx_pk}
+        ]]>
+    </select>
+    
+    
+    
+    <select id="product_category_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select admin_mem_category from admin_member
+        ]]>
+    </select>
+    
+    
+    <select id="product_category_add" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          update admin_member set admin_mem_category = concat_ws('§', admin_mem_category, '${admin_mem_category}') where admin_mem_idx_pk = 1
+        ]]>
+    </select>
+    
+    
+    <select id="product_category_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          update admin_member set admin_mem_category = '${admin_mem_category}'
+        ]]>
+    </select>
+  
+  
+  </mapper>
+  

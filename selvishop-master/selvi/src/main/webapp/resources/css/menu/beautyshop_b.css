@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* 영역 */
+div.shopArea {
+	background: #eee;
+}
+
+/* 카테고리 / 브랜드 */
+div.brandArea .cateListWrap {
+	padding: 15px 0 10px;
+}
+
+div.shopArea .cateTabBtn li {
+	position: relative;
+	float: left;
+	width: calc(100%/ 2);
+	background: #fff;
+}
+
+div.shopArea .cateTabBtn li:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	content: "";
+	width: 1px;
+	height: 100%;
+	background: #eee;
+}
+
+div.shopArea .cateTabBtn li.on {
+	background: #ff0072;
+}
+
+div.shopArea .cateTabBtn li.on a {
+	font-weight: 600;
+	color: #fff;
+}
+
+div.shopArea .cateTabBtn a {
+	display: block;
+	padding: 10px 0;
+	width: 100%;
+	min-height: 16px;
+	text-align: center;
+	color: #4d4d4d;
+}
+
+div.shopArea .cateTabBtn:after {
+	display: block;
+	content: "";
+	clear: both;
+}

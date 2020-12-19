@@ -1,0 +1,652 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0;
+	border: 0;
+	font-family: 'Nanum Gothic';
+	vertical-align: baseline;
+}
+
+a, a:hover, a:active, a:focus, a:visited, input, button, select {
+	text-decoration: none;
+	outline: none !important;
+}
+
+/* 아이콘 */
+.icon {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background-position: center center !important;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.icon.icon-black {
+	opacity: 0.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity = 75);
+	-moz-opacity: 0.75;
+}
+
+.icon.icon-black.icon-exit {
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/supersell-selvi/shoppingmall/admin/common/%EB%92%A4%EB%A1%9C%EA%B0%80%EA%B8%B0.png);
+}
+
+/* 공통 */
+.add-product .include_field_left {
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+
+/* 뒤로가기. 제목 */
+.properties.wrapper .left-header {
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	padding: 17px 0;
+	text-align: center;
+}
+
+.properties.wrapper .left-header .title {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 25px;
+	color: #222;
+}
+
+.properties.wrapper .left-header .backToDash {
+	position: absolute;
+	margin-left: 14px;
+	left: 0;
+}
+
+/* 왼쪽 내용 */
+.properties.wrapper .left-scrollbar {
+	height: calc(100% - 58px);
+	overflow: auto;
+}
+
+.scroll-wrapper {
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: relative;
+}
+
+.properties.wrapper .scroll-wrapper {
+	height: 100%;
+}
+
+
+
+.properties.wrapper .left-content {
+	padding: 25px 33px;
+	box-sizing: border-box;
+}
+
+.properties.wrapper .left-content .setting-row {
+	margin-bottom: 25px;
+	position:relative;
+}
+
+/* 왼쪽 내용 - 제목 */
+.properties.wrapper .left-content .setting-row .title {
+	margin-bottom: 12px;
+	line-height: 15px;
+}
+
+.properties.wrapper .left-content .setting-row .title span {
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 15px;
+	color: #666;
+}
+
+/* 왼쪽 내용 - inputbox text */
+input[readonly], input[readonly="readonly"] {
+	background-color: #fafafa;
+}
+
+
+
+
+
+.select_box li{
+    padding: 5px 9px;
+    font-size: 13px;
+	cursor:pointer;
+}
+
+.select_box li:hover{
+	background:#d0d0d0;
+}
+
+/* 썸네일 */
+.properties.wrapper .left-content .setting-row .box {
+
+	border-radius: 2px;
+}
+
+.properties.wrapper .left-content .setting-row .fill.box {
+	background-color: #ddd;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.properties.wrapper .left-content .setting-row .content.fill.box {
+	padding: 2.5px;
+}
+
+
+
+.properties.wrapper .left-content .setting-row .content.fill.box.postImgList .postImgBtn
+	{
+	width: 100%;
+	height: 100%;
+}
+
+.fileUploader-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.btn {
+	cursor: pointer;
+	box-sizing: border-box;
+	letter-spacing: 0.5px;
+	line-height: 46px;
+	height: 50px;
+	padding: 0 12px;
+	border: 2px solid transparent;
+	display: inline-block;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 14px;
+	width: 110px;
+	text-align: center;
+	-webkit-transition: all .2s cubic-bezier(.33, 0, .2, 1);
+	-moz-transition: all .2s cubic-bezier(.33, 0, .2, 1);
+	-o-transition: all .2s cubic-bezier(.33, 0, .2, 1);
+	transition: all .2s cubic-bezier(.33, 0, .2, 1);
+}
+
+.properties.wrapper .left-content .setting-row .content.fill.box .img {
+	position: relative;
+	width: 56px;
+	height: 56px;
+	background-color: #bbb;
+	display: inline-block;
+	float: left;
+	margin: 2.5px;
+	border-radius: 2px;
+}
+
+.properties.wrapper .left-content .setting-row .content.fill.box .add.img
+	{
+	opacity: 0.4;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity = 40);
+	-moz-opacity: 0.4;
+	-khtml-opacity: 0.4;
+}
+
+.properties.wrapper .left-content .setting-row .content.fill.box.postImgList .postImgBtn button
+	{
+	margin: 0;
+	padding: 2.5px;
+	width: 100%;
+	height: 100%;
+}
+
+.icon.icon-black.icon-add1 {
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/supersell-selvi/shoppingmall/admin/board/%EC%8D%B8%EB%84%A4%EC%9D%BC%EC%B6%94%EA%B0%80.png);
+}
+
+.properties.wrapper .left-content .setting-row .content.fill.box.postImgList .postImgBtn button i
+	{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 25px;
+	background-size: 50%;
+	color: #222;
+	opacity: 1;
+}
+
+.properties.wrapper .left-content .setting-row .content.fill.box.postImgList .postImgBtn button span
+	{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 25px;
+	background-size: 50%;
+	color: #222;
+	opacity: 1;
+}
+
+input[type=file] {
+	cursor: pointer !important;
+}
+
+.fileUploader-wrapper .fileUploader, .fileUploader-wrapper input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	opacity: 0;
+	filter: Alpha(Opacity = 0);
+	z-index: 1;
+}
+
+.properties.wrapper .left-content .setting-row .content.fill.box.postImgList .postImgBtn button input
+	{
+	width: 100%;
+	top: 0;
+}
+
+/* 이미지 올린 후 이미지 제거 */
+.hide {
+	display: none !important;
+}
+
+img {
+	image-rendering: auto;
+	width: 100%;
+}
+
+.delete {
+	cursor: pointer;
+}
+
+.left-content .setting-row .content.fill.box .img .delete {
+	position: absolute;
+	top: -4px;
+	right: -4px;
+}
+
+.left-content .setting-row .content.fill.box>.img
+	{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+/* 체크 박스 */
+.setting-row .checkBox-element {
+	padding: 14px 0;
+	font-size: 12px;
+	font-weight: 600;
+	color: #666;
+}
+
+[type="checkbox"]:not (:checked ), [type="checkbox"]:checked {
+	display: none;
+}
+
+.trans-fast {
+	-webkit-transition: all .13s linear;
+	-moz-transition: all .13s linear;
+	-o-transition: all .13s linear;
+	transition: all .13s linear;
+}
+
+[type="checkbox"]:not (:checked ) +label, [type="checkbox"]:checked+label
+	{
+	position: relative;
+	cursor: pointer;
+	padding-left: 20px;
+}
+
+.setting-row .checkBox-element [type="checkbox"]:not
+	 (:checked ) +label, .setting-row .checkBox-element [type="checkbox"]:checked+label
+	{
+	padding-left: 32px;
+}
+
+[type="checkbox"]:not (:checked ) +label:before, [type="checkbox"]:checked+label:before
+	{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+	background-color: white;
+}
+
+.setting-row .checkBox-element [type="checkbox"]:not
+	 (:checked ) +label:before, .setting-row .checkBox-element [type="checkbox"]:checked+label:before
+	{
+	top: -2px;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	-webkit-transition: all .13s cubic-bezier(.33, 0, .2, 1);
+	-moz-transition: all .13s cubic-bezier(.33, 0, .2, 1);
+	-ms-transition: all .13s cubic-bezier(.33, 0, .2, 1);
+	-o-transition: all .13s cubic-bezier(.33, 0, .2, 1);
+	transition: all .13s cubic-bezier(.33, 0, .2, 1);
+}
+
+[type="checkbox"]:not (:checked ) +label:after, [type="checkbox"]:checked+label:after
+	{
+	content: '✔';
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	font-weight: 100;
+	font-size: 14px;
+	color: #4095f1;
+	transition: all .2s;
+	line-height: 16px;
+}
+
+[type="checkbox"]:not (:checked ) +label:after {
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity = 0);
+	-moz-opacity: 0;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+}
+
+.setting-row .checkBox-element [type="checkbox"]:not
+	 (:checked ) +label:after, .setting-row .checkBox-element [type="checkbox"]:checked+label:after
+	{
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	content: '\f00c';
+	position: absolute;
+	top: -1px;
+	left: 1px;
+	border-radius: 11px;
+	width: 20px;
+	height: 20px;
+	font-weight: 100;
+	font-size: 12px;
+	color: #fff;
+	transition: all .2s;
+	background-color: #666;
+	border-color: #888;
+	line-height: 20px;
+	text-align: center;
+}
+
+/* 오른쪽 내용 - 상세 설명, 저장 버튼 */
+.add-product .include_field_left, .add-product .include_field_right {
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.add-product .include_field_right {
+	width: calc(100% - 380px);
+}
+
+.information.wrapper {
+	height: 100%;
+}
+
+.information.wrapper .right-header {
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	padding: 17px 0;
+	text-align: center;
+	height: 25px;
+}
+
+.information.wrapper .right-header .title {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 25px;
+	color: #222;
+}
+
+.information.wrapper .right-header .btn-wrapper {
+	position: absolute;
+	right: 0;
+	top: 6px;
+	margin-right: 10px;
+}
+
+.btn-green {
+	background-color: #64b978;
+	border-color: #64b978;
+	color: #fff;
+}
+
+.information.wrapper .right-header .btn-wrapper button {
+	height: 45px;
+	line-height: 40px;
+}
+
+/* 네이버 스마트 에디터 */
+.information.wrapper .right-scrollbar {
+	height: calc(100% - 60px);
+}
+
+.information.wrapper .right-scrollbar .right-content {
+	height: 100%;
+}
+    
+
+
+
+
+
+
+.editor_div{
+	
+}
+
+
+
+
+/* productImageUploader 부분 */
+
+#productImageUploader{
+	display:none;
+}
+
+.image_upload_label{
+    cursor: pointer;
+    color: black;
+    width: 281px;
+    display: inline-block;
+    height: 45px;
+    cursor:pointer;
+}
+
+.filereader_image_div{
+	display:grid;
+}
+
+
+
+
+
+/* 라벨 append */
+
+.append_label{
+	position: absolute;
+    border: 1px solid #505050;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 2px;
+    background: #505050;
+    transition:all linear 0.3s;
+    -webkit-transition:all linear 0.3s;
+}
+
+.append_label:hover{
+	background:#d0d0d0;
+	border:1px solid #d0d0d0;
+}
+
+
+
+
+
+
+/* 미디어 쿼리 작성 */
+
+@media(min-width:780px){
+	
+	
+	
+	/* 왼편 게시판 게시글 설정 */
+	.scroll-wrapper>.scroll-content {
+		border: none !important;
+		box-sizing: content-box !important;
+		height: auto;
+		left: 0;
+		margin: 0;
+		max-height: none !important;
+		max-width: none !important;
+		overflow: scroll !important;
+		padding: 0;
+		position: relative !important;
+		top: 0;
+		width: auto !important;
+		height: 1462px;
+	}
+	
+	/* 정보기입창  */
+	.include_field_left{
+		float:left;
+	}
+	
+	.properties.wrapper {
+		width: 380px;
+		background-color: #f4f4f4;
+		border-right: 1px solid #ddd;
+		height: 100%;
+	}
+	
+	
+	/* 스마트에디터 */
+	.include_field_right{
+		width: calc(100% - 381px);
+    	display: inline-block;
+	}
+	
+	
+	/* 인풋 가로크기 */
+	.setting-row input[type="text"] {
+		width: 89%;
+		padding: 15px 20px 14px;
+		color: #222;
+		font-size: 14px;
+		line-height: 19px;
+		border-radius: 2px;
+		border: 1px solid #ddd;
+	}
+	
+	
+	/* 이미지 업로드 크기 */
+	.properties.wrapper .left-content .setting-row .content.fill.box.postImgList{
+		height: 65px;
+		padding: 5px;
+		width: 305px;
+	}
+	
+	
+	
+	/* 게시판 선택 팝업창 */
+	.select_box{
+    	width: 300px;
+    	border: 1px solid #d0d0d0;
+    	position: absolute;
+    	left: 0px;
+    	top: 78px;
+    	z-index: 9999;
+    	background: #fcfcfc;
+    	display:none;
+    	overflow:auto;
+	}
+}
+
+@media(max-width:780px){
+	
+	
+	/* 왼편 게시판 게시글 설정 */
+	.scroll-wrapper>.scroll-content {
+		border: none !important;
+		box-sizing: content-box !important;
+		height: auto;
+		left: 0;
+		margin: 0;
+		max-height: none !important;
+		max-width: none !important;
+		overflow: scroll !important;
+		padding: 0;
+		position: relative !important;
+		top: 0;
+		width: auto !important;
+		height: 100%;
+	}
+	
+	
+	/* 정보기입창  */
+	.include_field_left{
+		
+	}
+	
+	.properties.wrapper {
+		width: 100%;
+		background-color: #f4f4f4;
+		border-right: 1px solid #ddd;
+		height: 100%;
+	}	
+	
+	/* 스마트에디터 */
+	.include_field_right{
+		width: 100%;
+    	display: inline-block;
+	}
+	
+	/* 인풋 가로크기 */
+	.setting-row input[type="text"] {
+		width: 85%;
+		padding: 15px 20px 14px;
+		color: #222;
+		font-size: 14px;
+		line-height: 19px;
+		border-radius: 2px;
+		border: 1px solid #ddd;
+	}
+	  
+	
+	/* 이미지 업로드 크기 */
+	.properties.wrapper .left-content .setting-row .content.fill.box.postImgList{
+		height: 65px;
+		padding: 5px;
+
+	}
+	
+	
+	/* 게시판 선택 팝업창 */
+	.select_box{
+    	width: 100%;
+    	border: 1px solid #d0d0d0;
+    	left: 0px;
+    	top: 78px;
+    	z-index: 9999;
+    	background: #fcfcfc;
+    	overflow:auto;
+	}
+}

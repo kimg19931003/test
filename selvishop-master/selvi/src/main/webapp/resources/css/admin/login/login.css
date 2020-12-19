@@ -1,0 +1,39 @@
+
+
+#login_form{
+    width: 350px;
+    height: 200px;
+    margin: auto;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    padding-top: 56px;
+    margin-top: 28vh;
+    z-index:99;
+    background: #000000;
+}
+
+
+
+.login_entry{
+	width:50%;
+	background:#e40069;
+	color:white;
+	cursor:pointer;
+	padding:5px 10px;
+	text-align:center;
+	display: inline-block;
+	margin-top: 34px;
+}
+
+
+
+#admin_id{
+	padding: 8px 6px;
+    width: 76%;
+}
+
+#admin_pass{
+	padding: 8px 6px;
+    width: 76%;
+    margin-top: 15px;
+}

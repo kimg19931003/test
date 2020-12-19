@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* 기획전 - 슬라이더 */
+div.shopArea .bnrListBox {
+	margin-top: 10px;
+}
+
+/* 메이크업 */
+div.shopArea .bnrBox {
+	position: relative;
+	padding-top: 92.3%;
+	overflow: hidden;
+}
+
+div.shopArea .bnrBox .bnr1Box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 66.6%;
+}
+
+div.shopArea .bnrBox .bnr2Box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 33.4%;
+}
+
+/* 스킨케어 */
+div.shopArea .bnrList3Box {
+	margin-top: 0;
+}
+
+div.shopArea .bnrBox {
+	position: relative;
+	padding-top: 92.3%;
+	overflow: hidden;
+}
+
+div.shopArea .bnrBox .bnr2Box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 33.4%;
+}
+
+div.shopArea .bnrList3Box .bnr2Box {
+	right: auto;
+	left: 0;
+}
+
+div.shopArea .bnrBox .bnr1Box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 66.6%;
+}
+
+div.shopArea .bnrList3Box .bnr1Box {
+	left: auto;
+	right: 0;
+}
+
+/* 헤어 케어 */
+div.shopArea .bnrList4Box {
+	margin: 0 0 10px;
+}
+
+div.shopArea .prodBnrBox a {
+	float: left;
+	width: calc(100%/ 3);
+}
+
+div.shopArea .prodBnrBox:after {
+	display: block;
+	content: "";
+	clear: both;
+}

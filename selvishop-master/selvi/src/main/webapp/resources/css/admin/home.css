@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+
+#home_title_line{
+    width: 972px;
+    margin: auto;
+    border-bottom: 1px solid #d0d0d0;
+    position: relative;
+    left: -40px;
+    top: -28px;
+}
+
+
+#home_title_line div{
+	display:inline-block;
+	
+}
+
+.title{
+	font-size:20px;
+    margin: 25px;
+    padding-right: 19px;
+	font-weight:bolod;
+	border-right:1px solid #d0d0d0;
+}
+
+#home_form{
+	width:1100px;
+	margin:auto;
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    margin-left: -400px; 
+}
+
+
+.home_status{
+    float: left;
+    width: 244px;
+    height: 400px;
+    margin: 10px 25px;
+    padding: 22px;
+    border: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 주문 영역 */
+  
+.order_info{
+    padding:8px;
+    font-size:14px;
+    color:#a0a0a0;
+}
+
+.order_info span{
+	width:45%;
+	display:inline-block;
+}
+
+.order_info span:nth-child(2){
+	width:50%;
+	display:inline-block;
+	text-align:right;
+
+}
+
+.order_info >span> span{
+	color:#e40069;
+}
+
+
+.order div:nth-child(1), .order div:nth-child(2){
+	text-align:center;	
+}
+
+.order_title{
+	font-weight:bold;
+	padding-bottom:15px;
+}
+
+.order_img{
+	width:80px;
+	height:80px;
+	margin:0px auto 25px auto;
+	
+}
+
+
+
+/* 주문 영역 */
+
+
+
+
+
+
+
+
+
+/* 상품 영역 */
+
+.product_info{
+    padding:8px;
+    font-size:14px;
+    color:#a0a0a0;
+}
+
+.product_info span{
+	width:45%;
+	display:inline-block;
+}
+
+.product_info span:nth-child(2){
+	width:50%;
+	display:inline-block;
+	text-align:right;
+
+}
+
+.product_info span span{
+	color:#e40069;
+}
+
+.product div:nth-child(1), .product div:nth-child(2){
+	text-align:center;	
+}
+
+.product_title{
+	font-weight:bold;
+	padding-bottom:15px;
+}
+
+.product_img{
+	width:80px;
+	height:80px;
+	margin:0px auto 25px auto;
+	
+}
+
+
+/* 상품 영역 */
+
+
+
+
+
+
+
+
+
+/* 게시판 영역 */
+
+
+.board_info{
+    padding:8px;
+    font-size:14px;
+    color:#a0a0a0;
+}
+
+.board_info span{
+	width:45%;
+	display:inline-block;
+}
+
+.board_info span:nth-child(2){
+	width:50%;
+	display:inline-block;
+	text-align:right;
+
+}
+
+.board_info span span{
+	color:#e40069;
+}
+
+.board div:nth-child(1), .board div:nth-child(2){
+	text-align:center;	
+}
+
+.board_title{
+	font-weight:bold;
+	padding-bottom:15px;
+}
+
+.board_img{
+	width:80px;
+	height:80px;
+	margin:0px auto 25px auto;
+	
+}
+
+
+
+
+
+/* 게시판 영역  */

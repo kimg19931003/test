@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="selvi">
+     
+    
+     
+    <select id="notice" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         insert into notice(id,user_id, fname, sub, word, realtime) values((select count(*) from (select id from notice) as tmp) , '${id}', '${name}','${sub}','${word}',NOW())
+         
+        ]]>
+    </select>
+  
+  
+   <select id="notice_client" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         select * from notice
+        ]]>
+    </select>
+    
+    <select id="notice_in" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         select * from notice where id='${id}'
+        ]]>
+    </select>
+    
+    <select id="sell_wait" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         select * from supersell_info si left join (select * from link_code group by product_no) lc on si.product_no = lc.product_no order by si.id DESC
+        ]]>  
+    </select>
+    
+    <select id="sell_wait_complete" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          update supersell_info set sell_wait_complete ='y', sell_wait_complete_time=NOW() where id=${product_id}
+        ]]>
+    </select>
+    
+      <select id="sell_wait_cancel" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          update supersell_info set sell_wait_complete ='n', sell_wait_complete_time='' where id=${product_id} 
+        ]]>
+    </select>
+    
+      <select id="image_upload" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          insert into product_list(id, product_name, product_price, product_image,product_video,product_image_arr,product_video_arr,opt,page_num,ios_pic,ios_vid,basic_image_url, basic_video_url) 
+          values((select count(*) from (select id from product_list) tmp),'${product_name}', '${product_price}','${product_image}','${product_video}','${product_image_arr}','${product_video_arr}','${opt}','${page_num}','${ios_pic}','${ios_vid}','${basic_image_url}','${basic_video_url}')
+        ]]>
+    </select>
+    
+    
+      <select id="image_upload_link_range" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          insert into link_code(id, product_name, product_price, product_image,product_video,product_image_arr,opt,min,max) values((select count(*) from (select id from product_list) tmp),'${product_name}', '${product_price}','${product_image}','${product_video}','${product_image_arr}','${opt}','${min}','${max}')
+        ]]>
+    </select>
+    
+    <select id="product_list_manager" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from product_list
+        ]]>
+    </select>
+    
+     <select id="product_add_link_range" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from product_list where id='${product_id}'
+        ]]>
+    </select>
+    
+    <select id="product_add_link_range_update" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         update product_list set min='${min}', max='${max}', link_num_state='${link_num_state}' where id='${product_id}'
+        ]]>
+    </select>
+    
+    <select id="link_state" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            select * from link_code
+        ]]>
+    </select>
+    
+    
+    
+    
+    
+    
+    
+    <select id="sell_wait_domestic_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+              update supersell_info set domestic_ship_fee = '${val}' where id=${id}
+        ]]>
+    </select>
+    
+    <select id="sell_wait_product_price_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+              update supersell_info set product_price = '${val}' where id=${id}
+        ]]>
+    </select>
+    
+  
+    
+    
+    
+    
+    <select id="supersell_info_delete" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            delete from supersell_info where id = ${id}
+        ]]>
+    </select>
+    
+    <select id="supersell_info_num_minus" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            update supersell_info set id = id-1 where id >= ${id}
+        ]]>
+    </select>
+    
+</mapper>
+

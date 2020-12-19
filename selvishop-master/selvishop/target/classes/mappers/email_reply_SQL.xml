@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="selvi">
+     
+    
+     
+    <select id="email_reply_cert" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            select * from entry1 where id='${id}' and email_ok='n'
+        ]]>
+    </select>
+    
+    <select id="email_reply_update" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            update entry1 set email_pass='${email_pass}', email='${email}' where id='${id}'
+        ]]>
+    </select>
+    
+    
+    <select id="email_reply_mailcert" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            select email from entry1 where id='${id}'
+        ]]>
+    </select>
+    
+  
+    
+    
+   
+</mapper>
+

@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+
+body, html{
+	font-family: 'Nanum Gothic';
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-align:left;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    text-align:left;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    text-align:left;
+}
+:-moz-placeholder { /* Firefox 18- */
+    text-align:left;
+}
+
+input{
+	text-align:left;
+}
+
+
+*{
+
+ -ms-user-select:none;
+ -moz-user-select:-moz-none;
+ -khtml-user-select:none;
+ -webkit-user-select:none;
+ user-select:none;
+
+}
+
+*{
+
+}
+
+#header{
+	width:100%;
+	height:70px;
+	background:black;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:3;
+}
+
+.icons{
+	width:1100px;
+	margin:auto;
+	padding:19px;
+}
+
+.logo, .icon_menu, .login_info{
+	display:inline-block;
+}
+
+.logo{
+	width:195px;	
+}
+
+.logo_img{
+	width:195px;
+	
+}
+
+.icon_menu, .login_info{
+	color:white;
+	font-weight:bold;
+	font-size:17px;
+	position:relative;
+	top: -10px;
+    left: 53px;
+}
+
+.login_info{
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+	position:relative;
+	top: -11px;
+    left: 53px;
+	
+}
+
+.icon_menu{
+    padding-bottom: 16px;
+    width: 85px;
+    
+}
+.icon_menu:hover{
+	border-bottom:7px solid #d0d0d0;
+}
+
+.icon_menu_text{
+	position:relative;
+	left:10px;
+}
+
+
+.login_info{
+	left: 720px;
+	transition:all linear 0.4s;	
+	-webkit-transition:all linear 0.4s;
+	-o-transition:all linear 0.4s;
+	cursor:pointer;
+}
+.login_info:hover{
+	color:#d0d0d0;
+}
+
+
+
+.drop_login_popup{
+	position:absolute;
+	visibility:hidden;
+    top: 66px;
+	left:50%;
+	margin-left: 280px;
+	width:250px;
+    z-index:1;
+	height:339px;
+	background:white;
+	box-shadow: 0.2px 0.2px 6.1px -2.8px;
+	-webkit-box-shadow: 0.2px 0.2px 6.1px -2.8px;
+	transition:all ease 0.4s;
+	-webkit-transition:all ease 0.4s;
+	-o-transition:all ease 0.4s;
+
+}
+
+.drop_login_popup > div{
+	color:#a0a0a0;
+    text-align:center;
+    padding: 15px;
+    font-weight:bold;
+}
+
+.drop_login_popup > div:hover{
+	background:#f0f0f0;
+	color:#505050;
+}
+
+
+.drop_login_popup > div:nth-child(1){
+	border-bottom:1px solid #d0d0d0;
+}
+
+.drop_login_tri{
+    position: absolute;
+    left: -112%;
+    margin-left: 480px;
+    top: -20px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+
+
+.drop_login_menu_img{
+	width:16px;
+}
+
+
+
+
+/* 상품 정보 띄워주는 상품나열  */
+
+.customer_info_product{
+	width: 800px;
+    margin: 30px auto 30px auto;
+}
+
+
+.customer_info_product th{
+	font-weight:bold;
+}
+
+
+.customer_info_product td{
+	vertical-align: middle;
+}
+
+.customer_info_product_img img{
+	width:180px;
+}
+  
+
+  
+/* 호버링시 어느 ㅇ니풋 칸인지 말풍선 띄워줌 */
+.arrow_box {
+    margin: -80px auto 0px 20px;
+    position: absolute;
+    background: #505050;
+
+    padding: 6px 16px 6px 16px;
+    border-radius: 6px;
+    color:white;
+    font-size: 14px;
+    display:none;
+}
+.arrow_box:after {
+    content: '';
+    position: absolute;
+    border-top: 10px solid #505050;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    bottom: -9px;
+    left: 5px;
+   
+}
+
+input:hover + p.arrow_box {
+  display: block;
+}
+
+.detail_search_form{
+	position:relative;
+	width:auto;
+}
+
+
+
+/* 주문상세검색 제목 */
+
+h2{
+	padding:10px !important;
+}
+
+
+
+/* 검색 버튼 */
+.search_button{
+	border: 1px solid #d0d0d0;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    top: 2px;
+    color: white;
+    background: #505050;
+    cursor:pointer;
+    transition: all linear 0.3s;
+}
+.search_button:hover{
+	background:#202020;
+}
+
+
+/* 로그아웃 버튼 */
+.logout{
+	cursor:pointer;
+}

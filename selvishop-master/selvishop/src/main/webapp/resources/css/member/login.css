@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* 로그인 / 메인 */
+div.titleTopArea {
+    position: fixed;
+    top: 0;
+    width: 850px;
+    height: 56px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    background: #fff;
+    z-index: 9997;
+}
+
+div.titleTopArea a.btnBack {
+    left: 0;
+}
+
+div.titleTopArea a.btnBox {
+    position: absolute;
+    top: 0;
+    width: 46px;
+    height: 100%;
+}
+
+div.titleTopArea a.btnBox p {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+div.titleTopArea a.btnBox span {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.titleTopArea a.btnBox img {
+    width: 28px;
+}

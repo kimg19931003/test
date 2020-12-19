@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/* 아이디 찾기 */
+div.findArea .findBox {
+    border: 1px solid #dadada;
+}
+
+div.findArea .findBox p {
+    position: relative;
+    padding-left: 10px;
+    height: 48px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+}
+
+div.findArea .findBox p input {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    border: none;
+    outline: 0;
+}
+
+div.findArea .findBox p:last-child {
+    border-bottom: none;
+}
+
+div.findArea .btnFind {
+    margin-top: 25px;
+    padding: 13px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    background: #ff0072;
+}
+
+div.findArea .idOkBox {
+    padding-top: 28px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+div.findArea .idOkBox span {
+    font-weight: 600;
+}
+
+div.findArea .idOkBox strong {
+    display: block;
+    margin: 5px 0 8px;
+    color: #ff0072;
+}
+
+div.findArea .idOkBox p {
+    line-height: 22px;
+    font-size: 17px;
+    color: #2e2e2e;
+}
+
+div.findArea .idOkBox a.btnFind {
+    margin-top: 50px;
+}
+
+div.findArea .idNoBox {
+    padding-top: 20px;
+    text-align: center;
+}
+
+div.findArea .idNoBox .idNoTxt {
+    padding-top: 115px;
+    background: url(https://img.womanstalk.co.kr/upload/images/mobile/ico_m_none.png) top center no-repeat;
+    background-size: 95px;
+}
+
+div.findArea .idNoBox .idInfoTxt {
+    margin-top: 20px;
+}
+
+div.findArea .idNoBox .idInfoTxt p.txt {
+    line-height: 15px;
+}
+
+div.findArea .idNoBox .idInfoTxt strong.call {
+    display: inline-block;
+    margin: 5px 0;
+    padding-left: 25px;
+    height: 19px;
+    font-size: 18px;
+    line-height: 16px;
+    color: #ff0072;
+    background: url(https://img.womanstalk.co.kr/upload/images/mobile/ico_m_call.png) top left no-repeat;
+    background-size: 19px;
+}
+
+div.findArea .idNoBox a.btnFind {
+    margin-top: 50px;
+}
+
+
+/* 비밀번호 찾기*/
+div.findArea .findChkBox {
+    padding: 10px 0;
+}
+
+div.findArea .findChkBox button.btnChk {
+    display: inline-block;
+    margin-right: 15px;
+    padding-left: 28px;
+    width: auto;
+    height: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 15px;
+    background: url(https://img.womanstalk.co.kr/upload/images/mobile/btn_m_login.png) left center no-repeat;
+    background-size: 20px;
+}
+
+div.findArea .findChkBox button.btnChk.on {
+    background: url(https://img.womanstalk.co.kr/upload/images/mobile/btn_m_login_on.png) left center no-repeat;
+    background-size: 20px;
+}
+
+div.findArea .findPwBox p.confirmBox input {
+    float: left;
+    width: 165px;
+}
+
+div.findArea .findPwBox p.confirmBox button {
+    float: right;
+    margin: 11px 10px 0 0;
+    padding: 6px 0;
+    width: 73px;
+    height: auto;
+    letter-spacing: -.5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #000;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+}
+
+div.findArea .findBox p:last-child {
+    border-bottom: none;
+}
+
+div.findArea .findPwBox p.cfInputBox input {
+    width: 70px;
+}
+
+div.findArea .findPwBox p.cfInputBox span {
+    position: absolute;
+    top: 0;
+    right: 92px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    color: #ee6c6c;
+}
+

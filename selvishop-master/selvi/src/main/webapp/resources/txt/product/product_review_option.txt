@@ -1,0 +1,36 @@
+ <faketag data-id='"+(length+1)+"'>
+		<div class='option_space_child'>
+			<div class='option_space_product_name'>
+			
+			    <span>밀키문 5개 + 코코문 5개</span>  
+			    <span class='product_cancel'><img src='/resources/img/cross.png' /></span>
+			</div>
+
+
+
+			<div class='option_space_product_num_name'>
+				<div class='minus_div' data-id='"+(length+1)+"'>
+					<button class="minus">
+						<img
+							src='https://img.womanstalk.co.kr/upload/images/mobile/btn_m_cnt_down.png'
+							alt='down'>
+					</button>
+				</div>
+
+				<div class='product_num_div'>
+					<input class='product_num' type='text' value='1' readonly />
+				</div>
+
+				<div class='plus_div' data-id='"+(length+1)+"'>
+					<button class='plus'>
+						<img src='https://img.womanstalk.co.kr/upload/images/mobile/btn_m_cnt_up.png' alt='up'>
+					</button>
+				</div>
+				
+				
+				
+				<div class='product_num_price'><%=i*2000 %>원</div>
+			</div>
+
+		</div>
+    </faketag>		

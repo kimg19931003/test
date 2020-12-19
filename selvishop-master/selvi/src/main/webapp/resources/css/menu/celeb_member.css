@@ -1,0 +1,583 @@
+@charset "UTF-8";
+
+/* 헤더 */
+div.topArea {
+    overflow: hidden;
+    background: #ff0072;
+}
+
+div.viewTopArea {
+    position: fixed;
+    top: 0;
+    width: 850px;
+    height: 56px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    background: #fff;
+    z-index: 9997;
+}
+
+div.viewTopArea.celeb {
+    background: #fff;
+    height: 56px!important;
+}
+
+div.viewTopArea.celeb.wh {
+    background: 0 0;
+    border-bottom: none;
+    height: 56px!important;
+}
+
+div.topArea .schBoxWrap {
+    position: relative;
+    padding: 20px 0 0;
+    height: 76px;
+}
+
+div.viewTopArea .schBoxWrap {
+    padding: 0;
+    height: 100%;
+}
+
+div.viewTopArea a {
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+}
+
+div.viewTopArea a.btnViewBack {
+    position: absolute;
+    top: 14px;
+    left: 9px;
+    width: 28px;
+}
+
+div.viewTopArea.celeb a {
+    z-index: 10;
+}
+
+div.viewTopArea.celeb a.btnViewBack {
+    left: 0;
+    top: 0;
+    width: 46px;
+    height: 56px;
+    padding: 14px 0 0 9px;
+    box-sizing: border-box;
+}
+
+div.viewTopArea.celeb a.btnViewBack span {
+    display: block;
+    width: 28px;
+}
+
+div.viewTopArea.celeb .btnViewBack .img1 {
+    display: none;
+}
+
+div.viewTopArea.celeb.wh .btnViewBack .img1 {
+    display: block;
+}
+
+div.viewTopArea.celeb .btnViewBack .img2 {
+    display: block;
+}
+
+div.viewTopArea.celeb.wh .btnViewBack .img2 {
+    display: none;
+}
+
+div.viewTopArea.celeb .logo {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    line-height: 56px;
+    z-index: 0;
+}
+
+div.viewTopArea.celeb.wh .logo {
+    color: #fff;
+}
+
+div.viewTopArea a {
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+}
+
+div.viewTopArea.celeb a {
+    z-index: 10;
+}
+
+div.viewTopArea.celeb a.btnHome {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 39px;
+    height: 56px;
+}
+
+div.viewTopArea.celeb a.btnHome span {
+    display: block;
+    width: 26px;
+    padding: 16px 0 0 7px;
+}
+
+div.viewTopArea.celeb a.btnHome .img1 {
+    display: none;
+}
+
+div.viewTopArea.celeb.wh a.btnHome .img1 {
+    display: block;
+}
+
+div.viewTopArea.celeb a.btnHome .img2 {
+    display: block;
+}
+
+div.viewTopArea.celeb.wh a.btnHome .img2 {
+    display: none;
+}
+
+div.viewTopArea.celeb .snsBtnWrap {
+    position: absolute;
+    top: 0;
+    right: 39px;
+    z-index: 10;
+}
+
+div.viewTopArea.celeb .snsBtnWrap button.btnshare {
+    position: relative;
+    width: 35px;
+    height: 56px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+div.viewTopArea.celeb .snsBtnWrap button.btnshare img {
+    width: 18px;
+}
+
+div.viewTopArea.celeb .snsBtnWrap button.btnshare .img1 {
+    display: none;
+}
+
+div.viewTopArea.celeb.wh .snsBtnWrap button.btnshare .img1 {
+    display: block;
+}
+
+div.viewTopArea.celeb .snsBtnWrap button.btnshare .img2 {
+    display: block;
+}
+
+div.viewTopArea.celeb.wh .snsBtnWrap button.btnshare .img2 {
+    display: none;
+}
+
+/* 공유 */
+.hide {
+    display: none;
+}
+
+div.popArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 10001;
+}
+
+div.popArea .popWrap {
+    display: table;
+    margin: 0 auto;
+    width: 40%;
+    height: 100%;
+}
+
+div.popArea .popBox {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+div.popArea .content {
+    background: #fff;
+}
+
+div.popShareSns .content {
+    background: 0 0;
+}
+
+div.popShareSns .snsList {
+    background: rgba(255,255,255,.8);
+}
+
+div.popShareSns .snsList button {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+div.popShareSns .snsList button:last-child {
+    border-bottom: none;
+}
+
+div.popShareSns .snsList img {
+    margin-right: 5px;
+    width: 32px;
+}
+
+div.popShareSns .snsList span {
+    font-weight: 600;
+    color: #000;
+}
+
+div.popShareSns button.btnClose {
+    margin-top: 16px;
+    padding: 13px 0;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    background: rgba(255,255,255,.9);
+}
+
+/* 내용 */
+div.celebArea {
+    background: #f1f1f1;
+}
+
+div.crewInfoBox {
+    margin-bottom: 7px;
+    text-align: center;
+    background: #fff;
+}
+
+div.crewInfoBox.type2 {
+    position: relative;
+    margin-bottom: 0;
+    height: 721px;
+}
+
+div.crewInfoBox.type2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    opacity: .5;
+    z-index: 1;
+}
+
+/* 프로필 */
+div.crewInfoBox.type2 .infoBox {
+    position: absolute;
+    width: 100%;
+    top: 91px;
+    text-align: center;
+    z-index: 1;
+}
+
+div.crewInfoBox.type2 .infoBox .celeb-name {
+    width: 23%;
+    margin: 0 auto;
+}
+
+div.crewInfoBox.type2 .infoBox .celeb-name img {
+    border-radius: 50%;
+    border: 1px solid rgba(241,241,241,.2);
+    padding: 2px;
+    width: 140px;
+    box-sizing: border-box;
+}
+
+div.crewInfoBox h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+div.crewInfoBox.type2 .infoBox h4 {
+    font-size: 26px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+div.crewInfoBox p {
+    margin-top: 10px;
+    color: #828282;
+}
+
+div.crewInfoBox.type2 .infoBox p.item-num {
+    color: #fff;
+    font-size: 16px;
+    opacity: .8;
+    margin-top: 5px;
+}
+
+/* 공구 */
+div.celebArea .celebProdWrap.type2 {
+    margin-top: 0;
+    background: 0 0;
+    padding: 5px 18px 20px;
+}
+
+div.celebArea .celebProdWrap.type2.celebshop {
+    position: relative;
+    z-index: 1;
+    padding: 10px 8px 38px;
+}
+
+div.celebArea .celebProdWrap.type2.celebshop.first {
+    margin-top: -382px;
+    padding: 0 18px 38px;
+}
+
+div.prodBox {
+    position: relative;
+    background: #fff;
+}
+
+div.celebArea .celebProdWrap.type2 .prodBox {
+    padding: 19px 10px 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+div.celebArea .celebProdWrap.type2:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 공구 없을 때 */
+div.celebArea .celebProdWrap.type2.celebshop .no-prod {
+    padding: 227px 0 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;
+    height: 548px;
+}
+
+/* 공구가 있을 때 */
+div.celebArea .celebProdBox {
+    margin-top: 15px;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox {
+    margin-top: 0!important;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox.prodBox {
+    width: 402px;
+    background: 0 0;
+    float: left;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox.prodBox {
+    padding: 0;
+    position: relative;
+}
+
+div.celebArea .celebProdWrap.type2.celebshop .celebProdBox.prodBox {
+    width: 100%;
+}
+
+div.celebArea .celebProdWrap.type2.celebshop .prodBox .prodBox {
+    padding: 36px 20px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* 공구 있을 때 - 날짜 */
+div.celebArea .celebProdWrap.type2 .celebProdBox .date {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+/* 공구 있을 때 - 정보 */
+div.prodBox .prodInfo {
+    margin: 0;
+    padding: 6px 10px 9px;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox div.prodBox .prodInfo {
+    padding: 0;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox.prodBox div.prodBox .prodInfo {
+    padding: 0;
+}
+
+div.prodBox p.title {
+    display: block;
+    height: 36px;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -.5px;
+    overflow: hidden;
+    color: #000;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox p.title {
+    text-align: center;
+    color: #111;
+    line-height: 1.2;
+    font-size: 16px;
+    padding: 0;
+    height: 21px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    max-width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+div.celebArea .celebProdWrap.type2.celebshop div.prodBox p.title {
+    font-size: 22px;
+    padding: 0;
+    height: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+div.prodBox .priceInfo {
+    position: relative;
+    margin-top: 11px;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox .priceInfo {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+
+div.celebArea .celebProdWrap.type2.celebshop div.prodBox .priceInfo {
+    margin-top: 11px;
+    margin-bottom: 10px;
+}
+
+div.prodBox .priceInfo strong.sale {
+    display: inline-block;
+    margin-right: 2px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 16px;
+    letter-spacing: -1px;
+    color: #ff0072!important;
+}
+
+div.prodBox .priceInfo strong.saleWt {
+    font-size: 16px;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox .priceInfo strong.sale {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+div.celebArea .celebProdWrap.type2.celebshop div.prodBox .priceInfo strong.sale {
+    font-size: 22px;
+}
+
+div.prodBox .priceInfo p.price {
+    display: inline-block;
+}
+
+div.prodBox .priceInfo p.price strong {
+    font-size: 16px;
+    line-height: 17px;
+    color: #000;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox .priceInfo p.price strong {
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+}
+
+div.celebArea .celebProdWrap.type2.celebshop div.prodBox .priceInfo p.price strong {
+    font-size: 22px;
+}
+
+/* 공구 있을 때 - 이미지 */
+div.prodBox .prodImgBox {
+    position: relative;
+}
+
+div.prodBox .prodImg2 {
+    position: relative;
+    padding-top: 50%;
+    overflow: hidden;
+}
+
+div.prodBox .prodImg2 p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translate(50%,50%);
+    -ms-transform: translate(50%,50%);
+    transform: translate(50%,50%);
+}
+
+div.prodBox .prodImg2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+div.prodBox .prodImg2 img {
+    width: auto;
+    height: 100%;
+}
+
+/* 공구 있을 때 - 내용 */
+div.celebArea .celebProdWrap.type2 div.txtWrap {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+div.celebArea .celebProdWrap.type2.celebshop div.txtWrap {
+    padding-top: 20px;
+    margin-top: 18px;
+}
+
+div.celebArea .celebProdWrap.type2 div.txtWrap div.comt {
+    font-size: 13px;
+    color: #222;
+    padding-right: 0;
+    margin-top: 0;
+    line-height: 19px;
+    height: 55px;
+    overflow: hidden;
+}
+
+/* 셀럽 추천 */
+div.celebArea .celebFooterBox {
+    margin-top: 20px;
+    padding: 0 8px;
+}

@@ -1,0 +1,395 @@
+@charset "UTF-8";
+
+div.celebArea {
+	background: #fff;
+	margin: 0 auto;
+    width: 850px;
+}
+
+.celeb-mainimg {
+	height: 330px;
+}
+
+/* 셀럽 목록 */
+div.celebArea .celebsBox {
+	position: relative;
+	margin-top: 12px;
+	padding-top: 20px;
+	background: #fff;
+}
+
+div.celebArea .celebsBox.type2 {
+	padding: 18px 0 14px;
+	margin-top: 0;
+	height: 156px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 20px;
+}
+
+div.celebArea .celebsBox.type2 h3 {
+	height: 18px;
+	text-align: left !important;
+	font-size: 16px;
+	padding-left: 18px;
+}
+
+div.celebArea .celebsBox.type2 h3 a {
+	width: auto !important;
+	font-size: 14px;
+	font-weight: 400;
+	top: 0;
+}
+
+div.celebArea .celebsBox h3 {
+	position: relative;
+	height: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+div.celebArea .celebsBox h3 a {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	width: 12px;
+}
+
+div.celebArea .celebsBox h3 span {
+	font-weight: 400;
+	color: #ff3747;
+}
+
+div.celebArea .celebsBox.type2 h3 a span.txt {
+	display: inline-block;
+	color: #999 !important;
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+div.celebArea .celebsBox.type2 h3 a span.arr {
+	display: inline-block;
+	width: 7px;
+	vertical-align: middle;
+}
+
+div.celebArea .celebsBox.type2 h3 a span img {
+	width: 7px;
+	height: 12px;
+}
+
+div.celebArea .celebsBox .celebs {
+	margin-top: 30px;
+}
+
+div.celebArea .celebsBox.type2 .celebs {
+	margin-top: 13px;
+}
+
+div.celebArea .celebsBox.type2 .celebs .swiper-container .swiper-wrapper
+	{
+	height: auto !important;
+}
+
+div.celebArea .celebsBox.type2 li {
+	margin-bottom: 0;
+}
+
+div.celebArea .celebsBox .celebs ul li {
+	float: left;
+	margin-bottom: 30px;
+	width: calc(100%/ 6 - 1px);
+}
+
+div.celebArea .celebsBox .celebs ul li a {
+	display: block;
+	padding: 0 17px;
+	width: auto;
+	text-align: center;
+}
+
+div.celebArea .celebsBox .celebs ul li a img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+div.celebArea .celebsBox .celebs ul li a span {
+	display: block;
+	margin-top: 8px;
+	font-size: 12px;
+}
+
+div.celebArea .celebsBox.type2 .celebs ul li {
+	display: block;
+	position: relative;
+	margin-bottom: 0;
+	height: auto;
+	text-align: center;
+}
+
+div.celebArea .celebsBox.type2 .celebs ul li a {
+	position: relative;
+	padding: 0;
+	display: inline-block;
+	margin: 0 17px;
+}
+
+div.celebArea .celebsBox.type2 .celebs ul li a img {
+	padding: 2px;
+	border: 1px solid #f1f1f1;
+	box-sizing: border-box;
+}
+
+div.celebArea .celebsBox.type2 .celebs ul li a span {
+	color: #000;
+}
+
+/* 공구 내용 */
+div.celebArea .celebProdWrap.type2 {
+	margin-top: 0;
+	background: 0 0;
+	/* padding: 5px 18px 20px; */
+}
+
+div.prodBox {
+	position: relative;
+	background: #fff;
+}
+
+div.celebArea .celebProdBox {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox {
+	margin-top: 0 !important;
+}
+
+div.celebArea .celebProdWrap.type2 .prodBox {
+	padding: 19px 10px 10px;
+	box-sizing: border-box;
+	/* border-radius: 8px; */
+	border: 1px solid #eee;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox.prodBox {
+	/* width: 402px; */
+	width: 410px; background : 0 0;
+	float: left;
+	background: 0 0;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox.prodBox {
+	padding: 0;
+	position: relative;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox.prodBox.main {
+	/* margin-top: 20px !important; */
+	margin-bottom: 20px;
+	*/
+}
+
+div.prodBox .prodInfo {
+	margin: 0;
+	padding: 6px 10px 9px;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox div.prodBox .prodInfo {
+	padding: 0;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox.prodBox div.prodBox .prodInfo
+	{
+	padding: 0;
+}
+
+div.prodBox p.title {
+	display: block;
+	height: 36px;
+	font-size: 15px;
+	line-height: 19px;
+	letter-spacing: -.5px;
+	overflow: hidden;
+	color: #000;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox p.title {
+	text-align: center;
+	color: #111;
+	line-height: 1.2;
+	font-size: 16px;
+	padding: 0;
+	height: 21px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	max-width: 90%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+div.prodBox .priceInfo {
+	position: relative;
+	margin-top: 11px;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox .priceInfo {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 6px;
+}
+
+div.prodBox .priceInfo strong.sale {
+	display: inline-block;
+	margin-right: 2px;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 16px;
+	letter-spacing: -1px;
+	color: #ff0072 !important;
+}
+
+.sale {
+    text-decoration: none !important;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox .priceInfo strong.sale {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+div.prodBox .priceInfo strong.sale span {
+	font-size: 14px;
+}
+
+div.prodBox .priceInfo p.price {
+	display: inline-block;
+}
+
+div.prodBox .priceInfo p.price strong {
+	font-size: 16px;
+	line-height: 17px;
+	color: #000;
+}
+
+div.celebArea .celebProdWrap.type2 div.prodBox .priceInfo p.price strong
+	{
+	font-size: 16px;
+	font-weight: 400;
+	color: #222;
+}
+
+div.prodBox .prodImg2 {
+	position: relative;
+	padding-top: 50%;
+	overflow: hidden;
+}
+
+div.prodBox .prodImg2 p {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-transform: translate(50%, 50%);
+	-ms-transform: translate(50%, 50%);
+	transform: translate(50%, 50%);
+}
+
+div.prodBox .prodImg2 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	max-width: 100%;
+	width: auto;
+	height: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+div.prodBox .prodImg2 img {
+	width: auto;
+	height: 100%;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox .celeb-name {
+	position: relative;
+	display: block;
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+	margin-top: 15px;
+}
+
+div.celebArea .celebProdBox .celebgo {
+	float: left;
+	margin-right: 6px;
+	width: calc(100%/ 4 - 6px);
+}
+
+div.celebArea .celebProdWrap.type2 .celebgo {
+	position: relative;
+	width: auto;
+	margin-right: 0;
+	float: none;
+	padding: 0;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox .celeb-name a {
+	display: block;
+}
+
+div.celebArea .celebProdBox .name {
+	margin-top: 8px;
+	font-size: 13px;
+	color: #939393;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox .name {
+	margin: 0 0 8px;
+	font-size: 14px;
+	color: #111;
+}
+
+div.celebArea .celebProdBox .name img {
+	width: 26px;
+	font-size: 13px;
+	border-radius: 50%;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox .name img {
+	width: 34px;
+	height: 34px;
+}
+
+div.celebArea .celebProdWrap.type2 div.txtWrap {
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+	margin-top: 15px;
+}
+
+div.celebArea .celebProdWrap.type2 .celebProdBox.prodBox.main div.txtWrap
+	{
+	border-top: none;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+div.celebArea .celebProdWrap.type2 div.txtWrap div.comt {
+	font-size: 13px;
+	color: #222;
+	padding-right: 0;
+	margin-top: 0;
+	line-height: 19px;
+	height: 55px;
+	overflow: hidden;
+}
+
+/* 셀럽공구 인플루언서 지원 */
+div.celebArea .celebFooterBox {
+    /* margin-top: 20px; */
+    padding: 0 8px;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="selvi">
+     
+    
+     
+    <select id="sellwait_name_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update product_list set product_name='${val}' where id=${id}     
+        ]]>
+    </select>
+    
+    <select id="sellwait_num_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update product_list set page_num='${val}' where id=${id}    
+        ]]>
+    </select>
+    
+    <select id="sellwait_price_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update product_list set product_price='${val}' where id=${id}    
+        ]]>
+    </select>
+    
+    <select id="sellwait_image_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update product_list set product_image='${val}' where id=${id}    
+        ]]>
+    </select>
+    
+    <select id="sellwait_video_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update product_list set product_video='${val}' where id=${id}    
+        ]]>
+    </select>
+    
+    <select id="sellwait_delete_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           delete from product_list where id=${id};    
+        ]]>
+    </select>
+    
+    <select id="sellwait_num_minus" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[          
+           update product_list set id=id-1 where id >=${id};
+        ]]>
+    </select>
+  
+    
+    
+   
+</mapper>
+

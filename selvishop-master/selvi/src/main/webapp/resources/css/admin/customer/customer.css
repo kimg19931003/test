@@ -1,0 +1,482 @@
+@charset "UTF-8";
+
+
+input::-webkit-input-placeholder { color:#c0c0c0;font-family: 'Nanum Gothic'; }
+input::-moz-placeholder { color:#c0c0c0;font-family: 'Nanum Gothic'; }
+input:-ms-input-placeholder { color:#c0c0c0;font-family: 'Nanum Gothic'; }
+input:-moz-placeholder { color:#c0c0c0;font-family: 'Nanum Gothic'; }
+input::placeholder { color:#c0c0c0; font-family: 'Nanum Gothic';}
+
+input{
+	border:1px solid #d0d0d0;
+}
+
+#customer_title_line{
+    width: 972px;
+    margin: auto;
+    
+    position: relative;
+    left: -40px;
+    top: -65px;
+}
+
+
+select, input{
+	padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 47%;
+}
+
+#customer_title_line div{
+	display:inline-block;
+	left: -40px;
+    position: relative;
+	
+}
+
+.customer{
+	font-size:20px;
+    margin: 25px;
+    padding-right: 19px;
+	font-weight:bolod;
+	border-right:1px solid #d0d0d0;
+}
+
+#customer_form{
+	width:1100px;
+	margin:auto;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: -400px; 
+}
+
+
+.title{
+	font-size: 20px;
+    margin: 25px;
+    padding-right: 19px;
+    font-weight: bold;
+    border-right: 1px solid #d0d0d0;
+}
+
+
+
+ #customer_table_info{
+	display:none;
+}
+
+#customer_table tr , #customer_table td{
+	border-bottom:1px solid #d0d0d0;
+	cursor:pointer;
+	
+}
+
+#customer_table th{
+	padding : 20px 0px 20px 0px;
+}
+
+#customer_table tr:hover{
+	background:#f8f8f8;
+	transition:all linear 0.2s;
+}
+
+#customer_table td{
+	padding: 35px 0px 35px 0px;
+	font-size:13px;
+}
+
+
+table{
+	text-align:center;
+}
+
+
+/* 데이터 테이블 랭스 플레이스 */
+
+#customer_table_length{
+	position: relative;
+    left: 900px;
+    top: -22px;
+}
+
+
+
+
+/* 데이터 테이블 서치 플래이스 */
+
+#customer_table_filter{
+    position: relative;
+    top: -21px;
+    left: -538px;
+}
+
+
+
+	
+
+
+#customer_table_filter img{
+    position: relative;
+    top: 2px;
+}
+
+
+
+
+
+
+
+/* 고객 칸 클릭했을때 고객정보 전체 창 띄워주는 폼  */
+
+
+#customer_info_form{
+	background:white;
+	width:100%;
+	height:auto;
+	z-index:11;
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:none;
+}
+
+
+
+
+#customer_info_header{
+	width:100%;
+	height:70px;
+	background:black;
+
+}
+
+.customer_info_header_form{
+	width:1100px;
+	margin:auto;
+	height:70px;
+	background:black;
+}
+
+
+
+#customer_info_header .customer_info_header_form div{
+	display:inline-block;
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+    
+}
+
+
+.customer_back_img{
+	position:relative;
+	left:-15px;
+	top:19px;
+	cursor:pointer;
+}
+
+
+.customer_back{
+	position:relative;
+    left: -2px;
+    top: 9px;
+
+}
+
+.customer_info{
+	position:relative;
+	left: 830px;
+    top: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 고객 기본정보  */
+
+.customer_info_form{
+	width:1100px;
+	margin:auto;
+}
+
+
+
+.customer_initial_info, .customer_activity_info{
+	position:relative;
+	width:500px;
+	height:800px;
+}
+
+
+.customer_initial_info{
+	left: -318px;
+	top:20px;
+	font-weight: 900;
+	margin:auto;
+}
+
+.customer_activity_info{
+    top: -780px;  
+    left: 340px;
+	
+    margin:auto;
+}
+
+.customer_initial_info >div{
+	width:100%;
+	padding:25px 5px 25px 5px;
+	border-bottom:1px solid #d0d0d0;
+}
+
+
+
+.customer_initial_info >div>span:nth-child(1){
+	width:40%;
+	display:inline-block;
+}
+
+.customer_initial_info >div>span:nth-child(2){
+	width:54%;
+	display:inline-block;
+}
+
+.customer_initial_info .initial_name input{
+	padding:15px;
+	font-size:15px;
+	font-weight:bold;
+	width:86%;
+}
+
+.customer_initial_info .initial_phone input{
+	padding:15px;
+	font-size:15px;
+	font-weight:bold;
+	width:17%;
+}
+
+.customer_initial_info .initial_post input{
+	padding:15px;
+	font-size:15px;
+	font-weight:bold;
+	width:44%;
+	background:#f0f0f0;
+}
+
+.customer_initial_info .initial_post button{
+    cursor: pointer;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    line-height: 46px;
+    height: 51px;
+    padding: 0 12px;
+    border: 2px solid #d0d0d0;
+    display: inline-block;
+    border-radius: 2px;
+    color: black;
+    background:white;
+    font-weight: 700;
+    font-size: 14px;
+    width: 110px;
+    text-align: center;
+    -webkit-transition: all .2s cubic-bezier(.33, 0, .2, 1);
+    -moz-transition: all .2s cubic-bezier(.33, 0, .2, 1);
+    -o-transition: all .2s cubic-bezier(.33, 0, .2, 1);
+}
+
+
+.customer_initial_info .initial_addr span:nth-child(1){
+	position:relative;
+	top:-50px;
+}
+
+
+
+.customer_initial_info .initial_addr input{
+	padding:15px;
+	font-size:15px;
+	font-weight:bold;
+	width:86%;	
+}
+
+
+/* 주소찾기 버튼 */
+.addr_button{
+    border: 1px solid #d0d0d0;
+    background: #e6005a;
+    padding: 9px 22px;
+    color: white;
+    cursor: pointer;
+    width: 69px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.customer_initial_info .initial_addr input:nth-child(1){
+	margin-bottom:10px;
+	background:#f0f0f0;
+	border:1px solid #d0d0d0;
+}
+
+
+.customer_initial_info .initial_birth input{
+	padding:15px;
+	font-size:15px;
+	font-weight:bold;
+	width:18%;
+}
+
+.customer_initial_info .initial_birth input:nth-child(2){
+	margin-left:5px;
+}
+
+.customer_initial_info .initial_birth input:nth-child(3){
+	margin-left:5px;
+}
+
+
+
+.customer_initial_info .initial_gender span{
+	font-size:15px;
+}
+
+.customer_initial_info .initial_gender input{
+	position:relative;
+	top:-2px;
+	margin-right:12px;
+}
+
+
+.customer_initial_info .initial_gender span > span:nth-child(2){
+	position:relative;
+	left:50px;
+}
+
+
+.customer_initial_info .initial_exit span:nth-child(2){
+	color:black;
+	cursor:pointer;
+}
+.customer_initial_info .initial_exit span:nth-child(2):hover{
+	color:red;
+}
+
+
+.customer_info_title{
+	font-size: 20px;
+    margin: 0px 25px 0px 0px;
+   
+    font-weight: bold;
+
+}
+	
+
+	
+	
+	
+	
+/* 고객 활동 정보 */	
+	
+.customer_activity_info >div{
+	width:100%;
+	padding:25px 5px 25px 5px;
+	border-bottom:1px solid #d0d0d0;
+	font-weight:900;
+}	
+
+
+
+	
+.customer_activity_info >div>span:nth-child(1){
+	width: 40%;
+    display: inline-block;
+}	
+	
+.customer_activity_info >div>span:nth-child(2){
+	width: 54%;
+    display: inline-block;
+}		
+
+
+.customer_activity_info .activity_rate input{
+	padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 60%;
+}
+
+
+.customer_activity_info .activity_refund_account input{
+	padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+   
+}
+
+
+.customer_activity_info .activity_refund_account span:nth-child(1){
+	position:relative;
+	top:-23px;
+}
+
+
+.customer_activity_info .activity_refund_account input:nth-child(1){
+	width:37%;
+}
+	
+	
+.customer_activity_info .activity_refund_account input:nth-child(2){
+	width:37%;
+	
+}
+
+
+.customer_activity_info .activity_refund_account input:nth-child(3){
+	width:87.5%;
+	margin-top:10px;
+}
+
+.customer_activity_info .activity_memo textarea{
+	width: 227px;
+    padding: 15px 20px;
+    color: #222;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+}
+
+
+
+
+/* 변경사항 저장 버튼 */
+.save_button{
+	background-color: #64b978;
+    border-color: #64b978;
+    color: #fff;
+    width: 200px;
+    padding:20px 10px 20px 10px;
+    text-align:center;
+    cursor:pointer;
+    transition:all ease 0.3s;
+    -webkit-transition:all ease 0.3s;
+    -o-transition:all ease 0.3s;
+    position: relative;
+    top: -500px;
+    left: 450px;
+}
+.save_button:hover{
+    opacity:0.8;	
+}

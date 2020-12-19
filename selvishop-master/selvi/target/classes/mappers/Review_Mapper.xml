@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="selvishop">
+  
+    
+    
+    <select id="event_review_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from review
+        ]]>
+    </select>
+    
+  
+    <select id="event_review_post" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           insert into review(review_user_id , review_content , review_reg_date, review_board_name) values('${review_user_id}', '${review_content}', NOW() , 'event' )
+        ]]>
+    </select>
+    
+    
+    
+
+    
+    <select id="faq_review_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from review
+        ]]>
+    </select>
+    
+  
+    <select id="faq_review_post" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           insert into review(review_user_id , review_content , review_reg_date, review_board_name) values('${review_user_id}', '${review_content}', NOW() , 'faq' )
+        ]]>
+    </select>
+    
+    
+
+    
+    
+    
+    <select id="notice_review_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from review
+        ]]>
+    </select>
+    
+  
+    <select id="notice_review_post" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           insert into review(review_user_id , review_content , review_reg_date, review_board_name) values('${review_user_id}', '${review_content}', NOW() , 'notice' )
+        ]]>
+    </select>
+    
+    
+  
+  
+  
+  
+  
+
+  
+  </mapper>
+  

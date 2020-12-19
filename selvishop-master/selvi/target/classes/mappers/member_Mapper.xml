@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="selvishop">
+  
+    
+  
+    <select id="member_cert_id" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            select * from member where mem_id='${mem_id}'
+        ]]>
+    </select>
+      
+    <select id="member_insert_join" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            insert into member( mem_id, mem_email, mem_name, mem_pass, mem_pass2, mem_phone, mem_gender, mem_birth, mem_addr , mem_personal_info_agree , mem_sevice_terms_agree, mem_shopping_info_agree_sms , mem_shopping_info_agree_email,mem_join_date) 
+            values( '${mem_id}', '${mem_email}', '${mem_name}', '${mem_pass}', '${mem_pass2}', '${mem_phone}', '${mem_gender}' , '${mem_birth}' , '${mem_addr}' , '${mem_personal_info_agree}', '${mem_sevice_terms_agree}', '${mem_shopping_info_agree_sms}', '${mem_shopping_info_agree_email}' ,NOW())
+        ]]>
+    </select>
+    
+    <select id="member_login_entry" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            select * from member where mem_id='${mem_id}' and mem_pass = '${mem_pass}'
+        ]]>
+    </select>
+    
+    <select id="member_last_login" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            update member set mem_last_login = NOW() where mem_id='${mem_id}' and mem_pass = '${mem_pass}'
+        ]]>
+    </select>
+    
+    <select id="member_last_modify" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            select * from member where mem_id='${mem_id}' and mem_pass = '${mem_pass}'
+        ]]>
+    </select>
+  
+  
+  
+  
+  
+  </mapper>
+  

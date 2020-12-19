@@ -1,0 +1,432 @@
+#main_wrap {
+	width: 100% !important;
+	max-width: 1040px !important;
+	margin: auto !important;
+}
+
+input:focus {
+	outline: none;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.float_left {
+	float: left;
+}
+
+#wrap {
+	box-shadow: 0px 0.3px 0.7px 0px grey;
+	-webkit-box-shadow: 0px 0.3px 0.7px 0px grey;
+
+}
+
+/* 상단 고정 메뉴 */
+.titleTopArea {
+	border-bottom: 1px solid #d0d0d0;
+	padding: 16px 0px 16px 0px;
+	position: relative;
+}
+
+.titleTopArea>div {
+	display: inline-block;
+}
+
+.titleTopArea>div:nth-child(1) {
+	width: 47px;
+	position: relative;
+	left: 17px;
+}
+
+.titleTopArea>div:nth-child(2) {
+	width: 77px;
+	position: relative;
+	top: 4px;
+}
+
+.titleTopArea>div:nth-child(3) {
+	width: 26px;
+	position: absolute;
+	right: 15px;
+	top: 19px;
+}
+
+.top_bar_text {
+	font-size: 19px;
+}
+
+.top_bar_img img {
+	width: 25px;
+	cursor: pointer;
+}
+
+.top_bar_home img {
+	width: 25px;
+	cursor: pointer;
+}
+
+/* 상단 고정 메뉴 */
+
+/* 라디오박스 커스텀 */
+[type="checkbox"] {
+	display: none;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+}
+
+label {
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+}
+
+label {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #d0d0d0;
+	display: block;
+	position: relative;
+	left: 50%;
+	transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+}
+
+[type="checkbox"]:hover {
+	border: 1px solid #e40069;
+}
+
+[type="checkbox"]:active {
+	border: 1px solid #e40069;
+}
+
+[type="checkbox"]:checked+label:after {
+	content: '✔';
+	position: absolute;
+	top: -2px;
+	left: 3px;
+	color: #e40069;
+	font-weight: bold;
+	font-size: 17px;
+	transition: all ease 0.1s;
+	-webkit-transition: all ease 0.1s;
+	width: 15px;
+	height: 15px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+[type="checkbox"]:not (:checked ) +label:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	width: 0px;
+	height: 0px;
+	transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+/* 장바구니에 넣은 상품 리스트 목록 */
+.product_basket {
+	width: 96%;
+	margin: 40px auto 0px auto;
+    box-shadow: 0px 1px 8px 0px lightgrey;
+    -webkit-box-shadow: 0px 1px 8px 0px lightgrey;
+    text-align: center;
+}
+
+
+
+
+
+
+.product_info>div {
+	display: inline-block;
+}
+
+.product_num_div div {
+	display: inline-block;
+}
+
+.product_check div {
+	display: inline-block;
+}
+
+.product_img {
+	width: 100px !important;
+	height: 100px !important;
+}
+
+.product_img > img{
+	width: 100px !important;
+	height: 100px !important;
+}
+
+.all_choice {
+	padding: 0px 0px 5px 0px;
+	background: #f0f0f0;
+	text-align: left;
+}
+
+.all_choice>div {
+	display: inline-block;
+}
+
+.all_choice>div:nth-child(1) {
+	padding: 10px 6px 0px 7px;
+}
+
+.all_choice>div:nth-child(2) {
+	position: relative;
+	left: 15px;
+	bottom: 4px;
+}
+
+.product_check {
+	padding: 0px 22px 0px 7px;
+}
+
+.product_num {
+	width: 30px;
+	padding: 2px 5px 5px 2px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.product_name {
+	font-size: 14px;
+	margin-left: 6px;
+	position: absolute;
+	top: -25px;
+	width: 100% !important;
+}
+
+.product_name_num {
+    position: relative;
+    top: 26px;
+    left: 5px;
+    width: 50%;
+    text-align: left;
+}
+
+.product_num_div {
+	margin: 14px 0px 0px 0px;
+}
+
+.minus img {
+	width: 10px;
+}
+
+.plus img {
+	width: 10px;
+}
+
+.plus_div {
+	border: 1px solid #d0d0d0;
+	padding: 4px;
+	position: relative;
+	left: -5px;
+	border-left: 0;
+}
+
+.minus_div {
+	border: 1px solid #d0d0d0;
+	padding: 4px;
+	position: relative;
+	left: 5px;
+	border-right: 0;
+}
+
+.product_price {
+	display: unset;
+}
+
+.product_img {
+	
+}
+
+.product_price {
+	position: relative;
+	top: 10px;
+	font-weight: bold;
+	left: 8px;
+}
+
+
+
+
+
+@media(min-width:600px){
+	.product_info {
+		padding: 13px 0px;
+		display: inline-block;
+		width: 496px;
+   	    text-align: left;
+	}
+	
+	.delivery {
+		border-top: 1px solid #d0d0d0;
+		text-align: center;
+		padding: 10px 0px;
+		font-weight: bold;
+	}
+}
+
+
+@media(max-width:600px){
+	.product_info {
+		padding: 13px 0px;
+    	width: 100%;
+   	    text-align: left;	
+	}
+	
+	.delivery {
+		border-top: 1px solid #d0d0d0;
+		text-align: center;
+		padding: 10px 0px;
+		font-weight: bold;
+		font-size:14px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 결제 예정 금액 칸 */
+.pay_price {
+	width: 96%;
+	margin: 20px auto;
+	border: 1px solid #d0d0d0;
+}
+
+.total_price {
+	border-bottom: 1px solid #d0d0d0;
+	padding: 12px;
+	position: relative;
+}
+
+.total_price>div {
+	width: 49.5%;
+}
+
+.total_price>div:nth-child(2) {
+	text-align: right;
+	font-size: 21px;
+	font-weight: bold;
+	color: #ff0072;
+	width: 129px;
+	position: absolute;
+	right: 13px;
+	top: 8px;
+}
+
+.price_info {
+	padding: 8px;
+	border-bottom: 1px solid #d0d0d0;
+	position: relative;
+}
+
+.price_info>div {
+	padding: 5px 0px;
+}
+
+.price_info>div:nth-child(1) {
+	font-weight: bold;
+}
+
+.price_info>div>div {
+	width: 130px;
+}
+
+.price_info>div>div:nth-child(2) {
+	width: 129px;
+	position: absolute;
+	right: 14px;
+	text-align: right;
+}
+
+.total_price2 {
+	border-bottom: 1px solid #d0d0d0;
+	padding: 8px;
+	position:relative;
+}
+
+.total_price2>div {
+	width: 49.5%;
+}
+
+.total_price2>div:nth-child(2) {
+	text-align: right;
+	width: 69px;
+    position: absolute;
+    right: 23px;
+}
+
+.total_price2>div {
+	font-weight: bold;
+}
+
+.product_select {
+	padding: 8px;
+	text-align: center;
+}
+
+.product_select>div {
+	width: 48%
+}
+
+.product_select>div:nth-child(2) {
+	
+}
+
+.product_select_div>div {
+	border: 1px solid #a0a0a0;
+	border-radius: 5px;
+	background: #a0a0a0;
+	color: white;
+	padding: 10px;
+	width: 43%;
+	text-align: center;
+	cursor: pointer;
+	transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+}
+
+.product_select_div>div:hover {
+	background: #505050;
+	border: 1px solid #505050;
+}
+
+.product_select_order {
+	border: 1px solid #ff0072;
+	border-radius: 5px;
+	background: #ff0072;
+	color: white;
+	padding: 10px;
+	width: 43%;
+	text-align: center;
+	cursor: pointer;
+	transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+}
+
+.product_select_order:hover {
+	background: #12ffdd;
+	border: 1px solid #12ffdd;
+}

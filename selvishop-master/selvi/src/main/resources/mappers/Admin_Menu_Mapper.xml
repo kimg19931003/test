@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="selvishop">
+  
+
+  
+    <select id="order_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from prdt_order where order_state = '${order_state}'
+        ]]>
+    </select>
+    
+    <select id="order_get_all" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from prdt_order
+        ]]>
+    </select>
+    
+    
+    <select id="customer_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from member
+        ]]>
+    </select>
+  
+  
+   <select id="customer_post" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from member where mem_idx_pk = ${mem_idx_pk}
+        ]]>
+    </select>
+    
+   <select id="order_customer_post" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from prdt_order where order_idx_pk = ${order_idx_pk}
+        ]]>
+    </select>
+    
+    
+    
+    <select id="order_customer_invoice" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          update prdt_order set order_invoice_num = '${order_invoice_num}' , order_courier = '${order_courier}' where order_idx_pk = ${order_idx_pk}
+        ]]>
+    </select>
+    
+    
+    <select id="order_customer_leave_list" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+      
+        ]]>
+    </select>
+    
+    
+    
+    
+    
+    <select id="product_add_admin_member_category" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from admin_member where admin_mem_id = '${admin_mem_id}'
+        ]]>
+    </select>
+
+  
+  </mapper>
+  

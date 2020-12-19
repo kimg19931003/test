@@ -1,0 +1,278 @@
+
+
+body{
+	background:#f0f0f0;
+}
+
+
+
+
+
+/*셀비 메인페이지 슬라이드 */
+.bx-wrapper{
+	margin:auto;
+}
+/*셀비 메인페이지 슬라이드 */
+
+
+
+
+
+
+/* 셀비 상품 리스트 공통 css */
+
+.product_list{
+	border:1px solid #ffffff;
+	width:267px;
+	height:350px;
+	margin:10px 5px 20px 8px; 
+	float:left;
+	transition:all linear 0.1s;
+}
+
+.event_product_list{
+	border:1px solid #ffffff;
+	width:408px;
+	height:250px;  
+	margin:10px 5px 2px 8px; 
+	float:left;
+	transition:all linear 0.1s;
+}
+.event_product_list:hover{
+	box-shadow: 0.5px 0.5px 3px 0px;
+}
+
+
+.product_list:hover{
+	box-shadow:0.1px 0.1px 0.1px 0.1px;
+	border : 1px solid #7ecdf4;
+}
+
+
+.product_price{
+	padding: 0px 20px 0px 20px;
+	font-size: 20px;
+}
+
+.product_price_initial{
+	ext-shadow: 0.3px 0.3px 0.3px grey;
+}
+
+.product_sale_price_percent{
+	font-size:16px;
+	color:#e40069;
+}
+
+.product_sale_price{
+	font-size:17px;
+}
+
+.sale{
+	text-decoration:line-through;
+}
+
+
+.product_img{
+	width:100%;
+	height: 182px;
+	background: url('//selvishop.kr/web/product/medium/201902/aa5c354c8d7112f13907e3d38042c42b.jpg') center center no-repeat #ffffff;
+}
+
+.product_name{
+	padding: 0px 20px 0px 20px;
+	
+}
+
+
+/* 셀비 상품 리스트 공통 css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 카테고리 페이지 */
+
+#category{
+	width:850px; 
+	margin:auto;
+	border:1px solid #d0d0d0;
+	margin-bottom:30px;
+	background:white;
+}
+
+
+.category{
+	display:inline-block;
+	width:120px;
+	margin:auto;
+	text-align:center;
+	    padding: 28px 23px;
+}
+
+
+
+/* 카테고리 페이지 */
+
+  
+
+
+
+
+
+
+
+
+
+
+
+/* 단일 상품 강조 칸 */
+
+
+#single_product_promotion{
+	width:850px;
+	margin:auto;
+	height:200px;
+	background:white;
+	border:1px solid #d0d0d0;
+	
+}
+
+
+/* 단일 상품 강조 칸 */
+
+
+
+
+
+/* 최상단 최하단 이동 버튼 */
+
+
+#up_down{
+	position:fixed;
+	top:500px;
+	right:10%;
+	width:100px;
+	left: 50%;
+    margin-left: 454px;
+}
+
+.up img, .down img{
+	width:20px;
+	padding:9px;
+	background:#3f3f3f;
+    cursor:pointer;
+}
+
+
+
+
+/* 최상단 최하단 이동 버튼 */
+
+
+
+
+
+
+
+
+
+
+/* 메인페이지 상품 목록 */
+#main_product_list{
+	width:850px;
+	margin:auto;
+
+	height:1140px;
+}
+/* 메인페이지 상품 목록 */
+
+
+
+/*이벤트 상품 목록*/
+
+#event_product_list{    
+	width:850px;
+	margin:auto;
+
+	height:1065px;
+}
+
+/*이벤트 상품 목록*/
+
+
+
+/*신상품 목록*/
+
+#new_product_list{
+	width:850px;
+	margin:auto;
+	
+	height:1145px;
+}
+
+/*신상품 목록*/
+
+
+
+
+
+
+
+
+/* product_list wrap */
+#main_wrap{
+	width:850px;
+	margin: 20px auto;
+	background:white;
+	border:1px solid #d0d0d0;
+	height:auto;
+}
+
+#event_wrap{
+	width:850px;
+	margin:20px auto;
+	background:white;
+	border:1px solid #d0d0d0;
+	height:auto;
+}
+
+
+#new_wrap{
+	width:850px;
+	margin:20px auto;
+	background:white;
+	border:1px solid #d0d0d0;
+	height:auto;
+}
+
+/* product_list wrap */
+
+
+
+
+/* 상품 목록 타이틀 */
+.list_title{
+	
+    line-height: 40px;
+    text-indent: 10px;
+    font-size: 23px;
+	
+	
+}
+/* 상품 목록 타이틀 */

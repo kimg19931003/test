@@ -1,0 +1,187 @@
+input:focus {
+  outline: none;
+}
+
+
+
+
+
+.inline-block{
+	display:inline-block;
+}
+
+
+.pink{
+	color:#ff0072;
+	font-weight:bold;
+}
+
+
+
+#wrap{
+	box-shadow: 0px 0.3px 0.7px 0px grey;
+	-webkit-box-shadow: 0px 0.3px 0.7px 0px grey;
+	padding-bottom: 10px;
+}
+
+/* 상단 고정 메뉴 */
+
+.titleTopArea{
+	border-bottom:1px solid #d0d0d0;
+	padding : 16px 0px 16px 0px;
+}
+
+.titleTopArea > div{
+	display:inline-block;
+}
+
+.titleTopArea > div:nth-child(1){
+	width:6%;
+	position:relative;
+	left:17px;
+}
+
+.titleTopArea > div:nth-child(2){
+	width:15%;
+	position:relative;
+	top:4px;
+}
+
+.titleTopArea > div:nth-child(3){
+	width:76%;
+	text-align:right;
+	position:relative;
+}
+
+.top_bar_text{
+	font-size:19px;
+	
+}
+
+
+.top_bar_img img{
+	width:25px;
+	cursor:pointer;
+}
+
+.top_bar_home img{
+	width:25px;
+	cursor:pointer;
+}
+
+/* 상단 고정 메뉴 */
+
+
+
+/* 배송조회 기능 */
+
+.product_order{
+	width:96%;
+	margin:20px auto;
+	border:1px solid #d0d0d0;
+	position:relative;
+}
+
+
+.order_header{
+	padding: 7px 18px;
+	background: #f0f0f0;
+}
+
+.order_header div{
+	display:inline-block;
+}
+
+.order_header div:nth-child(1){
+	font-weight:bold;
+}
+
+.order_header div:nth-child(2){
+	position:absolute;
+	right:20px;
+}
+
+
+.order_info{
+    margin: 16px auto;
+    width: 91%;
+}
+
+
+.order_info > div{
+	display:inline-block;
+}
+
+.order_info_img img{
+	width: 100px;
+}
+
+.order_info_explain div:nth-child(1){
+
+	font-size:14px;
+}
+
+.order_info_explain div:nth-child(2){
+	color:#ff0072;
+	font-size:14px;
+}
+
+
+
+
+/* 배송정보 */
+
+.delivery_info{
+	width:96%;
+
+	margin:40px auto;	
+}
+
+
+.font-small{
+	color:#ff0072;
+	font-size:13px;
+}
+
+.delivery_info_table{
+	border-collapse:collapse;
+    width:100%;
+    text-align:center;
+    margin:10px 0px;
+}
+
+.delivery_info_table td{
+	border:1px solid #d0d0d0;
+	padding: 7px;
+	font-size:13px;
+}
+
+
+.last_pay_money{
+	border-bottom:1px dashed #d0d0d0;
+	text-align:right;
+	padding: 10px 0px;
+	width:96%;
+	margin:Auto;
+}
+
+.addr_request_div{
+	width:90%;
+	display:inline-block;
+}
+
+
+.addr_request{
+	width:90%;
+	display:inline-block;
+	padding:5px;
+}
+
+.repair{
+    width: auto;
+    display: inline-block;
+    border: 1px solid #d0d0d0;
+    padding: 6px 8px;
+    position: relative;
+    top: 2px;
+}

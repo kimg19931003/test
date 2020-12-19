@@ -1,0 +1,584 @@
+@charset "UTF-8";
+
+.contents_wrapper {
+	width: 1100px;
+	padding: 42px 0;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* 헤더 */
+.contents_field {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.contents_wrapper .contents_field {
+	width: 510px;
+	margin: 0 auto;
+}
+
+.right.contents_field {
+    width: 961px;
+    margin-top: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -410px;
+}
+
+.right.contents_field .field_header {
+	height: 50px;
+	text-align: left;
+	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	top: -123px;
+}
+
+/* 제목 */
+.right.contents_field .field_header .field_header_title {
+	margin-top: 9px;
+	display: inline-block;
+	font-weight: 600;
+	color: #222;
+	font-size: 20px;
+	line-height: 32px;
+	width: 707px;
+}
+
+#customer_title_line {
+	width: 972px;
+	margin: auto;
+	position: relative;
+	left: -40px;
+	top: -65px;
+}
+
+/* 엑셀 다운 / 버튼 영역 */
+.right.contents_field .field_header .field_header_contents {
+	display: inline-block;
+}
+
+.right.contents_field .field_header .field_header_contents div {
+	display: inline-block;
+	height: 50px;
+}
+
+.right.contents_field .field_header .field_header_contents .button-wrap
+	{
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+/* 엑셀 다운 */
+.tooltip-wrap.hover-trans {
+	position: relative;
+	display: inline-block;
+}
+
+.right.contents_field .field_header .field_header_contents button.excelExportButton
+	{
+	width: 55px;
+}
+
+.right.contents_field .field_header .field_header_contents button.excelExportButton i
+	{
+	height: 45px;
+}
+
+/* 버튼 */
+.btn-black {
+	background-color: #222;
+	border-color: #222;
+	color: #fff;
+}
+
+.right.contents_field .field_header .field_header_contents button.trigger
+	{
+	width: 160px;
+	height: 50px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0;
+}
+
+/* datepicker 주말 색상 변경 */
+.ui-datepicker-calendar>tbody td.ui-datepicker-week-end:first-child a {
+	color: red;
+}
+
+.ui-datepicker-calendar>tbody td.ui-datepicker-week-end:last-child a {
+	color: blue;
+}
+
+/* datepicker 오늘 날짜 색상 */
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+	border: 1px solid #e600e6 !important;
+	background: #ffe6ff !important;
+	color: #e600e6 !important;
+}
+
+/* datepicker mouse ver시 */
+.ui-state-hover {
+	border: 1px solid #cccccc !important;
+	background: #ededed !important;
+	font-weight: normal !important;
+	color: #2b2b2b !important;
+}
+
+/* 상품 현황 */
+.mBox {
+	line-height: 1.5;
+	margin-top: 30px;
+}
+
+.mBox.typeAll {
+	/* border: 4px solid #d8dcdf; */
+	border: 1px solid #ddd;
+	background-color: #f6f6f6;
+}
+
+.mBox.typeAll.pannel {
+	margin: 30 0 30px;
+}
+
+.mBox.typeAll.pannel .state {
+	float: left;
+	max-width: 100%;
+	padding-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.mBox.typeAll.pannel .state li {
+	float: left;
+	/* height: 12px; */
+	margin: 0 0 0 19px;
+	padding: 0 0 0 20px;
+	line-height: 1.25;
+	border-left: 1px solid #b1b1b3;
+}
+
+.mBox.typeAll.pannel .state li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+	border-left: 0;
+}
+
+.mBox.typeAll.pannel .state a {
+	margin: 0 0 0 5px;
+	color: #1d87d5;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.mBox:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 검색 */
+.optionArea {
+	margin: 0 0 150px;
+	clear: both;
+}
+
+.optionArea table {
+	table-layout: fixed;
+	width: 100%;
+	/* border: 0; */
+	border: 1px solid #ddd;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.mOption table {
+	line-height: 1.5;
+	background-color: #fff;
+}
+
+.optionArea caption {
+	display: none;
+}
+
+.mOption th {
+	font-weight: normal;
+	vertical-align: top;
+	background-color: #f5f4f4;
+}
+
+.mOption td, .optionArea td {
+	width: 130px;
+}
+
+.mOption th, .mOption td {
+	padding: 9px 9px 7px;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+}
+
+.optionArea th, .optionArea td {
+	border: 0;
+	word-wrap: break-word;
+	border-bottom: 1px solid #ddd;
+}
+
+ul.mForm {
+	margin: -8px 0 0;
+}
+
+.mForm li {
+	margin: 8px 0 0;
+}
+
+.fSelect {
+	display: inline;
+	height: 22px;
+	line-height: 22px;
+	margin: 0;
+	max-width: 100%;
+}
+
+input.fText {
+	max-width: 100%;
+	height: 22px;
+	padding: 0 5px;
+	line-height: 22px;
+	box-sizing: border-box;
+	border: 1px solid #a7a7a7;
+	border-right-color: #cfcfcf;
+	border-bottom-color: #cfcfcf;
+	outline: 0 none;
+}
+
+a.btnIcon, button.btnIcon, span.btnIcon {
+	display: inline-block;
+	overflow: hidden;
+	width: 20px;
+	height: 20px;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	white-space: nowrap;
+	background:
+		url(https://s3.ap-northeast-2.amazonaws.com/supersell-selvi/shoppingmall/admin/search/%EC%95%84%EC%9D%B4%EC%BD%98.png)
+		0 0 no-repeat;
+	box-sizing: border-box;
+}
+
+.btnIcon.icoMinus {
+	position: relative;
+	border: 1px solid #cacaca;
+	background-color: #f8f8f8;
+	background-image: none;
+}
+
+.btnIcon.icoMinus:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	margin: -1px 0 0;
+	width: 8px;
+	height: 2px;
+	background-color: #6b6b6b;
+}
+
+.btnIcon span {
+	visibility: hidden;
+	display: block;
+	height: 100%;
+	font-size: 1px;
+}
+
+.btnIcon.icoPlus {
+	position: relative;
+	border: 1px solid #cacaca;
+	background-color: #f8f8f8;
+	background-image: none;
+}
+
+.btnIcon.icoPlus:after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 8px;
+	width: 2px;
+	height: 8px;
+	background-color: #6b6b6b;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.btnIcon.icoPlus:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	margin: -1px 0 0;
+	width: 8px;
+	height: 2px;
+	background-color: #6b6b6b;
+}
+
+.txtInfo {
+	margin: 0 0 0 10px;
+	color: #898989;
+	font-size: 11px;
+	font-style: normal;
+}
+
+p.txtInfo {
+	position: relative;
+	padding: 0 0 0 10px;
+}
+
+p.txtInfo, ul.txtInfo {
+	margin: 5px 0 0 0;
+}
+
+p.txtInfo:before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 1px;
+	top: 6px;
+	left: 0;
+	background-color: #898989;
+}
+
+label.gLabel {
+	display: inline-block;
+	padding: 0 40px 0 0;
+	outline: 0 none;
+}
+
+label.eSelected {
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+.mOption label.gLabel {
+	padding-right: 20px;
+}
+
+.fChk {
+	width: 14px;
+	height: 14px;
+}
+
+.gSingle {
+	display: block;
+	margin-top: 5px !important;
+}
+
+.fSelect.category {
+	width: 125px;
+}
+
+.gBreak {
+	display: inline-block;
+	margin: 1px 0 0;
+}
+
+.btnDate, .btnDate span, .btnSearch, .btnSearch span {
+	height: 22px;
+}
+
+.btnDate, .btnDate span, .btnSearch, .btnSearch span {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+
+.btnDate span, .btnSearch span {
+	vertical-align: top;
+}
+
+.btnDate span {
+	height: 22px;
+	padding: 0 8px;
+	color: #1c1c1c;
+	font-size: 12px;
+	line-height: 20px;
+	border: 1px solid #cacaca;
+	background-color: #f8f8f8;
+}
+
+.btnDate+.btnDate {
+	margin-left: -5px;
+}
+
+.btnDate:hover span, .btnDate.selected span {
+	color: #fff;
+	border-color: #1b87d4;
+	background-color: #1b87d4;
+}
+
+input.fText.gDate {
+	width: 90px;
+}
+
+.btnIcon.icoCal {
+	width: 13px;
+	height: 13px;
+	background-position: -50px -500px;
+}
+
+label.gSingleLabel {
+	display: inline-block;
+	padding: 0 15px 0 0;
+	outline: 0 none;
+}
+
+label.eSelected {
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+/* 검색 / 초기화 버튼 */
+.mButton {
+	margin: 40px 0;
+	padding: 0 4px 0 0;
+	text-align: right;
+}
+
+.mButton.gCenter {
+	position: relative;
+	text-align: center;
+}
+
+.mButton a {
+	margin: 0 0 0 10px;
+}
+
+.mButton a:first-child {
+	margin-left: 0;
+}
+
+.optionArea>.mButton .btnSearch, .optionArea>.mButton .btnSearch span,
+	.optionArea>.mButton .btnSearch.reset, .optionArea>.mButton .btnSearch.reset span
+	{
+	height: 30px;
+}
+
+.btnSearch span {
+	padding: 0 8px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	border: 1px solid transparent;
+	background-color: #404f6a;
+}
+
+.optionArea>.mButton .btnSearch span {
+	padding: 0 22px;
+	line-height: 30px;
+}
+
+.btnSearch.reset span {
+	color: #1c1c1c;
+	border: 1px solid #cacaca;
+	background-color: #f8f8f8;
+}
+
+.optionArea>.mButton .btnSearch.reset span {
+	height: 30px;
+	padding: 0 22px;
+	/* font-size: 12px; */
+	line-height: 30px;
+}
+
+.mButton:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+/* 리스트 개수 */
+#product_table_length {
+	position: relative;
+}
+
+#product_table_length select{
+	padding: 9px;
+}
+
+/* 리스트 */
+#product_table {
+	text-align: center;
+}
+
+#product_table tr, #product_table td {
+	border-bottom: 1px solid #d0d0d0;
+	cursor: pointer;
+}
+
+#product_table th {
+	border-bottom: 1px solid #111;
+	padding: 20px 0px 20px 0px;
+	vertical-align: middle;
+}
+
+#product_table tr:hover {
+	background: #f8f8f8;
+	transition: all linear 0.2s;
+}
+
+.tb_content>*, .tb_content>* img {
+	vertical-align: middle;
+	width: 115px;
+}
+
+.tb_content>.thumb-tb-title {
+	text-align: left;
+}
+
+/* 페이징 */
+.pagination_div {
+	text-align: center;
+	padding: 50px 0 60px;
+	width: 100%;
+}
+
+.pagination_css {
+	font-size: 14px;
+	cursor: pointer;
+	padding: 10px;
+	color: #aaa;
+}
+
+.pagination_css.pagination_selected {
+	font-size: 16px;
+	font-weight: bold;
+	color: #dd4035;
+}
+
+.hide {
+	display: none !important;
+}
+
+.no-content-msg {
+	text-align: center;
+	color: #999;
+	font-size: 24px;
+	line-height: 43px;
+	margin-top: 200px;
+}
+
+
+
+
+/* 데이터 테이블 css */
+

@@ -1,0 +1,247 @@
+
+*{
+	list-style:none;
+	text-decoration:none;
+}
+
+
+
+
+.main_phone_checkbox{
+	width:100%;
+}
+
+
+.email_div{
+	width:49%;
+	display:inline-block;
+}
+
+
+.phone_div{
+	width:49%;
+	display:inline-block;
+}
+
+
+.email_display_div{
+	width:100%;
+	padding: 50px 0px 50px 0px !important;
+}
+
+
+.label_title{
+	background : rgba(11, 99, 186, 0);
+}
+
+/********************** 라디오박스 커스텀 *****************************/
+
+
+[type="checkbox"]{
+	display:none;
+	transition:all linear 0.3s;
+	-webkit-transition:all linear 0.3s;
+}
+
+label{
+	transition:all linear 0.3s;
+	-webkit-transition:all linear 0.3s;
+	
+}
+
+.customer_radio{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #505050;
+    position: relative;
+    transition:all ease 0.3s;
+    -webkit-transition:all ease 0.3s;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0px 5px 0px 0px;
+}
+.customer_radio:hover{
+	border:1px solid #e40069;
+}
+
+
+
+[type="checkbox"]:checked + label:after{
+	content: '✔';
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    color: #e40069;
+
+    font-weight: bold;
+    font-size:17px;
+    transition:all ease 0.1s;
+    -webkit-transition:all ease 0.1s;
+    width:0px;
+    height:0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+[type="checkbox"]:not(:checked) + label:after{
+	content: '';
+    transition:all ease 0.3s;
+    -webkit-transition:all ease 0.3s;
+ 
+}
+
+
+
+
+
+/****************** pc 반응형 *************************/
+
+@media ( min-width :780px) {
+	#main_wrap {
+		width: 100% !important;
+		max-width: 1024px !important;
+		margin: auto !important;
+		padding: 100px 0px 100px 0px;
+	}
+	#join_complete {
+		width: 60%;
+		margin: auto;
+		text-align: center;
+	}
+	.join_complete_title {
+		font-family: NotoSansKR;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 1.5;
+		letter-spacing: 0.6px;
+	}
+	.join_complete_comment {
+		width: 480px;
+		margin: 14px auto 32px auto;
+		height: 164px;
+		border-radius: 30px;
+		background: rgba(11, 99, 186, 0.1);
+		filter: alpha(opacity = 10);
+		
+		padding: 0px 10px;
+	}
+	.join_complete_comment div {
+		background: rgba(11, 99, 186, 0);
+		padding: 16px 0px 0px 0px;
+		border-radius: 24px;
+		color: #505050;
+		
+	}
+	.join_complete_send_pass {
+		width: 240px;
+		margin: auto;
+		border-radius: 24px;
+		background: #e40069;
+		font-size: 15px;
+		padding: 10px 0px;
+		display: inline-block;
+	}
+	.move_send_pass {
+		color: white;
+	}
+	.join_complete_cancel{
+		width: 240px;
+		margin: auto;
+		border-radius: 24px;
+		background: #dedede;
+		font-size: 15px;
+		margin-top: 10px;
+		padding: 10px 0px;
+		display: inline-block;
+	}
+	.move_cancel {
+		color: black;
+	}
+	
+	.change_div{
+	    padding-top:33px !important;
+	}	
+}
+
+
+
+
+
+
+
+
+
+/****************** 모바일 반응형 *************************/
+
+@media(max-width:780px){
+	#main_wrap {
+		width: 100% !important;
+		max-width: 1024px !important;
+		margin: auto !important;
+		padding: 100px 0px 100px 0px;
+	}
+	#join_complete {
+		width: 90%;
+		margin: auto;
+		text-align: center;
+	}
+	.join_complete_title {
+		font-family: NotoSansKR;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 1.5;
+		letter-spacing: 0.6px;
+	}
+	.join_complete_comment {
+		width: 95%;
+		height: 164px;
+		max-width:480px;
+		border-radius: 30px;
+		background: rgba(11, 99, 186, 0.1);
+		margin: 24px auto 32px auto;
+		filter: alpha(opacity = 10);
+		font-size: 14px;
+		padding: 0px 10px;
+	}
+	.join_complete_comment div {
+		background: rgba(11, 99, 186, 0);
+		padding: 9px 0px 0px 0px;
+		border-radius: 24px;
+		color: #505050;
+	}
+	.join_complete_send_pass {
+		width: calc(35% - 10px);
+		min-width:150px;
+		margin: auto;
+		border-radius: 24px;
+		background: #e40069;
+		font-size: 15px;
+		padding: 10px 0px;
+		display:inline-block;
+		cursor:pointer;
+	}
+	.move_send_pass {
+		color: white;
+	}
+	.join_complete_cancel {
+		width: calc(35% - 10px);
+		min-width:150px;
+		margin: auto;
+		border-radius: 24px;
+		background: #dedede;
+		font-size: 15px;
+		margin-top: 10px;
+		padding: 10px 0px;
+		display:inline-block;
+	}
+	.move_cancel {
+		color: black;
+	}
+	
+	.change_div{
+	    padding-top:33px !important;
+	}
+}

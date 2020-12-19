@@ -1,0 +1,184 @@
+#main_wrap {
+	width: 100% !important;
+	max-width: 1040px !important;
+	margin: auto !important;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.titleTopArea {
+	border-bottom: 1px solid #d0d0d0;
+	padding: 16px 0px 16px 0px;
+	position: relative;
+}
+
+.titleTopArea>div {
+	display: inline-block;
+}
+
+.titleTopArea>div:nth-child(1) {
+	width: 46px;
+	position: relative;
+	left: 17px;
+}
+
+.titleTopArea>div:nth-child(2) {
+	width: 95px;
+	position: relative;
+	top: 4px;
+}
+
+.titleTopArea>div:nth-child(3) {
+	width: 23px;
+	position: absolute;
+	right: 20px;
+}
+
+.top_bar_text {
+	font-size: 19px;
+}
+
+.top_bar_img img {
+	width: 25px;
+	cursor: pointer;
+}
+
+.top_bar_home img {
+	width: 25px;
+	cursor: pointer;
+}
+
+/* 구매이력 */
+.order_history {
+	width: 96%;
+	border-collapse: collapse;
+	margin: 20px auto;
+}
+
+.order_history th {
+	background: #505050;
+	color: white;
+	padding: 10px 0px;
+}
+
+.order_history td {
+	text-align: center;
+	padding: 10px 0px;
+	border: 1px solid #d8d8d8;
+}
+
+/* 주문 배송 조회 */
+.order_delivery_see {
+	width: 96%;
+	height: auto;
+	margin: 20px auto;
+	border: 1px solid #d0d0d0;
+}
+
+.order_delivery_see>div {
+	width: 100%;
+	text-align: center;
+}
+
+.order_delivery_see>div:nth-child(2) {
+	width: 100%;
+	text-align: center;
+	height: 70px;
+}
+
+.order_product_title {
+	padding: 10px 0px;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.order_product_state>div {
+	width: 16%;
+	margin: 15px 0px;
+	position: relative;
+	float: left;
+}
+
+/*
+.order_product_state > div:after{
+	content: ">";
+    position: absolute;
+    top: 4px;
+    left: 99%;
+    font-size: 25px;
+}
+
+*/
+
+
+.order_product_state>div:last-child:after {
+	display: none;
+}
+
+.order_product_state_word {
+	font-size: 13px;
+}
+
+#wrap {
+
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+
+/* 로그인 회원 메뉴 */
+.member_menu {
+	width: 96%;
+	height: auto;
+	margin: 20px auto;
+	border: 1px solid #d0d0d0;
+}
+
+.member_menu a>div {
+	padding: 10px 10px;
+	font-size: 13px;
+	font-weight: bold;
+	border-bottom: 1px solid #d0d0d0;
+	position: relative;
+}
+
+.member_menu a>div:last-child {
+	border-bottom: 0px;
+}
+
+.member_menu a>div>span:nth-child(2) {
+	position: absolute;
+	right: 10px;
+}
+
+/* 로그아웃 버튼 */
+.logout {
+	width: 96%;
+	height: auto;
+	margin: 20px auto;
+	border: 1px solid #d0d0d0;
+	text-align: center;
+	padding: 8px 0px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+
+
+
+@media(min-width:600px){
+	.arrow {
+		font-size: 25px;
+		position: absolute;
+		left: 97%;
+    }
+}
+
+@media(max-width:600px){
+	.arrow {
+   		font-size: 15px;
+    	position: absolute;
+    	left: 95%;
+	}
+}

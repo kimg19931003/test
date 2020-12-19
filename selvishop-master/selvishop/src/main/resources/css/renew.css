@@ -1,0 +1,209 @@
+
+body, html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:12px;
+}
+
+
+#k_product_info_range{
+    width:1100px;  
+    margin:auto;
+    height:800px; 
+    padding:200px 100px 100px 150px;
+}
+
+.k_product_img{ 
+    height:500px; 
+    width:400px; 
+}
+
+
+.k_product_name{
+    position:relative;
+    left:450px;
+    top:-465px;
+    font-size: 25px;
+    border-bottom:1px solid #505050;
+    padding-bottom: 11px;width:260px;
+} 
+
+.k_product_opt{
+    position:relative;
+    left:450px;
+    top:-430px;
+    font-size: 18px;
+    border:1px solid #808080;
+    border-radius:8px;
+    width:55px;
+    height: 31px;
+    padding:5px;
+    text-align: center;
+    background:#505050;
+    color:white;
+    font-size:14px;
+}
+
+.k_product_price{
+    position:relative;
+    left:450px;
+    top:-420px;
+    font-size: 20px;
+
+}
+
+.k_product_buy{
+    position:relative;
+    left:450px;
+    top:-250px;
+    font-size: 19px;
+    border:1px solid #808080;
+    border-radius:8px;
+    width:92px;
+    height: 40px;
+    padding:7px;
+    color:white;
+    background: -webkit-linear-gradient( red,indigo);
+    background: -moz-linear-gradient( red,indigo);
+    background: -o-linear-gradient( red,indigo);
+    background: linear-gradient( red,indigo);
+}
+
+
+#k_reply{
+    width:710px;
+    margin:auto;
+} 
+
+
+
+#k_reply tr{
+    background:fafafa;
+}
+#k_reply tr:hover{
+   
+}
+
+
+
+#k_reply th{
+    background: #a5a2B6;
+}
+#k_reply th:hover{
+  
+}
+
+#k_reply td{
+    
+}
+
+
+#k_reply td,th{
+    padding:5px; 
+    padding: 7px 7px 0px 7px;
+    
+}
+
+#k_reply th{
+    border:1px solid #F5F1EE;;
+    background:#f5f5f5;
+}
+
+#k_reply thead{
+    border:1px solid #a5a2B6;
+}
+
+.k_number{
+
+}
+
+.k_category{
+    
+}
+
+.k_subtitle{
+    width:400px;
+    cursor:pointer;
+}
+
+.k_subtitle_info_line{
+    width: 466px;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    top: -130px;
+}
+
+.k_subtitle_info{
+    
+    padding-bottom:5px;
+    width: 110px;
+    display: inline-block;
+    font-size:13px;
+    position: relative;
+    top: 105px;
+    left: 350px;
+}
+   
+.k_subtitle_div{
+    width:auto;
+    height:auto;
+    display:inline-block;
+}
+ 
+.k_subtitle_img{
+    width: 68%;
+   
+    border: 1px solid #d0d0d0;
+}
+
+.k_subtitle_line{
+    
+    width:350px;
+    display: inline-block;
+    position:  absolute;
+    top: 40px;
+    font-size: 14px;
+    left: -41px;
+    
+    text-overflow: ellipsis;
+    padding: 10px;
+    overflow:hidden;
+    z-index:9;
+    white-space: nowrap; 
+
+}
+
+.k_subtitle_line:hover{
+    height:auto;
+    box-shadow: 0.2px 0.2px 0.2px 0.2px;
+    
+}
+
+.k_writer{
+
+}
+
+.k_hit{
+
+}
+
+.k_title{
+    padding:10px;
+    text-align:left;
+    border-bottom:1px solid #505050;
+    width:400px;
+}
+
+.k_title_word{
+    text-align:left;
+    padding:11px;
+}
+
+.k_reply_word{
+    display:none;
+    padding: 8px 0 0 21px;
+    transition:all linear 1s;
+}
+
+
+

@@ -1,0 +1,150 @@
+
+*{
+	list-style:none;
+	text-decoration:none;
+}
+
+
+
+
+
+
+/****************** pc 반응형 *************************/
+
+@media ( min-width :780px) {
+	#main_wrap {
+		width: 100% !important;
+		max-width: 1024px !important;
+		margin: auto !important;
+		padding: 100px 0px 100px 0px;
+	}
+	#join_complete {
+		width: 60%;
+		margin: auto;
+		text-align: center;
+	}
+	.join_complete_title {
+		font-family: NotoSansKR;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 1.5;
+		letter-spacing: 0.6px;
+	}
+	.join_complete_comment {
+		width: 480px;
+		margin: 14px auto 32px auto;
+		height: 164px;
+		border-radius: 30px;
+		background: rgba(11, 99, 186, 0.1);
+		filter: alpha(opacity = 10);
+		
+		padding: 0px 10px;
+	}
+	.join_complete_comment div {
+		background: rgba(11, 99, 186, 0);
+		padding: 16px 0px 0px 0px;
+		border-radius: 24px;
+		color: #505050;
+		
+	}
+	.join_complete_move_login {
+		width: 240px;
+		margin: auto;
+		border-radius: 24px;
+		background: #e40069;
+		font-size: 15px;
+		padding: 10px 0px;
+		display: inline-block;
+	}
+	.move_login {
+		color: white;
+	}
+	.join_complete_move_find_pass {
+		width: 240px;
+		margin: auto;
+		border-radius: 24px;
+		background: #dedede;
+		font-size: 15px;
+		margin-top: 10px;
+		padding: 10px 0px;
+		display: inline-block;
+	}
+	.move_find_pass {
+		color: black;
+	}
+}
+
+
+
+
+
+
+
+
+
+/****************** 모바일 반응형 *************************/
+
+@media(max-width:780px){
+	#main_wrap {
+		width: 100% !important;
+		max-width: 1024px !important;
+		margin: auto !important;
+		padding: 100px 0px 100px 0px;
+	}
+	#join_complete {
+		width: 90%;
+		margin: auto;
+		text-align: center;
+	}
+	.join_complete_title {
+		font-family: NotoSansKR;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.5;
+		letter-spacing: 0.6px;
+	}
+	.join_complete_comment {
+		width: 95%;
+		height: 164px;
+		max-width:480px;
+		border-radius: 30px;
+		background: rgba(11, 99, 186, 0.1);
+		margin: 24px auto 32px auto;
+		filter: alpha(opacity = 10);
+		font-size: 14px;
+		padding: 0px 10px;
+	}
+	.join_complete_comment div {
+		background: rgba(11, 99, 186, 0);
+		padding: 14px 0px 0px 0px;
+		border-radius: 24px;
+		color: #505050;
+	}
+	.join_complete_move_login {
+		width: calc(35% - 10px);
+		min-width:150px;
+		margin: auto;
+		border-radius: 24px;
+		background: #e40069;
+		font-size: 15px;
+		padding: 10px 0px;
+		display:inline-block;
+	}
+	.move_login {
+		color: white;
+	}
+	.join_complete_move_find_pass {
+		width: calc(35% - 10px);
+		min-width:150px;
+		margin: auto;
+		border-radius: 24px;
+		background: #dedede;
+		font-size: 15px;
+		margin-top: 10px;
+		padding: 10px 0px;
+		display:inline-block;
+	}
+	.move_find_pass {
+		color: black;
+	}
+}

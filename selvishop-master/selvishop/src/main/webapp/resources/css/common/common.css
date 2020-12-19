@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #fff;
+}
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+	code, form, fieldset, legend, input, textarea, p, blockquote, th, td,
+	img {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a, a:active, a:hover, a:link, a:visited {
+    color: #3b3b3b;
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+a, button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: 0 0;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+img, input, select, textarea {
+    vertical-align: middle;
+}
+
+button, fieldset, img {
+    border: 0 none;
+    outline: 0;
+}
+
+input[type=number], input[type=text] {
+    border: 1px solid #aaa;
+    color: #656565;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.swiper-wrapper, .swiper-wrapper .swiper-slide {
+    height: auto;
+}
+
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 850px;
+    box-shadow: 0 0 7px 0 #e7e7e7;
+    background: #fff;
+}

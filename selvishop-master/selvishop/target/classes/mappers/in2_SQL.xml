@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="selvi">
+     
+    
+     
+    <select id="m_sell_list" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+      select  si.product_img, si.product_info,si.product_num,si.id,ifnull(replace(replace(si.product_price,',',''),'\\',''),'0') as product_p from (select * from link_code group by product_no) lc left join supersell_info si on  lc.product_no = si.product_no where lc.user_id= '${id}' and not si.bank_refund_wait in('y') and si.sell_wait_complete not in('n')  
+         
+        ]]>  
+    </select>
+    
+      <select id="m_sell_list_none" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+      select * from product_list pl left join link_code lc on pl.id = lc.product_id  where lc.user_id='${id}' and pl.id not in (select lc.product_id from supersell_info si left join link_code lc on si.prdt_order = lc.product_id  where lc.user_id= '${id}' and not si.bank_refund_wait in('y') and si.sell_wait_complete not in('n'))
+        ]]>
+    </select>
+    
+    <select id="link_view" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        select * from link_code lc left join product_list pl on pl.id = lc.product_id  where lc.user_id='${id}'
+         
+        ]]>
+    </select>
+    
+     <select id="bank_info_cert" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+       insert into bank_info(id, user_id, user_name, bank_name, bank_num, person_num,bank_insert_clear,bank_refund_wait,bank_refund_total_price,bank_refund_total_price_tax, ftime,realtime) values((select count(*) from (select id from bank_info) tmp),'${user_id}','${user_name}','${bank_name}','${bank_num}','${person_num}','${bank_insert_clear}','${bank_refund_wait}','${bank_refund_total_price}','${bank_refund_total_price_tax}','${ftime}',NOW())
+         
+        ]]>
+    </select>
+    
+     <select id="bank_info_cert_entry" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+       update entry1 set id='${user_id}', user_name='${user_name}', bank_name='${bank_name}', bank_num='${bank_num}', person_num='${person_num}',bank_insert_clear='${bank_insert_clear}',bank_refund_wait='${bank_refund_wait}',bank_refund_total_price='${bank_refund_total_price}', ftime='${ftime}',realtime =NOW(), tax_agree='y' where id='${user_id}'
+         
+        ]]>
+    </select>
+    
+    
+    <select id="bank_info_cert_insert_person_num" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+       update entry1 set person_num = '${person_num}' where id='${id}'
+        ]]>
+    </select>
+    
+    
+    <select id="supersell_info_total_price" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select ifnull(replace(total_price,',',''), '0') as total_p, if(domestic_ship_fee='','0', domestic_ship_fee) as domestic_ship_fee from (select * from link_code group by product_no) lc left join supersell_info si on lc.product_no = si.product_no where lc.user_id='${id}' and not si.bank_refund_wait in ('y') and si.sell_wait_complete not in('n')
+         
+        ]]>
+    </select>
+    
+      <select id="view_count" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        
+       update link_code set page_view = page_view +1  where user_ih = '${product_no}' and detail_no = '${detail_no}'
+       
+         
+        ]]>
+    </select>
+    
+    
+     <select id="supersell_info" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          insert into supersell_info( id, product_info, product_price, product_num, total_price, realtime, product_no, cate_no, display_group,user_id,supersell_info_image_url ,product_img , total_order_price_view,total_sale_price_view ,product_opt,domestic_ship_fee, order_id, paymentod_name, paymentod_detail, buyer_name, buyer_email, buyer_phone, buyer_addr, browser, prdt_order , referer) 
+          values((select count(*) from (select id from supersell_info) tmp),'${product_info}','${product_price}', '${product_num}','${total_order_sale_price_view}',NOW(),'${product_no}','${cate_no}','${display_group}','${user_id}', '${supersell_info_image_url}','${product_img}' , '${total_order_price_view}', '${total_sale_price_view}','${product_opt}','${domestic_ship_fee}','${order_id}','${paymentod_name}','${paymentod_detail}','${buyer_name}','${buyer_email}','${buyer_phone}','${buyer_addr}', '${browser}', '${prdt_order}', '${referer}')
+     
+        ]]>
+    </select>
+    
+    
+    <select id="supersell_info_detail_no" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          update link_code set detail_no = '${detail_no}' where product_no = '${product_no}'
+        ]]>
+    </select>
+    
+    
+    <select id="bank_refund_wait" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          update supersell_info set bank_refund_wait = 'y' where id= ${id_num}
+        ]]>
+    </select>
+   
+   
+   <select id="refund_list" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from bank_info where user_id= '${id}' order by id desc
+        ]]>
+    </select>
+    
+      <select id="refund_ent" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from entry1 where id= '${id}'
+        ]]>
+    </select>
+    
+  
+    
+     <select id="bank_agree" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update entry1 set bank_agree='y' where id='${id}'
+        ]]>
+    </select>
+    
+     <select id="bank_policy_agree" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update entry1 set bank_policy_agree='y' where id='${id}'
+        ]]>
+    </select>
+    
+    <select id="bank_policy_agree_select" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from entry1 where id='${id}' and bank_policy_agree not in('n')
+           
+        ]]>
+    </select>
+    
+    <select id="bank_agree_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select bank_agree from entry1 where id='${id}'
+        ]]>
+    </select>
+    
+    
+     <select id="session_product_list" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select product_id from link_code where user_id='${id}'
+        ]]>
+    </select>
+   
+</mapper>
+

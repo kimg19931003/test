@@ -1,0 +1,519 @@
+@charset "UTF-8";
+
+a {
+	text-decoration: none;
+}
+
+body {
+	height: 100%;
+}
+
+/* 전체 내용 */
+#main_wrap {
+	width: 100% !important;
+	max-width: 1024px !important;
+	margin: 0px auto !important;
+	/* overflow: hidden; */
+	/* height: 100% !important; */
+}
+
+/* 상품 전체 목록 */
+#main_product_list {
+	width: 1024px;
+	margin: auto;
+	/* height: 100% !important; */
+}
+
+/* 제목 */
+.product_line_title {
+	font-size: 31px;
+	margin: 50px auto 48px auto;
+	text-align: center;
+	width: 1024px;
+	font-family: "Noto Sans KR Medium", 맑은고딕, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.03;
+	letter-spacing: 0.6px;
+	color: #000;
+}
+
+/* 카테고리 */
+.category {
+	background-color: #f8f8f8;
+}
+
+.category_menu_layout {
+	width: 998px;
+	min-width: 998px;
+	display: block;
+	margin: auto;
+}
+
+.category>li {
+	display: inline-block;
+	vertical-align: top;
+	list-style: disc !important;
+	font-family: "Noto Sans KR Light", 맑은고딕, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0.4px;
+}
+
+.category>li>a {
+	display: block;
+	height: 47px;
+	padding: 0 30px;
+	color: #000;
+	background-color: #f8f8f8;
+	font-family: "Noto Sans KR Light", 맑은고딕, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0.4px;
+}
+
+.fa, .fab, .fal, .far, .fas {
+	background-color: #f8f8f8;
+}
+
+/* 상품 수량 / 상품 정렬 */
+.total_category_sort {
+	overflow-x: hidden;
+	margin-top: 74px;
+	margin-left: -3px;
+}
+
+.category_layout {
+	width: 1000px;
+	min-width: 1000px;
+	display: block;
+	margin: auto;
+}
+
+.total_category_sort .category_sort {
+	zoom: 1;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 34px;
+}
+
+.total_category_sort .category_sort .total {
+	float: left;
+	font-family: "Noto Sans KR Light", 맑은고딕, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0.4px;
+	color: #000;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0.4px;
+}
+
+.total_category_sort .category_sort .sort {
+	float: right;
+	list-style: none;
+}
+
+.total_category_sort .category_sort .sort li {
+	float: left;
+}
+
+.total_category_sort .category_sort .sort li:nth-child(2) {
+	margin-left: 12px;
+}
+
+.total_category_sort .category_sort .sort li:nth-child(3) {
+	margin-left: 11px;
+}
+
+.total_category_sort .category_sort .sort li:nth-child(4) {
+	margin-left: 9px;
+}
+
+.total_category_sort .category_sort .sort li a {
+	font-family: "Noto Sans KR Light", 맑은고딕, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0.4px;
+	color: #000;
+}
+
+/* 상품 리스트 */
+.best_item {
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.best_item_layout {
+	width: 1000px;
+	min-width: 1000px;
+	display: block;
+	margin: auto;
+}
+
+.best_product_list {
+	display: block;
+	line-height: normal;
+	font-size: 0;
+	text-align: left;
+}
+
+.best_product {
+	display: inline-block;
+	margin-bottom: 50px;
+	vertical-align: top;
+	font-size: initial;
+	width: 232px;
+	cursor: pointer;
+	margin-right: 24px;
+}
+
+.best_product:nth-child(4n) {
+	    margin-right: 0px !important;
+}
+
+.product {
+	display: block;
+}
+
+.thumbnail {
+	display: block;
+	text-align: center;
+	positon: relative;
+}
+
+.product_thumbnail {
+	vertical-align: middle;
+}
+
+.thumbnail img {
+	vertical-align: middle;
+	/* max-width: 100%;
+	width: 100%; */
+	width: 232px;
+	height: 232px;
+}
+
+.product_price_rate_discount {
+	width: 40px;
+	height: 40px;
+	opacity: 0.8;
+	background-color: #0b63ba;
+	position: relative;
+	position: absolute;
+	transform: translate(477%, -101%);
+}
+
+.product_rate_discount {
+	font-family: "Noto Sans KR Medium", 맑은고딕, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: -0.1px;
+	color: #ffffff;
+	background-color: #0b63ba;
+}
+
+.product_description {
+	display: block;
+	/* text-align: center; */
+	margin-top: 20px;
+}
+
+.product_name {
+	display: block;
+	margin-bottom: 8px;
+	/* padding-bottom: 5px; */
+	position: relative;
+	margin-top: 10px;
+	width: 243px;
+}
+
+.product_name_span {
+	font-family: "Noto Sans KR Light", 맑은고딕, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.07;
+	letter-spacing: 0.4px;
+	color: #595959;
+}
+
+.product_description ul {
+	overflow: visible;
+	list-style: none;
+}
+
+.product_description ul li {
+	margin-bottom: -7px;
+}
+
+.product_description ul li sapn {
+	/* 공백을 여러 개 넣어도 1개만 표시.
+		코드에 줄바꿈이 없어도, 자동 줄바꿈이 되며, 코드에 줄바꿈이 있을 때도 그대로 표시 */
+	white-space: pre-line;
+}
+
+.product_price_cost {
+	text-decoration: line-through;
+	font-family: "Noto Sans KR Light", 맑은고딕, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.07;
+	letter-spacing: 0.4px;
+	color: #595959;
+}
+
+.product_price_sale {
+	font-family: "Noto Sans KR Medium", 맑은고딕, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: -0.5px;
+	color: #292929;
+}
+
+.product_icon {
+	display: block;
+	margin-top: 11px;
+}
+/* 페이징 */
+.page {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 158px;
+}
+
+.page * {
+	vertical-align: top;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.page ul {
+	margin: 0 11px;
+}
+
+.page .off a {
+	color: #000;
+	background: #fff;
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-family: "Noto Sans KR Light", 맑은고딕, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0.5px;
+}
+
+.page .off a:hover, .page .on a {
+	color: #fff;
+	background: #c6c6c6;
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-family: "Noto Sans KR Light", 맑은고딕, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0.5px;
+}
+
+.page>a {
+	margin: 0 1px;
+}
+
+.fixed_void {
+	width: 100%;
+	height: 167px;
+}
+
+.product_list {
+	position: relative;
+	width: 242px;
+	height: 279px;
+	margin: 0px 10px 135px 10px;
+	transition: all linear 0.1s;
+	display: inline-block;
+}
+
+.event_product_list {
+	border: 1px solid #ffffff;
+	width: 408px;
+	height: 250px;
+	margin: 10px 5px 2px 8px;
+	float: left;
+	transition: all linear 0.1s;
+}
+
+.event_product_list:hover {
+	box-shadow: 0.5px 0.5px 3px 0px;
+}
+
+.product_price {
+	font-size: 20px;
+	margin-top: 8px;
+}
+
+.product_price_initial {
+	text-shadow: 0.3px 0.3px 0.3px grey;
+	text-decoration: line-through;
+	font-weight: 200;
+	font-size: 12px;
+	color: #909090;
+}
+
+.product_sale_price_percent {
+	font-size: 14px;
+	background: red;
+	color: white;
+	padding: 1px 4px;
+	font-weight: bold;
+}
+
+.product_sale_price {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.product_img_div {
+	width: 240px;
+	height: 240px;
+	border: 1px solid #f0f0f0;
+}
+
+/*************************** 미디어 PC 버전 ******************************************/
+/* @media ( min-width :600px) {
+	.product_list_product {
+		display: inline-block;
+		vertical-align: top;
+		width: 239px;
+		height: 343px;
+		margin-left: 0px;
+		margin-right: 15px;
+		position: relative;
+		text-align: left;
+	}
+	.product_list_figure {
+		position: relative;
+		display: block;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.product_img {
+		width: 240px;
+		height: 240px;
+	}
+	.product_image {
+		position: relative;
+		cursor: pointer;
+		width: 240px;
+		height: 240px;
+		overflow: hidden;
+	}
+
+	가격순 최신순 인기순 등..
+	.product_sort_right_ul {
+		display: unset;
+	}
+	.product_sort_right_select {
+		display: none;
+	}
+
+	정렬
+	.product_sort {
+		clear: both;
+		overflow: hidden;
+		height: 30px;
+		margin: 0 0 19px;
+	}
+}
+
+************************** 미디어 MOBILE 버전 *****************************************
+@media ( max-width :600px) {
+	.product_list_product {
+		vertical-align: top;
+		display: inline-block;
+		height: 310px;
+		margin-left: 0px;
+		margin-right: 15px;
+		position: relative;
+		text-align: left;
+		margin: auto;
+		padding: 0px 3px;
+	}
+	.product_img {
+		width: 160px;
+		height: 170px;
+	}
+	.product_list_figure {
+		position: relative;
+		display: block;
+		width: 160px;
+		margin: auto;
+	}
+	.product_image {
+		position: relative;
+		cursor: pointer;
+		width: 160px;
+		height: 170px;
+		overflow: hidden;
+	}
+
+	가격순 최신순 인기순 등..
+	.product_sort_right_ul {
+		display: none;
+	}
+	.product_sort_right_select {
+		display: unset;
+		height: 30px;
+		padding: 0px 5px;
+	}
+
+	정렬
+	.product_sort {
+		clear: both;
+		overflow: hidden;
+		height: 42px;
+	}
+}
+
+���������� ��ǰ ���
+@media ( min-width :600px) {
+	#main_product_list {
+		width: 1024px;
+		margin: auto;
+	}
+}
+
+@media ( max-width :600px) {
+	#main_product_list {
+		width: 94%;
+		margin: auto;
+		text-align: center;
+	}
+}
+ */ /* ���������� ��ǰ ��� */

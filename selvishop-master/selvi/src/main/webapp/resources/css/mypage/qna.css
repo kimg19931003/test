@@ -1,0 +1,464 @@
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+	color: #383d41;
+}
+/* 표 */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption {
+	display: none;
+}
+
+table caption {
+	text-indent: -9999px;
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+}
+
+.board_list {
+	width: 100%;
+	border-top: 2px solid #829c2c;
+	font-family: dotum, Helvetica, sans-serif;
+}
+
+.faq {
+	border-bottom: 2px solid #d6d6d6;
+}
+
+.board_list thead th {
+	font-size: 12px;
+	border-bottom: 1px solid #dcdcdc;
+	background: #f1f1f1
+		url(https://s3.ap-northeast-2.amazonaws.com/supersell-selvi/shoppingmall/customer/%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0%EC%A0%9C%EB%AA%A9%EA%B5%AC%EB%B6%84%EC%84%A0.gif)
+		left center no-repeat;
+	color: #685b55;
+	padding: 15px 0;
+}
+
+.board_list thead th:first-child {
+	border-bottom: 1px solid #dcdcdc;
+	background: #f1f1f1;
+}
+
+.board_list tbody td {
+	font-size: 12px;
+	text-align: center;
+	padding: 12px 0;
+	color: #5e5e5e;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.faq .faq_q_on td {
+	background: #829c2c;
+	color: #fff;
+	font-weight: bold;
+}
+
+.board_list tbody td.ti {
+	text-align: left;
+	padding: 12px 0 12px 28px;
+}
+
+/* 플러스 */
+.faq .faq_q_off .ti {
+	padding: 12px 0 12px 28px;
+	text-align: left;
+	background:
+		url(https://s3.ap-northeast-2.amazonaws.com/supersell-selvi/shoppingmall/customer/%ED%94%8C%EB%9F%AC%EC%8A%A4.png)
+		98% center no-repeat;
+}
+
+/* 마이너스 */
+.faq .faq_q_on .ti {
+	padding: 12px 0 12px 28px;
+	text-align: left;
+	background: #829c2c
+		url(https://s3.ap-northeast-2.amazonaws.com/supersell-selvi/shoppingmall/customer/%EB%A7%88%EC%9D%B4%EB%84%88%EC%8A%A4.png)
+		98% center no-repeat;
+}
+
+.faq .faq_q_on td a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.faq .faq_a {
+	display: none;
+}
+
+.faq .faq_a td {
+	padding: 0;
+}
+
+.faq .faq_a td div {
+	display: none;
+	padding: 20px 10px 20px 49px;
+	text-align: left;
+}
+/* 고객센터 */
+.titleTopArea {
+	border-bottom: 1px solid #d0d0d0;
+	padding: 16px 0px 16px 0px;
+}
+
+.titleTopArea>div {
+	display: inline-block;
+}
+
+.titleTopArea > div:nth-child(1){
+    width: 26px;
+    position: relative;
+    left: 17px;
+}
+
+.titleTopArea > div:nth-child(2){
+    width: 128px;
+    position: relative;
+    top: 4px;
+    left: 30px;
+}
+
+.titleTopArea > div:nth-child(3){
+    width: 26px;
+    position: absolute;
+    right: 12px;
+}
+
+.top_bar_text {
+	font-size: 19px;
+}
+
+.top_bar_img img {
+	width: 25px;
+	cursor: pointer;
+}
+
+.top_bar_home img {
+	width: 25px;
+	cursor: pointer;
+}
+
+/* 구매이력 */
+.order_history {
+	width: 96%;
+	border-collapse: collapse;
+	margin: 20px auto;
+}
+
+.order_history th {
+	background: #505050;
+	color: white;
+	padding: 10px 0px;
+}
+
+.order_history td {
+	text-align: center;
+	padding: 10px 0px;
+	border: 1px solid #d8d8d8;
+}
+
+/* 주문 배송 조회 */
+.order_delivery_see {
+	width: 96%;
+	height: auto;
+	margin: 20px auto;
+	border: 1px solid #d0d0d0;
+}
+
+.order_delivery_see>div {
+	width: 100%;
+	text-align: center;
+}
+
+.order_product_title {
+	padding: 10px 0px;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.order_product_state>div {
+	display: inline-block;
+	width: 16%;
+	margin: 15px 0px;
+	position: relative;
+}
+
+.order_product_state>div:after {
+	content: ">";
+	position: absolute;
+	top: 4px;
+	left: 123px;
+	font-size: 25px;
+}
+
+.order_product_state>div:last-child:after {
+	display: none;
+}
+
+/* 로그인 회원 메뉴 */
+.member_menu {
+	width: 96%;
+	height: auto;
+	margin: 20px auto;
+	border: 1px solid #d0d0d0;
+}
+
+.member_menu>div {
+	padding: 10px 10px;
+	font-size: 13px;
+	font-weight: bold;
+	border-bottom: 1px solid #d0d0d0;
+	position: relative;
+}
+
+.member_menu>div:last-child {
+	border-bottom: 0px;
+}
+
+.member_menu>div>span:nth-child(2) {
+	position: absolute;
+	right: 10px;
+}
+
+/* 자주묻는질문 카테고리 */
+.qna_category {
+	width: 96%;
+	margin: 20px auto;
+	background: #f0f0f0;
+	height: 62px;
+	border: 1px solid #a0a0a0;
+}
+
+.qna_category ul li {
+	float: left;
+	width: 25%;
+	padding: 7px 0px;
+	text-align: center;
+	font-size: 13px;
+	box-shadow: 0.5px -0.5px 0.5px -0.5px grey;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.2s;
+}
+
+.qna_category ul li:hover {
+	background: #a0a0a0;
+}
+
+/* 자주묻는짐룬 리스트 */
+.qna_list {
+	/* width: 96%;
+	margin: 20px auto;
+	background: white;
+	border: 1px solid #d0d0d0;
+	position: relative; */
+	
+}
+
+.qna_title, .qna_explain {
+	/* width: 95%;
+	margin: auto;
+	padding: 12px;
+	font-size: 14px;
+	cursor: pointer; */
+	
+}
+
+.qna_title>div {
+	display: inline-block;
+}
+
+.qna_title>div:nth-child(2) {
+	/* position: absolute;
+	right: 13px;
+	font-size: 32px;
+	top: -2px; */
+	
+}
+
+.qna_explain {
+	/* width: 95%;
+	margin: 7px auto;
+	padding: 12px;
+	border: 1px solid #f4f4f4;
+	background: #d0d0d0; */
+	
+}
+
+/* 검색 */
+img, fieldset {
+	border: 0 none;
+}
+
+input, select, button {
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+}
+
+.clear_both {
+	clear: both;
+	*zoom: 1;
+}
+
+.clear_both:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.fr {
+	float: right !important;
+	margin-bottom: 20px;
+}
+
+.list_sh {
+	font-family: dotum, Helvetica, sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.list_sh label {
+	text-indent: -9999px;
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	display: block;
+}
+
+.list_sh select {
+	height: 28px;
+}
+
+.list_sh .select-skin {
+	vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	width: 116px;
+	height: 28px;
+	border: 1px solid #d4d4d4;
+}
+
+.list_sh .select-skin {
+	height: 26px !important;
+}
+
+.select-skin select {
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+}
+
+.list_sh .select-skin select {
+	width: 100%;
+	height: 100%;
+	float: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-appearance: menulist-button;
+	cursor: pointer;
+	opacity: 1 !important;
+	border: 0px;
+}
+
+.list_sh .select-skin .selectbox {
+	width: 100%;
+	opacity: 0;
+	background: #ffffff
+		url(https://s3.ap-northeast-2.amazonaws.com/supersell-selvi/shoppingmall/customer/%EA%B2%80%EC%83%89%ED%99%94%EC%82%B4%ED%91%9C.png)
+		no-repeat;
+	background-position: -152px 9px;
+	padding-left: 10px;
+}
+
+.list_sh span {
+	border: 1px solid #d4d4d4;
+	height: 26px;
+	padding: 0 0 0 8px;
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.list_sh .input {
+	border: 0px;
+	padding-top: 6px;
+}
+
+.list_sh .vm {
+	border: 0px;
+	background: #695a55;
+	color: #fff;
+	text-align: center;
+	height: 28px;
+	padding: 4px 0 4px 0;
+	width: 64px;
+	display: inline-block;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+/* 페이징 */
+ul, ol, li {
+	list-style: none;
+}
+
+.page {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.page * {
+	vertical-align: top;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.page ul {
+	margin: 0 11px;
+}
+
+.page>a {
+	margin: 0 1px;
+	width: 34px;
+	height: 34px;
+}
+
+.page li a {
+	padding: 0 3px;
+	margin: 0 2px;
+	width: 34px;
+	height: 34px;
+	line-height: 33px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	background:
+		url('https://s3.ap-northeast-2.amazonaws.com/supersell-selvi/shoppingmall/customer/%ED%8E%98%EC%9D%B4%EC%A7%80OFF.png')
+		no-repeat 0 0;
+	box-sizing: border-box;
+}
+
+.page li a:hover, .page li.on a {
+	color: #fff;
+	background:
+		url('https://s3.ap-northeast-2.amazonaws.com/supersell-selvi/shoppingmall/customer/%ED%8E%98%EC%9D%B4%EC%A7%80ON.png')
+		no-repeat 0 0;
+}

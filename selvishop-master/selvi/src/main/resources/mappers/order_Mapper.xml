@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="selvishop">
+  
+    
+  
+    <select id="order_complete" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           insert into prdt_order( order_prdt_name, order_prdt_price, order_buy_time, order_pay_msg, order_pay_option, order_pay_email, order_device, order_prdt_quantity , order_prdt_option_name, order_prdt_price_arr , order_prdt_thumbnail, order_name, order_phone, order_phone_add, order_email, order_recipient, order_addr,  order_recipient_phone, order_recipient_phone_add,  order_delivery_message,  order_delivery_message_add , order_state) 
+           values('${order_prdt_name}', '${order_prdt_price}', '${order_buy_time}', '${order_pay_msg}', '${order_pay_option}', '${order_pay_email}', '${order_device}', '${order_prdt_quantity}', '${order_prdt_option_name}', '${order_prdt_price_arr}', '${order_prdt_thumbnail}' , '${order_name}' , '${order_phone}' , '${order_phone_add}', '${order_email}', '${order_recipient}', '${order_addr}', '${order_recipient_phone}', '${order_recipient_phone_add}', '${order_delivery_message}', '${order_delivery_message_add}', '${order_state}' )
+        ]]>
+    </select>
+    
+
+  
+  
+  
+  
+  </mapper>
+  

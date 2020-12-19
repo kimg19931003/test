@@ -1,0 +1,639 @@
+	
+	#main_wrap {
+		width: 100% !important;
+		max-width: 1024px !important;
+		margin: auto !important;
+		padding: 40px 0px 40px 0px;
+		text-align:center;
+	}
+	
+	
+	
+	.kakao_div a{
+	    opacity:0;
+	    position:absolute;
+	    left:0px;
+	    top:0px;
+	    width:100%;
+	    height: 100%;
+	}
+	
+	
+	.kakao_import_button{
+	    display:none;
+	}
+	
+	/************************** 위쪽 cs 메뉴4개 ********************************/
+	
+	
+	.cs_menu_div{
+	    width:100%;
+	}
+	
+	
+	
+	.notice_div{
+	    display: inline-block;
+    	width: 47%;
+    	text-align:center;
+    	border: 1px solid #d0d0d0;
+    	border-radius: 30px;
+    	padding: 33px 0px;
+	}
+	
+	
+	.faq_div{
+	    display: inline-block;
+    	width: 47%;	
+    	text-align:center;
+   	 	border: 1px solid #d0d0d0;
+    	border-radius: 30px;
+    	padding: 32px 0px;
+    	vertical-align: top;  	
+    	margin-left: 14px;
+	}
+	
+	
+	
+	
+	
+	.prdtreview_div{
+	    display: inline-block;
+    	width: 47%;	
+    	text-align:center;
+    	border: 1px solid #d0d0d0;
+    	border-radius: 30px;
+    	padding: 32px 0px;
+    }
+	
+	
+	
+	.event_div{
+	    display: inline-block;
+    	width: 47%;	
+    	text-align:center;
+    	border: 1px solid #d0d0d0;
+    	border-radius: 30px;
+    	padding: 34px 0px;
+    	margin-left: 14px;
+    	vertical-align: top;
+	}
+	
+	
+	
+	
+	
+	.arrow_img{
+	    width: 9px;
+   	 	height: 16px;
+    	vertical-align: middle;
+	}
+	
+
+	
+	/************************** 위쪽 cs 메뉴4개 ********************************/
+	
+	
+	
+	
+	
+	
+	
+	/************************** 아래쪽 cs 메뉴4개 ********************************/
+	
+	
+	
+	
+	.company_info_div{
+	    width:100%;
+	    margin-top: 44px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	.worktime_div{
+	    display: inline-block;
+    	width: 47%;
+    	text-align:center;
+    
+    	border-radius: 30px;
+    	padding: 28px 0px;
+    	background: #f4f4f4;
+	}
+	
+	
+	.bankinfo_div{
+	    display: inline-block;
+    	width: 47%;	
+    	text-align:center;
+   	 
+    	border-radius: 30px;
+    	padding: 32px 0px;
+    	vertical-align: top;  	
+    	margin-left: 14px;
+    	padding: 28px 0px;
+    	background: #f4f4f4;
+	}
+	
+	
+	
+	.addr_div{
+	    display: inline-block;
+    	width: 47%;	
+    	text-align:center;
+    
+    	border-radius: 30px;
+    	padding: 28px 0px;
+    	vertical-align: top;
+    	background: #f4f4f4;
+    }
+	
+	
+	
+	.individual_div{
+	    display: inline-block;
+    	width: 47%;	
+    	text-align:center;
+    	border-radius: 30px;
+    	padding: 37px 0px;
+    	margin-left: 14px;
+    	vertical-align: top;
+    	background: #f4f4f4;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	/************************** 아래쪽 cs 메뉴4개 ********************************/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+/**************************** 카카오톡, 네이버톡 상담 바로가기 *********************************/
+
+/*****************************  PC 미디어 쿼리 ************************************/
+@media ( min-width :780px) {
+	/** 위쪽 cs 메뉴 2개 2개 씩 **/
+	.notice_faq_div {
+		display: inline-block;
+		width: 49%;
+	}
+	.prdtreview_event_div {
+		display: inline-block;
+		width: 49%;
+	}
+	
+	
+	
+	
+
+	/** cs 위에 메뉴 4개 이미지 **/
+	.notice_img {
+		width: 49px;
+		height: 51px;
+		vertical-align: middle;
+	}
+	.faq_img {
+		width: 42px;
+		height: 53px;
+		vertical-align: middle;
+	}
+	.review_img {
+		width: 54px;
+		height: 54px;
+		vertical-align: middle;
+	}
+	.event_img {
+		width: 49px;
+		height: 50px;
+		vertical-align: middle;
+	}
+	
+	
+	
+	/** cs 텍스트 **/
+	.cs_text{
+	    display:inline-block;
+	    margin-left: 25px;
+	    margin: 0px 25px 0px 25px;
+	    vertical-align: middle;
+	    color:black;
+	}
+
+	/** 밑쪽 cs 메뉴 2개 2개씩 **/
+	.worktime_bankinfo_div {
+		display: inline-block;
+		width: 49%;
+	}
+	.addr_individual_div {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+	}
+	
+	
+	
+	
+	
+	
+	/******* 밑에 cs메뉴 4개들 글자크기 조정 *****/
+	.worktime_div div:nth-child(1){
+	    color : #0b63ba;
+	    font-family: NotoSansKR;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px 0px 15px 0px;
+        background: #f4f4f4;
+	}
+	.worktime_div div:nth-child(2){
+	    font-size : 13px;
+	    background: #f4f4f4;
+	}
+	.worktime_div div:nth-child(3){
+	    font-size : 13px;
+	    background: #f4f4f4;
+	}
+	.worktime_div div:nth-child(4){
+	    font-size : 13px;
+	    color:#ff0000;
+	    font-weight: bold;
+	    background: #f4f4f4;
+	}
+	
+	
+	
+	
+	
+	
+	.bankinfo_div div:nth-child(1){
+	    color : #0b63ba;
+	    font-family: NotoSansKR;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px 0px 15px 0px;
+        background: #f4f4f4;
+	}
+	.bankinfo_div div:nth-child(2){
+	    font-size : 13px;
+	    background: #f4f4f4;	
+	}
+	.bankinfo_div div:nth-child(3){
+	    font-size : 13px;	
+	    background: #f4f4f4;
+	}
+	.bankinfo_div div:nth-child(4){
+	    font-size : 13px;
+	    color:#ff0000;
+	    font-weight: bold;	
+	    background: #f4f4f4;
+	}
+	
+	
+	
+	
+	.addr_div div:nth-child(1){
+	    color : #0b63ba;
+	    font-family: NotoSansKR;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px 0px 15px 0px;
+        background: #f4f4f4;
+	}
+	.addr_div div:nth-child(2){
+	    font-size : 13px;
+	    background: #f4f4f4;
+	}
+	.addr_div div:nth-child(3){
+	    font-size : 13px;
+	    background: #f4f4f4;
+	}
+	.addr_div div:nth-child(4){
+	    font-size : 13px;
+	    font-weight: bold;	
+	    background: #f4f4f4;
+	}
+	
+	
+	
+	
+	
+	.individual_div div:nth-child(1){
+	    color : #0b63ba;
+	    font-family: NotoSansKR;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px 0px 15px 0px;
+        background: #f4f4f4;
+	}
+	.individual_div div:nth-child(2){
+	    font-size : 13px;
+	    background: #f4f4f4;
+	}
+	.individual_div div:nth-child(3){
+	    font-size : 13px;
+	    background: #f4f4f4;
+	}
+	.individual_div div:nth-child(4){
+	 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/**************************** 카카오톡, 네이버톡 상담 바로가기 *********************************/
+	.kakao_navertok_div{
+	    width:100%;
+	    margin:auto;
+	    text-align:right;
+	    margin-top:30px;
+	}
+	
+	
+	.kakao_div{
+	    width:25%;
+	    text-align:center;
+	 	border-radius: 22px;
+ 	 	display:inline-block;
+  		background: #fff122;
+  		padding: 10px 0px;
+  		font-size:14px;
+  		font-weight:bold;
+  		cursor:pointer;
+  		position:relative;
+	}
+	
+	
+	.navertok_div{
+	    width:25%;
+	    text-align:center;
+	 	border-radius: 22px;
+ 	 	display:inline-block;
+  		background: #3bab36;
+  		padding: 10px 0px;
+  		color:white;
+  		font-size:14px;
+  		cursor:pointer;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************** 모바읾 미디어 쿼리 ************************************/
+@media ( max-width :780px) {
+	/** 위쪽 cs 메뉴 2개 2개 씩 **/
+	.notice_faq_div {
+		width: 94%;
+		margin: auto;
+	}
+	.prdtreview_event_div {
+		width: 94%;
+		margin: auto;
+		margin-top: 18px;
+	}
+	
+	
+	/** cs 텍스트 **/
+	.cs_text{
+	    display:inline-block;
+	    margin-left: 25px;
+	    margin: 0px 8px 0px 8px;
+	    vertical-align: middle;
+	    color:black;
+	}	
+	
+
+	/** cs 위에 메뉴 4개 이미지 **/
+	.notice_img {
+		width: 39px;
+		height: 41px;
+		vertical-align: middle;
+	}
+	.faq_img {
+		width: 32px;
+		height: 43px;
+		vertical-align: middle;
+	}
+	.review_img {
+		width: 44px;
+		height: 44px;
+		vertical-align: middle;
+	}
+	.event_img {
+		width: 39px;
+		height: 40px;
+		vertical-align: middle;
+	}
+
+
+
+
+
+	/** 밑쪽 cs 메뉴 2개 2개씩 **/
+	.worktime_bankinfo_div {
+		width: 94%;
+		margin: auto;
+	}
+	.addr_individual_div {
+		width: 94%;
+		margin: auto;
+		margin-top: 18px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/******* 밑에 cs메뉴 4개들 글자크기 조정 *****/
+	.worktime_div div:nth-child(1){
+	    color : #0b63ba;
+	    font-family: NotoSansKR;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 0px 0px 15px 0px;
+        background: #f4f4f4;
+	}
+	.worktime_div div:nth-child(2){
+	    font-size : 12px;
+	    background: #f4f4f4;
+	}
+	.worktime_div div:nth-child(3){
+	    font-size : 12px;
+	    background: #f4f4f4;
+	}
+	.worktime_div div:nth-child(4){
+	    font-size : 12px;
+	    color:#ff0000;
+	    font-weight: bold;
+	    background: #f4f4f4;
+	}
+	
+	
+	
+	
+	
+	
+	.bankinfo_div div:nth-child(1){
+	    color : #0b63ba;
+	    font-family: NotoSansKR;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 0px 0px 15px 0px;
+        background: #f4f4f4;
+	}
+	.bankinfo_div div:nth-child(2){
+	    font-size : 12px;
+	    background: #f4f4f4;	
+	}
+	.bankinfo_div div:nth-child(3){
+	    font-size : 12px;	
+	    background: #f4f4f4;
+	}
+	.bankinfo_div div:nth-child(4){
+	    font-size : 12px;
+	    color:#ff0000;
+	    font-weight: bold;	
+	    background: #f4f4f4;
+	}
+	
+	
+	
+	
+	.addr_div div:nth-child(1){
+	    color : #0b63ba;
+	    font-family: NotoSansKR;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 0px 0px 15px 0px;
+        background: #f4f4f4;
+	}
+	.addr_div div:nth-child(2){
+	    font-size : 12px;
+	    background: #f4f4f4;
+	}
+	.addr_div div:nth-child(3){
+	    font-size : 12px;
+	    background: #f4f4f4;
+	}
+	.addr_div div:nth-child(4){
+	    font-size : 12px;
+	    font-weight: bold;	
+	    background: #f4f4f4;
+	}
+	
+	
+	
+	
+	
+	.individual_div div:nth-child(1){
+	    color : #0b63ba;
+	    font-family: NotoSansKR;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 0px 0px 15px 0px;
+        background: #f4f4f4;
+	}
+	.individual_div div:nth-child(2){
+	    font-size : 12px;
+	    background: #f4f4f4;
+	}
+	.individual_div div:nth-child(3){
+	    font-size : 12px;
+	    background: #f4f4f4;
+	}
+	.individual_div div:nth-child(4){
+	 
+	}
+	
+	
+	
+	
+	/**************************** 카카오톡, 네이버톡 상담 바로가기 *********************************/
+	.kakao_navertok_div{
+	    width:100%;
+	    margin:auto;
+	    text-align:right;
+	    margin-top:30px;
+	}
+	
+	
+	.kakao_div{
+	    width:98%;
+	    text-align:center;
+	 	border-radius: 22px;
+ 	 	border: solid 2px #dedede;
+  		background: #fff122;
+  		padding: 10px 0px;
+  		font-size:14px;
+  		font-weight:bold;
+  		margin:auto;
+  		position:relative;
+	}
+	
+	
+	.navertok_div{
+	    width:98%;
+	    text-align:center;
+	 	border-radius: 22px;
+ 	 	border: solid 2px #dedede;
+  		background: #3bab36;
+  		padding: 10px 0px;
+  		color:white;
+  		font-size:14px;
+  		margin:10px auto;
+	}
+}

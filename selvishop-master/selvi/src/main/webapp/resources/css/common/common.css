@@ -1,0 +1,33 @@
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+@charset "UTF-8";
+
+* {
+	font-family: "Noto Sans KR", 맑은고딕, Arial, sans-serif;
+	*zoom:1
+}
+
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	border-radius: 0;
+	box-sizing: border-box;
+	flex-shrink: 0;
+}
+
+a {
+	color: black;
+}
+
+body {
+	
+}
+
+/* 크롬 스크롤바 투명하게 */
+::-webkit-scrollbar {
+	height: 0px;
+	width: 0px;
+}

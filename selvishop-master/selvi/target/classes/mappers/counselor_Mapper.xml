@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="selvishop">
+  
+    
+  
+    <select id="counselor_notice_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           SET @rownum:=0; 
+		   select @rownum:=@rownum+1 as rownum, a.* from  board a where a.board_name = 'notice'
+        ]]>
+    </select>
+    
+    <select id="counselor_notice_view_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+		   SET @rownum:=0; 
+		   select * from (select @rownum:=@rownum+1 as rownum, a.* from  board a where a.board_name = 'notice' ) as tmp where rownum= ${board_idx_pk}
+        ]]>
+    </select>
+    
+    <select id="counselor_notice_hit_put" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update board set board_hit = board_hit + 1 where board_name='notice'
+        ]]>
+    </select>
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+    <select id="counselor_faq_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from board where board_name =  'faq'
+        ]]>
+    </select>
+    
+    <select id="counselor_faq_view_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           SET @rownum:=0; 
+		   select * from (select @rownum:=@rownum+1 as rownum, a.* from  board a where a.board_name = 'faq' ) as tmp where rownum= ${board_idx_pk}
+        ]]>
+    </select>
+    
+    <select id="counselor_faq_hit_put" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update board set board_hit = board_hit + 1 where board_name='faq'
+        ]]>
+    </select>
+    
+    <select id="counselor_faq_write_post" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           insert into board(board_id, board_title, board_content, board_secret_setting, board_password, board_writer, board_name) values('${board_id}','${board_title}','${board_content}','${board_secret_setting}','${board_password}', '${board_writer}', '${board_name}') 
+        ]]>
+    </select>
+    
+    
+    
+    
+    
+    <select id="counselor_prdt_review_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from board where board_name =  'review'
+        ]]>
+    </select>
+    
+    <select id="counselor_prdt_review_write_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from board where board_name =  'review'
+        ]]>
+    </select>   
+    
+  	<select id="counselor_prdt_review_write_post" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           insert into board(board_id, board_title, board_content, board_secret_setting, board_password, board_writer, board_name, board_star_score, board_reg_date, board_thumbnail) 
+           values('${board_id}','${board_title}','${board_content}','${board_secret_setting}','${board_password}', '${board_writer}', '${board_name}', '${board_star_score}', NOW(), '${board_thumbnail}') 
+        ]]>
+    </select>
+  
+    
+    
+    
+    
+    <select id="counselor_event_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           SET @rownum:=0; 
+		   select @rownum:=@rownum+1 as rownum, a.* from  board a where a.board_name = 'event'
+        ]]>
+    </select>
+    
+    <select id="counselor_event_view_get" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           SET @rownum:=0; 
+		   select * from (select @rownum:=@rownum+1 as rownum, a.* from  board a where a.board_name = 'event' ) as tmp where rownum= ${board_idx_pk}
+        ]]>
+    </select>
+    
+    <select id="counselor_event_hit_put" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update board set board_hit = board_hit + 1 where board_name='event'
+        ]]>
+    </select>
+  
+  
+  
+  
+  
+   
+  
+  
+  </mapper>
+  

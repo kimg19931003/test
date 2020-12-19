@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="selvishop">
+  
+    
+  
+    <select id="product_view" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from product where prdt_idx_pk = '${prdt_idx_pk}'
+        ]]>
+    </select>
+    
+    <select id="product_option" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from product where prdt_idx_pk = '${prdt_idx_pk}'
+        ]]>
+    </select>
+      
+     
+    <select id="product_view_recommend" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update product set prdt_recommend = prdt_recommend+ 1 where prdt_idx_pk = '${prdt_idx_pk}'
+        ]]>
+    </select>
+  
+  
+    <select id="product_view_basket" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           insert into basket(basket_idx_pk, basket_id,  basket_product_name, basket_product_price, basket_product_option, basket_product_num,  basket_entry_time) values((select count(*) from (select * from basket) tmp), '${basket_id}' , '${basket_product_name}', '${basket_product_price}', '${basket_product_option}', '${basket_product_num}', '${basket_entry_time}')
+        ]]>
+    </select>
+  
+  
+    <select id="product_view_hit" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           update product set prdt_hit = prdt_hit+ 1 where prdt_idx_pk = '${prdt_idx_pk}'
+        ]]>
+    </select>
+  
+  </mapper>
+  

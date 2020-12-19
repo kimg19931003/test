@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+/* 헤더 */
+div.topArea {
+    overflow: hidden;
+    background: #ff0072;
+}
+
+div.viewTopArea {
+    position: fixed;
+    top: 0;
+    width: 850px;
+    height: 56px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    background: #fff;
+    z-index: 9997;
+}
+
+div.viewTopArea.celeb {
+    background: #fff;
+    height: 56px!important;
+}
+
+div.topArea .schBoxWrap {
+    position: relative;
+    padding: 20px 0 0;
+    height: 76px;
+}
+
+div.viewTopArea .schBoxWrap {
+    padding: 0;
+    height: 100%;
+}
+
+/* 뒤로가기 */
+div.viewTopArea a {
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+}
+
+div.viewTopArea a.btnViewBack {
+    position: absolute;
+    top: 14px;
+    left: 9px;
+    width: 28px;
+}
+
+div.viewTopArea.celeb a {
+    z-index: 10;
+}
+
+div.viewTopArea.celeb a.btnViewBack {
+    left: 0;
+    top: 0;
+    width: 46px;
+    height: 56px;
+    padding: 14px 0 0 9px;
+    box-sizing: border-box;
+}
+
+div.viewTopArea.celeb a.btnViewBack span {
+    display: block;
+    width: 28px;
+}
+
+/* 셀럽 리스트 */
+div.viewTopArea.celeb .logo {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    line-height: 56px;
+    z-index: 0;
+}
+
+/* 검색 */
+div.topArea .schBox {
+    position: relative;
+    margin: 21px 6px 0;
+    background: #fff;
+}
+
+div.viewTopArea .schBox {
+    position: absolute;
+    top: 14px;
+    right: 43px;
+    margin: 0;
+    width: 28px;
+    height: 28px;
+    background: 0 0;
+}
+
+div.viewTopArea.celeb .schBox {
+    height: 56px;
+    width: 39px;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+div.topArea .schBox .ipBox {
+    position: relative;
+    margin: 0 50px 0 12px;
+    height: 34px;
+    overflow: hidden;
+}
+
+div.viewTopArea .schBox .ipBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.viewTopArea.celeb .schBox .ipBox {
+    position: relative!important;
+    top: auto;
+    left: auto;
+    width: auto;
+}
+
+div.topArea .schBox input {
+    padding: 8px 0;
+    width: 100%;
+    color: #222;
+    border: none;
+    outline: 0;
+}
+
+div.viewTopArea .schBox .ipBox input {
+    display: none;
+}
+
+div.topArea a.btnSearch {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    text-align: center;
+    height: 100%;
+}
+
+div.viewTopArea a.btnSearch {
+    position: static;
+    width: 100%;
+    background: url(https://img.womanstalk.co.kr/upload/images/common/btn_gnb_search_b.png) center no-repeat;
+    background-size: 28px;
+}
+
+div.viewTopArea.celeb a.btnSearch {
+    position: absolute;
+    z-index: 10;
+}
+
+div.topArea a.btnSearch img {
+    margin-top: 5px;
+    width: 24px;
+}
+
+div.viewTopArea a.btnSearch img {
+    display: none;
+}
+
+/* 검색 클릭하였을 때 레이어 팝업 */
+div.schViewBoxWrap .schBox {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0 6px 0 49px;
+    width: calc(100% - 55px);
+    height: 46px;
+    background: #fff;
+}
+
+div.viewTopArea.celeb.schViewBoxWrap .schBox {
+    width: 100%;
+    margin: 0;
+}
+
+div.viewTopArea.celeb.schViewBoxWrap .schBox {
+    height: 46px;
+}
+
+div.viewTopArea.celeb.schViewBoxWrap .schBox .ipBox {
+    margin: 5px 48px 0 9px;
+}
+
+div.viewTopArea.celeb.schViewBoxWrap .schBox input {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+div.viewTopArea.celeb.schViewBoxWrap .schBox input {
+    display: block;
+    padding: 0 45px 0 14px;
+    font-size: 18px;
+    color: #222;
+    height: 46px;
+    line-height: 46px;
+}
+
+div.viewTopArea.celeb.schViewBoxWrap .schBox a {
+    right: 48px;
+}
+
+div.viewTopArea.celeb.schViewBoxWrap a.btnSearch {
+    width: 36px;
+    height: 40px;
+    top: 3px;
+}
+
+div.viewTopArea.celeb.schViewBoxWrap a.btnSearch img {
+    width: 22px;
+    margin-left: 8px;
+}
+
+div.viewTopArea.celeb.schViewBoxWrap button.btnClose {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    padding: 5px;
+    width: auto;
+    font-size: 14px;
+    color: #666;
+    z-index: 30;
+}
+
+/* 셀럽 리스트 */
+div.celebArea .celebList.type2 {
+    padding-top: 56px;
+}
+
+div.celebArea .celebList.type2 ul {
+    width: 100%;
+    background: #fff;
+    padding: 0 18px 20px;
+    box-sizing: border-box;
+}
+
+div.celebArea .celebList li {
+    margin-top: 2px;
+}
+
+div.celebArea .celebList.type2 li {
+    float: left;
+    width: 20%;
+    margin: 20px 0 0 0;
+}
+
+div.celebArea .celebList a.celeb {
+    display: table;
+    padding: 8px 10px;
+    width: calc(100% - 20px);
+    background: #fff;
+}
+
+div.celebArea .celebList.type2 a.celeb {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+div.celebArea .celebList p {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.celebArea .celebList p.img {
+    width: 60px;
+    padding: 0 8px;
+}
+
+div.celebArea .celebList.type2 a.celeb p.img {
+    display: inline-block;
+    width: 124px;
+    height: 124px;
+    padding: 0;
+}
+
+div.celebArea .celebList p.img img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+div.celebArea .celebList.type2 a.celeb p.img img {
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+div.celebArea .celebList.type2 a.celeb p.name {
+    display: block;
+    margin-top: 20px;
+}
+
+div.celebArea .celebList.type2 a.celeb p.name {
+    font-size: 12px;
+    color: #666;
+    opacity: .6;
+    line-height: 1.5;
+}
+
+div.celebArea .celebList p.name strong {
+    display: block;
+    font-size: 16px;
+    color: #2a2a2a;
+}
+
+div.celebArea .celebList.type2 a.celeb p.name strong {
+    font-size: 20px;
+    color: #111;
+    opacity: 1;
+}
+
+div.celebArea .celebList p.name span {
+    display: block;
+    margin-top: 2px;
+    line-height: 15px;
+    color: #989898;
+}
+
+div.celebArea .celebList.type2 p.name span {
+    display: inline-block;
+    height: 13px;
+    white-space: nowrap;
+    word-wrap: normal;
+    width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+    opacity: .6;
+}
+
+div.celebArea .celebList.type2 ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}

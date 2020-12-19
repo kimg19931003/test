@@ -1,0 +1,273 @@
+input:focus {
+  outline: none;
+}
+
+#wrap{
+	box-shadow: 0px 0.3px 0.7px 0px grey;
+	-webkit-box-shadow: 0px 0.3px 0.7px 0px grey;
+	padding-bottom: 10px;
+	width:100% !important;
+	max-width:850px;
+}
+
+/* 상단 고정 메뉴 */
+
+.titleTopArea{
+	border-bottom:1px solid #d0d0d0;
+	padding : 16px 0px 16px 0px;
+	position:relative;
+}
+
+.titleTopArea > div{
+	display:inline-block;
+}
+
+.titleTopArea > div:nth-child(1){
+    width: 26px;
+    position: relative;
+    left: 17px;
+}
+
+.titleTopArea > div:nth-child(2){
+    width: 128px;
+    position: relative;
+    top: 4px;
+    left: 30px;
+}
+
+.titleTopArea > div:nth-child(3){
+    width: 26px;
+    position: absolute;
+    right: 12px;
+}
+
+.top_bar_text{
+	font-size:19px;
+	
+}
+
+
+.top_bar_img img{
+	width:25px;
+	cursor:pointer;
+}
+
+.top_bar_home img{
+	width:25px;
+	cursor:pointer;
+}
+
+/* 상단 고정 메뉴 */
+
+
+
+/* 구매이력 */
+
+.order_history{
+	width:96%;
+	border-collapse:collapse;
+	margin:20px auto;
+}
+
+.order_history th{
+	background:#505050;
+	color:white;
+	padding:10px 0px;
+}
+
+.order_history td{
+	text-align:center;	
+	padding:10px 0px;
+	border:1px solid #d8d8d8;
+}
+
+
+
+
+/* 주문 배송 조회 */
+
+.order_delivery_see{
+	width:96%;
+	height:auto;
+	margin:20px auto;
+	border:1px solid #d0d0d0;
+	
+}
+
+.order_delivery_see > div{
+	width:100%;
+	text-align:center;
+}
+
+.order_product_title{
+	padding: 10px 0px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.order_product_state > div{
+	display:inline-block;
+	width:16%;
+	margin:15px 0px;
+	position:relative;
+}
+
+.order_product_state > div:after{
+	content: ">";
+    position: absolute;
+    top: 4px;
+    left: 123px;
+    font-size: 25px;
+}
+
+.order_product_state > div:last-child:after{
+	display:none;
+}
+
+
+/* 어떤 방식으로 로그인했는지 알려주는 창 */
+.login_method{
+	width:300px;
+	margin:40px auto;
+}
+
+.login_method div{
+	display:inline-block;
+}
+
+.login_method_img{
+	padding: 10px;
+	
+}
+
+.login_method_img img{
+	width:150px;
+}
+
+.login_method_text{
+	color:#e40069;;
+	position: relative;
+    left: 14px;
+}
+
+
+/* 로그인 회원 메뉴 */
+
+.member_menu{
+	width:96%;
+	height:auto;
+	margin:40px auto;
+	border:1px solid #d0d0d0;
+}
+
+.member_menu > div{
+	padding:10px 10px;  
+	font-size:13px;
+	font-weight:bold;
+	border-bottom:1px solid #d0d0d0;
+	position:relative;
+}
+
+.member_menu > div:last-child{
+	border-bottom:0px;
+}
+
+.member_menu > div > span:nth-child(2){
+	position: absolute;
+    right: 10px;
+}
+
+
+
+/* 어떤 방식으로 로그인했는지 알려주는 창 */
+
+.myinfo_necessary{
+	width:96%;
+	border-collapse:collapse;
+	margin:40px auto;
+}
+
+.myinfo_necessary input{
+	border:0;
+}
+
+
+
+.myinfo_necessary td{
+	border-top:1px solid #d0d0d0;
+	border-left:0;
+	border-bottom:1px solid #d0d0d0;
+	border-right:1px solid #d0d0d0;
+	font-size:14px;
+	padding:10px 15px;
+}
+
+.myinfo_necessary  th{
+	border:1px solid #d0d0d0;	
+	border-right:0;
+	font-weight:300;
+	font-size:14px;
+	padding: 0px 5px;
+}
+
+
+.myinfo_necessary input{
+	width:100%;
+}
+
+.birth > div{
+	display: inline-block;
+}
+
+.birth div:nth-child(1) input{
+	width:30px;
+	position:relative;
+	top:-2px;	
+}
+
+.birth div:nth-child(2) input{
+	width:18px;
+	position:relative;
+	top:-2px;	
+	left: 1px;
+}
+
+.birth div:nth-child(3) input{
+	width:18px;
+	position:relative;
+	top:-2px;	
+	left:2px;
+}
+
+
+.gender > div{
+	display:inline-block;
+
+}
+
+.gender > div > div{
+	display:inline-block;
+	width: 30px;
+}
+
+
+
+
+/* 개인정보 수정하기 버튼 */
+
+.member_info_repair_button{
+	width:96%;
+	margin:40px auto;
+	padding : 10px 0px;
+	text-align:Center;
+	border:1px solid #e40069;
+	color:white;
+	font-weight:bold;
+	background:#e40069;
+	transition:all linear 0.3s;
+	-webkit-transition:all linear 0.3s;
+}
+
+.member_info_repair_button:hover{
+	background:#310abf;
+	border:1px solid #310abf;
+}

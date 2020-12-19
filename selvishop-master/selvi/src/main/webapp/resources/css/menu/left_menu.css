@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+/* 영역 */
+nav.leftMenuArea {
+	position: relative;
+	margin: 0 auto;
+	width: 850px;
+}
+
+/* 닫기 버튼 */
+nav.leftMenuArea a.btnClose {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	width: auto;
+}
+
+nav.leftMenuArea a.btnClose img {
+	width: 32px;
+}
+
+/* 로그인 영역 / 비회원 주문 조회 / 배너 - 로그인 하였을 시 페이지 이동 */
+nav.leftMenuArea .txtBox {
+	padding: 0 18px 30px;
+}
+
+nav.leftMenuArea a.btnLogin {
+	display: inline-block;
+	margin-top: 31px;
+	padding-right: 24px;
+	width: auto;
+	font-size: 24px;
+	color: #ff0072;
+	background:
+		url(https://img.womanstalk.co.kr/upload/images/common/ico_arrow_login.png)
+		right center no-repeat;
+	background-size: 24px;
+}
+
+nav.leftMenuArea p {
+	margin-top: 6px;
+	color: #666;
+}
+
+nav.leftMenuArea .txtBox a.btnNonLogin {
+	margin-top: 68px;
+	width: calc(100% - 2px);
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: linear-gradient(to bottom, #fff, #eee);
+}
+
+nav.leftMenuArea .txtBox a.btnNonLogin span {
+	display: block;
+	padding: 22px 18px;
+	font-size: 16px;
+	background:
+		url(https://img.womanstalk.co.kr/upload/images/common/ico_arrow_order.png)
+		right 12px center no-repeat;
+	background-size: 24px;
+}
+
+nav.leftMenuArea a.btnEvent {
+	position: relative;
+	margin-top: 16px;
+	padding: 13px 0 13px 62px;
+	width: calc(100% - 62px);
+	height: 34px;
+	background: #ff0072
+		url(https://img.womanstalk.co.kr/upload/images/common/ico_arrow_right.png)
+		right 13px center no-repeat;
+	background-size: 24px;
+}
+
+nav.leftMenuArea a.btnEvent:before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 16px;
+	width: 35px;
+	height: 39px;
+	background:
+		url(https://img.womanstalk.co.kr/upload/images/common/ico_card_wtPay_w.png)
+		center no-repeat;
+	background-size: 35px;
+}
+
+nav.leftMenuArea a.btnEvent p {
+	margin-top: 0;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+nav.leftMenuArea a.btnEvent strong {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+}
+
+/* 카테고리 */
+nav.leftMenuArea .cateListBox {
+	/* border-top: 10px solid #f1f1f1; */
+	margin-bottom: 30px;
+}
+
+nav.leftMenuArea .cateListBox button {
+	padding: 20px 18px;
+	font-size: 18px;
+	color: #000;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	/* background: url(https://img.womanstalk.co.kr/upload/images/common/ico_cate_off.png) right 18px center no-repeat; */
+	background-size: 24px;
+}
+
+nav.leftMenuArea .cateListBox li {
+	float: left;
+	width: calc(100%/ 3 - 1px);
+	min-height: 40px;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+nav.leftMenuArea .cateListBox a {
+	padding: 11px 0;
+	text-align: center;
+	color: #000;
+}
+
+nav.leftMenuArea .cateListBox li:nth-child(3n+3) {
+	border-right: none;
+}
+
+nav.leftMenuArea .cateListBox .cateList:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/* 뷰티 */
+nav.leftMenuArea .cateListBox {
+	/* border-top: 10px solid #f1f1f1; */
+	
+}
+
+/* 실시간 급상승 베스트 상품은? - 슬라이더 */
+nav.leftMenuArea .prodListBox {
+	position: relative;
+	min-height: 70px;
+	/* border-top: 12px solid #f2f2f2; */
+	border-bottom: 1px solid #ddd;
+}
+
+nav.leftMenuArea .prodListBox h3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px;
+	width: calc(100% - 30px);
+	height: 35px;
+	font-weight: 400;
+	font-size: 18px;
+	color: #000;
+	background: #fff;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+/* 아코디언 메뉴 */
+.active, .accordion:hover {
+	background-color: #ccc;
+}
+
+.accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2212";
+}
+
+.cateList {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}

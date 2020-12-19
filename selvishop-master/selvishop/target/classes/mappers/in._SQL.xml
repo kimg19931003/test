@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="selvi">
+     
+    
+    
+    
+    <select id="login" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select * from entry1 where id = '${id}' and pass = '${pass}' and deleted = 'n'
+         
+        ]]>
+    </select>
+    
+    
+    <select id="email_yn" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select email_ok from entry1 where email_pass = '${pass}'       
+        ]]>
+    </select> 
+          
+      
+    <select id="email_cert" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          update entry1 set email_ok='y' where email_pass = '${pass}'        
+        ]]>
+    </select>
+    
+    
+    
+    <select id="entry" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+       insert into entry1(eid, id, pass,pass_cert, name, call1, date,email,email_pass) values((select count(*) from (select eid from entry1) tmp),'${id}', '${pass}', '${pass_cert}','${name}', '${call}', NOW(),'${email}','${email_pass}')
+         
+        ]]>
+    </select>
+    
+    <select id="m_main_codechk" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        select ifnull(code_out_ok,'n') as code_out_ok from link_code where user_id='${id}'
+        ]]>
+    </select>
+    
+    <select id="m_main_codechk_pre" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        select * from link_code where user_id='${id}' and product_id='${product_id}'
+        ]]>
+    </select>
+    
+    <select id="m_main_product_list" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        select * from product_list 
+        ]]>
+    </select>
+    
+     <select id="m_main_download" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        select * from product_list where id=${product_id}
+        ]]>
+    </select>
+    
+    <select id="m_main_product_image_arr" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        select product_image_arr from product_list where id=${product_id}
+        ]]>
+    </select>
+    
+     <select id="m_main_product_video_arr" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        select product_video_arr from product_list where id=${product_id}
+        ]]>
+    </select>
+    
+    <select id="entry_id_check" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select id from entry1 where id = '${id}'
+         
+        ]]>
+    </select>
+    
+   
+    
+     <select id="link_code_idcheck" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         select link  from link_code  where product_id = '${product_id}' and user_id = '${id}'
+         
+        ]]>
+    </select>
+    
+    <select id="link_code_prdtcheck" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         select *  from link_code  where user_id = '${id}'
+         
+        ]]>
+    </select>
+    
+    <select id="link_code_prdtexist1" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select user_ih from link_code where user_id='${id}'         
+        ]]>
+    </select>
+    
+     <select id="link_code_prdtexist2" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+          select page_num from product_list where id = '${product_id}'          
+        ]]>
+    </select>
+    
+    <select id="link_code_pagenum" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         select lc.link , pl.page_num from link_code lc left join product_list pl on lc.product_id = pl.id where lc.product_id = '${product_id}'
+         
+        ]]>
+    </select>
+    
+    <select id="link_code_product_no_chk" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         select cast(product_no as unsigned) as product_no from link_code where product_id='${product_id}' order by cast(product_no as unsigned) desc
+         
+        ]]>
+    </select>
+    
+    <select id="link_num_statecheck" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+         select * from product_list pl left join link_code lc on lc.product_id = pl.id where pl.id='${product_id}' and lc.product_no='${link_num_state}'
+         
+        ]]>
+    </select>
+    
+    <select id="link_codenum" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        select * from product_list where id='${product_id}'
+         
+        ]]>
+    </select>
+    
+    <select id="link_code_state_plus" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        update product_list set link_num_state = link_num_state+1 where id='${product_id}'
+         
+        ]]>
+    </select>
+    
+    <select id="link_code_state_update" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        update product_list set link_num_state = '${link_num_state}' where id='${product_id}'
+          
+        ]]>
+    </select>
+    
+    <select id="code_auto" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        insert into link_code(id,link,user_id,long_link,product_user_select, cate_no, display_group, code_out_ok,product_id, product_image, user_ih, user_ih_key,user_name, detail_no, product_no)
+         values((select count(*) from (select id from link_code) tmp),'${shor_link}','${user_id}','${link}','${product_user_select}','${cate_no}','${display_group}','y','${product_id}','${product_image}', '${user_ih}','${plus_var}','${user_name}', '${detail_no}','${user_ih}')
+         
+        ]]>
+    </select>
+    
+    <select id="code_auto_user_inhe" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select user_ih from link_code where user_ih = '${user_ih}'
+        ]]>
+    </select>
+    
+    
+    <select id="id_reply" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+           select * from entry1 where email='${email}'
+        ]]>
+    </select>
+    
+     <select id="pass_reply" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        select * from entry1 where email='${email}' and id='${id}'
+        ]]>
+    </select>
+    
+    
+     <select id="pass_reply_passchange" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+       update entry1 set pass='${pass}', pass_change_state='y' where id='${id}' and email='${email}'
+        ]]>
+    </select>
+    
+     <select id="pass_reply_temptopass" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+       update entry1 set pass='${pass}', pass_change_state='n' where pass='${temp_pass}'
+        ]]>
+    </select>
+    
+    <select id="pass_state_check" parameterType="hashmap" resultType="hashmap"> 
+        <![CDATA[
+       select * from entry1 where pass='${temp_pass}'
+        ]]>
+    </select>
+     
+</mapper>
+
